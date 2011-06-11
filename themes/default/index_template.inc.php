@@ -24,7 +24,7 @@
             <li><a class="menu" href="index.php"><span><?php echo __('Home'); ?></a></span></li>
             <li><a class="menu" href="index.php?p=libinfo"><span><?php echo __('Union Catalog Information'); ?></span></a></li>
             <li><a class="menu" href="index.php?p=help"><span><?php echo __('Help'); ?></span></a></li>
-            <li><a class="menu" href="http://senayan.diknas.go.id"><span>SLiMS</span></a></li>
+            <li><a class="menu" href="http://slims.web.id"><span>SLiMS</span></a></li>
         </ul>
     </div>
     <div class="clear">&nbsp;</div>
