@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><title><?php echo $page_title; ?></title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="webicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="webicon.ico" type="image/x-icon" />
-<link href="<?php echo UCS_WEB_ROOT_DIR.'/themes/'.$sysconf['themes'].'/style.css'; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo UCS_WEB_ROOT_DIR.'/themes/'.$sysconf['template']['theme'].'/style.css'; ?>" rel="stylesheet" type="text/css" />
 <?php echo $metadata; ?>
 </head>
 <body>

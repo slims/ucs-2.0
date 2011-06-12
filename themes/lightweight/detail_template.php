@@ -9,6 +9,10 @@ ob_start(); /* <- DONT REMOVE THIS COMMAND */
 <td class="tblContent" style="width: 80%;" valign="top">{title}</td>
 </tr>
 <tr>
+<td class="tblHead" style="width: 20%;" valign="top"><?php print __('Collection Location'); ?></td>
+<td class="tblContent" style="width: 80%;" valign="top">{location}</td>
+</tr>
+<tr>
 <td class="tblHead" style="width: 20%;" valign="top"><?php print __('Edition'); ?></td>
 <td class="tblContent" style="width: 80%;" valign="top">{edition}</td>
 </tr>
@@ -71,10 +75,6 @@ ob_start(); /* <- DONT REMOVE THIS COMMAND */
 <tr>
 <td class="tblHead" style="width: 20%;" valign="top"><?php print __('Image'); ?></td>
 <td class="tblContent" style="width: 80%;" valign="top">{image}</td>
-</tr>
-<tr>
-<td class="tblHead" style="width: 20%;" valign="top"><?php print __('File Attachment'); ?></td>
-<td class="tblContent" style="width: 80%;" valign="top">{file_att}</td>
 </tr>
 <tr>
 <td class="tblHead" style="width: 20%;" valign="top">&nbsp;</td>

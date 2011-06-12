@@ -75,5 +75,5 @@ if (isset($_GET['p'])) {
 $main_content = ob_get_clean();
 
 // template output
-require THEMES_BASE_DIR.'default'.DSEP.'index_template.inc.php';
+require THEMES_BASE_DIR.$sysconf['template']['theme'].DSEP.'index_template.inc.php';
 ?>

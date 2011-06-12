@@ -267,14 +267,6 @@ $sysconf['authority_level'][8] = __('Illustrator');
 $sysconf['authority_level'][9] = __('Creator');
 $sysconf['authority_level'][10] = __('Contributor');
 
-// redirect to mobile template on mobile mode
-if (defined('LIGHTWEIGHT_MODE') OR isset($_COOKIE['LIGHTWEIGHT_MODE'])) {
-    $sysconf['template']['theme'] = 'lightweight';
-    $sysconf['template']['css'] = $sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/style.css';
-    $sysconf['enable_xml_detail'] = false;
-    $sysconf['enable_xml_result'] = false;
-}
-
 /**
  * BIBLIO INDEXING
  */
@@ -290,4 +282,12 @@ if (defined('SESSION_AUTO_STARTED')) { @session_destroy(); }
 /* Force UTF-8 for MySQL connection and HTTP header */
 header('Content-type: text/html; charset=UTF-8');
 $dbs->query('SET NAMES \'utf8\'');
+
+// redirect to mobile template on mobile mode
+if (defined('LIGHTWEIGHT_MODE') OR isset($_COOKIE['LIGHTWEIGHT_MODE'])) {
+    $sysconf['template']['theme'] = 'lightweight';
+    $sysconf['template']['css'] = $sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/style.css';
+    $sysconf['enable_xml_detail'] = false;
+    $sysconf['enable_xml_result'] = false;
+}
 ?>

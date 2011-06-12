@@ -30,6 +30,7 @@ body {
     margin-bottom: 20px;
     font-size: 200%;
     font-weight: bold;
+    color: #00736B;
 }
 
 #librarySubName {
@@ -44,7 +45,6 @@ body {
 
 #mainContent {
     background: #fff;
-    width: 580px;
 }
 
 #mainContent p,h3 {
@@ -67,7 +67,7 @@ body {
 a,a:hover {
     font-size: 12px;
     font-weight: bold;
-    color: #003380;
+    color: #00736B;
 }
 
 a:hover {
