@@ -139,31 +139,31 @@ class biblio_list extends biblio_list_model
             } else {
                 switch ($_field) {
                     case 'location' :
-						if (!$this->disable_item_data) {
-							$_subquery = 'SELECT location_id FROM mst_location WHERE location_name=\''.$_q.'\'';
-							if ($_b == '-') {
-								$_sql_criteria .= " item.location_id NOT IN ($_subquery)";
-							} else { $_sql_criteria .= " item.location_id IN ($_subquery)"; }
-						} else {
-							if ($_b == '-') {
-								$_sql_criteria .= " biblio.node_id !='$_q'";
-							} else { $_sql_criteria .= " biblio.node_id = '$_q'"; }
-						}
+			if (!$this->disable_item_data) {
+			    $_subquery = 'SELECT location_id FROM mst_location WHERE location_name=\''.$_q.'\'';
+			    if ($_b == '-') {
+				$_sql_criteria .= " item.location_id NOT IN ($_subquery)";
+			    } else { $_sql_criteria .= " item.location_id IN ($_subquery)"; }
+			} else {
+			    if ($_b == '-') {
+				$_sql_criteria .= " biblio.node_id !='$_q'";
+			    } else { $_sql_criteria .= " biblio.node_id = '$_q'"; }
+			}
                         break;
                     case 'colltype' :
-						if (!$this->disable_item_data) {
-							$_subquery = 'SELECT coll_type_id FROM mst_coll_type WHERE coll_type_name=\''.$_q.'\'';
-							if ($_b == '-') {
-								$_sql_criteria .= " item.coll_type_id NOT IN ($_subquery)";
-							} else { $_sql_criteria .= " item.coll_type_id IN ($_subquery)"; }
-						}
+			if (!$this->disable_item_data) {
+			    $_subquery = 'SELECT coll_type_id FROM mst_coll_type WHERE coll_type_name=\''.$_q.'\'';
+			    if ($_b == '-') {
+				$_sql_criteria .= " item.coll_type_id NOT IN ($_subquery)";
+			    } else { $_sql_criteria .= " item.coll_type_id IN ($_subquery)"; }
+			}
                         break;
                     case 'itemcode' :
-						if (!$this->disable_item_data) {
-							if ($_b == '-') {
-								$_sql_criteria .= " item.item_code != '$_q'";
-							} else { $_sql_criteria .= " item.item_code LIKE '$_q%'"; }
-						}
+			if (!$this->disable_item_data) {
+			    if ($_b == '-') {
+				    $_sql_criteria .= " item.item_code != '$_q'";
+			    } else { $_sql_criteria .= " item.item_code LIKE '$_q%'"; }
+			}
                         break;
                     case 'callnumber' :
                         if ($_b == '-') {
@@ -171,11 +171,11 @@ class biblio_list extends biblio_list_model
                         } else { $_sql_criteria .= ' biblio.call_number LIKE \''.$_q.'%\''; }
                         break;
                     case 'itemcallnumber' :
-						if (!$this->disable_item_data) {
-							if ($_b == '-') {
-								$_sql_criteria .= ' AND item.call_number NOT LIKE \''.$_q.'%\'';
-							} else { $_sql_criteria .= ' item.call_number LIKE \''.$_q.'%\''; }
-						}
+			if (!$this->disable_item_data) {
+			    if ($_b == '-') {
+				    $_sql_criteria .= ' AND item.call_number NOT LIKE \''.$_q.'%\'';
+			    } else { $_sql_criteria .= ' item.call_number LIKE \''.$_q.'%\''; }
+			}
                         break;
                     case 'class' :
                         if ($_b == '-') {
@@ -273,8 +273,8 @@ class biblio_list extends biblio_list_model
         if ($this->criteria) {
             if (isset($this->criteria['searched_fields']['location']) || isset($this->criteria['searched_fields']['colltype'])) {
                 if (!$this->disable_item_data) {
-					$_add_sql_str .= ' LEFT JOIN item ON biblio.biblio_id=item.biblio_id ';
-				}
+		    $_add_sql_str .= ' LEFT JOIN item ON biblio.biblio_id=item.biblio_id ';
+		}
             }
         }
 

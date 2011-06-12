@@ -53,6 +53,8 @@ define('DSEP', DIRECTORY_SEPARATOR);
 
 // ucs base dir
 define('UCS_BASE_DIR', realpath(dirname(__FILE__)).DSEP);
+// slims alias dir
+define('SENAYAN_BASE_DIR', UCS_BASE_DIR);
 
 // absolute path for simbio platform
 define('SIMBIO_BASE_DIR', UCS_BASE_DIR.'simbio2'.DSEP);
@@ -76,6 +78,7 @@ define('IMAGES_BASE_DIR', UCS_BASE_DIR.'images'.DSEP);
 // ucs web doc root dir
 $temp_ucs_web_root_dir = preg_replace('@admin.*@i', '', dirname($_SERVER['PHP_SELF']));
 define('UCS_WEB_ROOT_DIR', $temp_ucs_web_root_dir.(preg_match('@\/$@i', $temp_ucs_web_root_dir)?'':'/'));
+define('SENAYAN_WEB_ROOT_DIR', UCS_WEB_ROOT_DIR);
 
 // modules web root
 define('MODULES_WEB_ROOT_DIR', UCS_WEB_ROOT_DIR.'admin/modules/');
