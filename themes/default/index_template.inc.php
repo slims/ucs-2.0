@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><title><?php echo $page_title; ?></title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="webicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="webicon.ico" type="image/x-icon" />
-<link href="<?php echo THEMES_WEB_ROOT_DIR; ?>default/style.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo THEMES_WEB_ROOT_DIR; ?>default/960.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $sysconf['template']['css']; ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo $sysconf['template']['theme_folder']; ?>/960.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo JS_WEB_ROOT_DIR; ?>jquery.js"></script>
 <script type="text/javascript" src="<?php echo JS_WEB_ROOT_DIR; ?>form.js"></script>
 <script type="text/javascript" src="<?php echo JS_WEB_ROOT_DIR; ?>gui.js"></script>

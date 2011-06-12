@@ -46,10 +46,13 @@ if (get_magic_quotes_gpc()) {
 @ini_set('display_errors', true);
 
 // ucs version
-define('UCS_VERSION', 'ucs-1.0');
+define('UCS_VERSION', 'ucs-2.0');
 
 // redefine directory separator
 define('DSEP', DIRECTORY_SEPARATOR);
+
+// ucs base url
+define('UCS_BASE_URL', '');
 
 // ucs base dir
 define('UCS_BASE_DIR', realpath(dirname(__FILE__)).DSEP);
@@ -77,14 +80,22 @@ define('IMAGES_BASE_DIR', UCS_BASE_DIR.'images'.DSEP);
 
 // ucs web doc root dir
 $temp_ucs_web_root_dir = preg_replace('@admin.*@i', '', dirname($_SERVER['PHP_SELF']));
+#$temp_ucs_web_root_dir = preg_replace('/\\/i', '/', $temp_ucs_web_root_dir);
 define('UCS_WEB_ROOT_DIR', $temp_ucs_web_root_dir.(preg_match('@\/$@i', $temp_ucs_web_root_dir)?'':'/'));
 define('SENAYAN_WEB_ROOT_DIR', UCS_WEB_ROOT_DIR);
+
+/* GUI Template config */
+$sysconf['template']['dir'] = 'themes';
+$sysconf['template']['theme'] = 'default';
+$sysconf['template']['theme_folder'] = UCS_BASE_URL.$sysconf['template']['dir'].'/'.$sysconf['template']['theme'];
+$sysconf['template']['css'] = UCS_BASE_URL.$sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/style.css';
 
 // modules web root
 define('MODULES_WEB_ROOT_DIR', UCS_WEB_ROOT_DIR.'admin/modules/');
 
 // javascript library web root dir
-define('JS_WEB_ROOT_DIR', UCS_BASE_DIR.'js/');
+#define('JS_WEB_ROOT_DIR', UCS_BASE_DIR.'js/');
+define('JS_WEB_ROOT_DIR', UCS_BASE_URL.'js/');
 
 // ucs admin web root dir
 define('ADMIN_WEB_ROOT_DIR', UCS_WEB_ROOT_DIR.'admin/');
