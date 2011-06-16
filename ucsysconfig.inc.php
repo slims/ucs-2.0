@@ -43,7 +43,11 @@ if (get_magic_quotes_gpc()) {
     $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
 }
 // turn off all error messages for security reason
-@ini_set('display_errors', true);
+@ini_set('display_errors', false);
+
+// set default timezone
+// for a list of timezone, please see PHP Manual at "List of Supported Timezones" section
+@date_default_timezone_set('Asia/Jakarta');
 
 // ucs version
 define('UCS_VERSION', 'ucs-2.0');
