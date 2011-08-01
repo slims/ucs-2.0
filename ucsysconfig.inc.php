@@ -104,6 +104,9 @@ define('BINARY_FOUND', 1);
 define('COMMAND_SUCCESS', 0);
 define('COMMAND_FAILED', 2);
 
+// simbio main class inclusion
+require SIMBIO_BASE_DIR.'simbio.inc.php';
+
 /* DATABASE CONNECTION config */
 // database constant
 // change below setting according to your database configuration
@@ -143,8 +146,6 @@ $sysconf['library_subname'] = 'SLiMS';
 /* SYSTEM LIBRARIES */
 // include utility library
 require LIB_DIR.'utility.inc.php';
-// simbio main class inclusion
-require SIMBIO_BASE_DIR.'simbio.inc.php';
 // simbio security class
 require SIMBIO_BASE_DIR.'simbio_UTILS'.DIRECTORY_SEPARATOR.'simbio_security.inc.php';
 // includes gettext
