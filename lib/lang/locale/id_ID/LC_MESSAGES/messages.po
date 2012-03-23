@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Senayan3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-03 13:01+0700\n"
-"PO-Revision-Date: 2010-04-03 13:32+0700\n"
-"Last-Translator: sulf <sulfan@gmail.com>\n"
+"PO-Revision-Date: 2012-03-24 01:06+0700\n"
+"Last-Translator: Arif Syamsudin <buitenzorg812@gmail.com>\n"
 "Language-Team: Arie Nugraha; Hendro Wicaksono; Wardiyono <dicarve@yahoo.com; hendrowicaksono@yahoo.com; wynerst@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,6 @@ msgid "Conference"
 msgstr "Konferensi"
 
 #: sysconfig.inc.php:330
-#, fuzzy
 msgid "Topic"
 msgstr "Topik"
 
@@ -388,9 +387,8 @@ msgstr "Batas Pemisah Rekod"
 #: admin/modules/bibliography/import.php:242
 #: admin/modules/bibliography/item_export.php:158
 #: admin/modules/bibliography/item_import.php:196
-#, fuzzy
 msgid "Number of Records To Export (0 for all records)"
-msgstr "Jumlah rekod yang di impor (0 untuk semua rekod)"
+msgstr "Jumlah Cantuman Untuk di Ekspor (0 untuk semua cantuman)"
 
 #: admin/modules/bibliography/export.php:177
 #: admin/modules/bibliography/import.php:244
@@ -488,13 +486,12 @@ msgid "All Data Successfully Deleted"
 msgstr "Semua Data Berhasil Dihapus"
 
 #: admin/modules/bibliography/index.php:269
-#, fuzzy
 msgid ""
 "Some or All Data NOT deleted successfully!\\n"
 "Please contact system administrator"
 msgstr ""
 "Sebagian atau semua data GAGAL dihapus!\n"
-"Hubungi admin sistem untuk pemecahannya"
+"Hubungi administrator sistem"
 
 #: admin/modules/bibliography/index.php:281
 msgid "Bibliographic"
@@ -505,9 +502,8 @@ msgid "Bibliographic List"
 msgstr "Daftar Katalog"
 
 #: admin/modules/bibliography/index.php:287
-#, fuzzy
 msgid "Upload Selected Bibliographic data to Union Catalog Server*"
-msgstr "Menambahkan Data Katalog Baru"
+msgstr "Unggah Data Bibliografi Terpilih ke Peladen Katalog Induk*"
 
 #: admin/modules/bibliography/index.php:294
 msgid "All Fields"
@@ -789,29 +785,24 @@ msgid "Print Barcodes for Selected Data"
 msgstr "Cetak Data Terpilih"
 
 #: admin/modules/bibliography/item_export.php:123
-#, fuzzy
 msgid "There is no record in item database yet, Export FAILED!"
-msgstr "Tabel keanggotaan dalam pangkalan data belum memiliki rekod. Ekspor GAGAL!"
+msgstr "Tidak ada cantuman dalam pangkalan data eksemplar, Ekspor GAGAL!"
 
 #: admin/modules/bibliography/item_export.php:132
-#, fuzzy
 msgid "ITEM EXPORT TOOL"
-msgstr "Fasiltas Import"
+msgstr "Peranngkat Ekspor Eksemplar"
 
 #: admin/modules/bibliography/item_export.php:134
-#, fuzzy
 msgid "Export item data to CSV file"
-msgstr "Fasilitas Ekspor data anggota dalam berkas CSV"
+msgstr "Ekspor data eksemplar ke berkas CSV"
 
 #: admin/modules/bibliography/item_import.php:171
-#, fuzzy
 msgid "ITEM IMPORT TOOL"
-msgstr "Fasiltas Import"
+msgstr "Perangkat Impor Eksemplar"
 
 #: admin/modules/bibliography/item_import.php:173
-#, fuzzy
 msgid "Import for item data from CSV file"
-msgstr "Fasilitas Impor data anggota dari berkas CSV"
+msgstr "Impor data eksemplar dari berkas CSV"
 
 #: admin/modules/bibliography/pop_attach.php:82
 msgid "Upload FAILED! Forbidden file type or file size too big!"
@@ -839,9 +830,8 @@ msgid "Upload Now"
 msgstr "Unggah Sekarang"
 
 #: admin/modules/bibliography/pop_attach.php:194
-#, fuzzy
 msgid "Repository ROOT"
-msgstr "Direktori Repositori"
+msgstr "Repositori ROOT"
 
 #: admin/modules/bibliography/pop_attach.php:204
 msgid "Repo. Directory"
@@ -872,9 +862,8 @@ msgid "Access"
 msgstr "Akses"
 
 #: admin/modules/bibliography/pop_attach.php:224
-#, fuzzy
 msgid "Access Limit by Member Type"
-msgstr "Daftar Peminjaman Anggota"
+msgstr "Akses Dibatasi dengan Jenis Keanggotaan"
 
 #: admin/modules/bibliography/pop_author.php:88
 msgid "Author succesfully updated!"
@@ -977,33 +966,28 @@ msgid "Export Bibliographic Data To CSV format"
 msgstr "Ekspor Data Bibliografi ke Format CSV"
 
 #: admin/modules/bibliography/submenu.php:35
-#, fuzzy
 msgid "Item Import"
-msgstr "Item ID"
+msgstr "Impor Eksemplar"
 
 #: admin/modules/bibliography/submenu.php:35
-#, fuzzy
 msgid "Import Data to Item/Copies database from CSV file"
-msgstr "Impor Data Bibliografi dari file CSV"
+msgstr "Impor Data ke pangkalan data Item/Kopi dari berkas CSV"
 
 #: admin/modules/bibliography/submenu.php:36
-#, fuzzy
 msgid "Item Export"
-msgstr "Daftar Koleksi"
+msgstr "Ekspor Eksemplar"
 
 #: admin/modules/bibliography/submenu.php:36
-#, fuzzy
 msgid "Export Item/Copies data To CSV format"
-msgstr "Ekspor Data Bibliografi ke Format CSV"
+msgstr "Ekspor data Eksemplar/Kopi ke format CSV"
 
 #: admin/modules/bibliography/ucs_upload.php:28
 msgid "UCS is not enabled! Change global system configuration to enable UCS"
 msgstr "UCS tidak aktif! Ubah konfigurasi sistem untuk mengaktifkan UCS"
 
 #: admin/modules/bibliography/z3950.php:338
-#, fuzzy
 msgid "* Please make sure you have a working Internet connection."
-msgstr "* Pastikan anda memiliki koneksi Internet yang bekerja."
+msgstr "* Pastikan Anda memiliki koneksi internet yang bekerja."
 
 #: admin/modules/circulation/circulation_action.php:46
 msgid "ERROR! Loan data can't be saved to database"
@@ -1680,9 +1664,8 @@ msgid "No Loan Transaction"
 msgstr "Tidak Ada Transaksi Peminjaman"
 
 #: admin/modules/master_file/item_status.php:44
-#, fuzzy
 msgid "Skipped By Stock Take"
-msgstr "Inventarisasi Koleksi"
+msgstr "Lewatkan saat Inventarisasi"
 
 #: admin/modules/master_file/item_status.php:52
 msgid "Item Status ID and Name can't be empty"
@@ -2558,9 +2541,8 @@ msgid "Staff activity log recapitulation"
 msgstr "Rekapitulasi Aktifitas Staf"
 
 #: admin/modules/reporting/customs/customs_report_list.inc.php:33
-#, fuzzy
 msgid "Visitor Statistic"
-msgstr "Statistik Koleksi"
+msgstr "Statistik Pengunjung"
 
 #: admin/modules/reporting/customs/customs_report_list.inc.php:34
 msgid "Visitor Statistic (by Day)"
@@ -2568,15 +2550,13 @@ msgstr "Statistik Pengunjung (berdasarkan hari)"
 
 #: admin/modules/reporting/customs/customs_report_list.inc.php:35
 #: admin/modules/reporting/customs/visitor_list.php:55
-#, fuzzy
 msgid "Visitor List"
-msgstr "Daftar Pengarang"
+msgstr "Daftar Pengunjung"
 
 #: admin/modules/reporting/customs/customs_report_list.inc.php:36
 #: admin/modules/reporting/customs/fines_report.php:64
-#, fuzzy
 msgid "Fines Report"
-msgstr "Laporan Peminjaman"
+msgstr "Laporan Laporan Denda"
 
 #: admin/modules/reporting/customs/fines_report.php:41
 #: admin/modules/reporting/customs/item_usage.php:102
@@ -2841,7 +2821,6 @@ msgid "Member Data Entry"
 msgstr "Entri data Anggota"
 
 #: admin/modules/reporting/customs/staff_act.php:93
-#, fuzzy
 msgid "Circulation Tasks"
 msgstr "Sirkulasi"
 
@@ -2850,9 +2829,8 @@ msgid "Press Ctrl and click to select multiple entries"
 msgstr "Tekan 'Ctrl' dan klik untuk memilih lebih dari satu"
 
 #: admin/modules/reporting/customs/visitor_list.php:65
-#, fuzzy
 msgid "NON-Member visitor"
-msgstr "Daftar Anggota"
+msgstr "Pengunjung BUKAN Anggota"
 
 #: admin/modules/reporting/customs/visitor_list.php:74
 msgid "Visitor ID"
@@ -2860,44 +2838,36 @@ msgstr "ID Pengunjung"
 
 #: admin/modules/reporting/customs/visitor_list.php:74
 #: admin/modules/reporting/customs/visitor_list.php:124
-#, fuzzy
 msgid "Visitor Name"
-msgstr "Nama Pengarang"
+msgstr "Nama Pengunjung"
 
 #: admin/modules/reporting/customs/visitor_list.php:86
-#, fuzzy
 msgid "Visit Date From"
-msgstr "Tanggal Pendaftaran sejak"
+msgstr "Tanggal Kunjungan Sejak"
 
 #: admin/modules/reporting/customs/visitor_list.php:92
-#, fuzzy
 msgid "Visit Date Until"
-msgstr "Tanggal Pendaftaran hingga"
+msgstr "Tanggal Kunjungan Sampai"
 
 #: admin/modules/reporting/customs/visitor_list.php:127
-#, fuzzy
 msgid "Visit Date"
-msgstr "Tanggal Denda"
+msgstr "Tanggal Kunjungan"
 
 #: admin/modules/reporting/customs/visitor_report.php:49
-#, fuzzy
 msgid "Library Visitor Report"
-msgstr "Tampilkan laporan peminjaman perpustakaan"
+msgstr "Laporan Pengunjung Perpustakaan"
 
 #: admin/modules/reporting/customs/visitor_report.php:141
-#, fuzzy
 msgid "NON-Member Visitor"
-msgstr "Daftar Anggota"
+msgstr "Pengunjung BUKAN Anggota"
 
 #: admin/modules/reporting/customs/visitor_report.php:158
-#, fuzzy
 msgid "Total visit/month"
-msgstr "Jumlah Total Koleksi Hilang"
+msgstr "Kunjungan total/bulan"
 
 #: admin/modules/reporting/customs/visitor_report_day.php:64
-#, fuzzy
 msgid "Visitor Report"
-msgstr "Laporan Lain"
+msgstr "Laporan Pengunjung"
 
 #: admin/modules/serial_control/index.php:50
 msgid "Serial Control"
@@ -3155,12 +3125,11 @@ msgid "Stock Taking Initialized"
 msgstr "Inisialisasi Inventarisasi Koleksi Berhasil"
 
 #: admin/modules/stock_take/init.php:131
-#, fuzzy
 msgid ""
 "Stock Taking FAILED to Initialized.\\n"
 "No item to stock take!"
 msgstr ""
-"GAGAL Inisialisasi Inventarisasi Koleksi.\n"
+"Inventarisasi GAGAL dimulai.\\n"
 "Tidak ada item untuk di inventarisasi!"
 
 #: admin/modules/stock_take/init.php:139
@@ -3208,9 +3177,8 @@ msgstr "Koleksi Hilang"
 
 #: admin/modules/stock_take/st_report.php:123
 #: admin/modules/stock_take/st_report.php:161
-#, fuzzy
 msgid "Existing Items"
-msgstr "Koleksi Ada"
+msgstr "Eksemplar yang Tersedia"
 
 #: admin/modules/stock_take/st_report.php:124
 #: admin/modules/stock_take/st_report.php:162
@@ -3591,19 +3559,16 @@ msgid "Show Promoted Titles at Homepage"
 msgstr "Tampilkan Judul Terpilih di Homepage"
 
 #: admin/modules/system/index.php:205
-#, fuzzy
 msgid "Don't Print"
-msgstr "Jangan Promosikan"
+msgstr "Jangan Dicetak"
 
 #: admin/modules/system/index.php:206
-#, fuzzy
 msgid "Print"
-msgstr "Tertutup"
+msgstr "Cetak"
 
 #: admin/modules/system/index.php:207
-#, fuzzy
 msgid "Print Circulation Receipt"
-msgstr "Sirkulasi"
+msgstr "Cetak Bukti Sirkulasi"
 
 #: admin/modules/system/index.php:213
 msgid "Loan and Due Date Manual Change"
@@ -3638,9 +3603,8 @@ msgid "Session Login Timeout"
 msgstr "Timeout Sesi Login"
 
 #: admin/modules/system/index.php:243
-#, fuzzy
 msgid "Barcode Encoding"
-msgstr "Ukuran Barcode"
+msgstr "Penyandian Barkod"
 
 #: admin/modules/system/module.php:47
 msgid "Module name and path can't be empty"
@@ -3877,9 +3841,8 @@ msgid "Please supply valid username and password"
 msgstr "Lengkapi username dan password dengan benar"
 
 #: lib/contents/login.inc.php:63
-#, fuzzy
 msgid "Welcome to Library Automation, "
-msgstr "Selamat datang di automasi perpustakaan,"
+msgstr "Selamat Datang di Automasi Perpustakaan,"
 
 #: lib/contents/login.inc.php:72
 msgid "Wrong Username or Password. ACCESS DENIED"
@@ -3894,9 +3857,8 @@ msgid "Welcome to Member's Area where you can view your current loan information
 msgstr "Selamat Datang di Area Anggota, dimana Anda bisa melihat status keanggotaan dan peminjaman Anda"
 
 #: lib/contents/member.inc.php:54
-#, fuzzy
 msgid "Please fill your Username and Password to Login!"
-msgstr "Lengkapi username dan password dengan benar"
+msgstr "Lengkapi Nama Pengguna dan Kata Sandi untuk Masuk!"
 
 #: lib/contents/member.inc.php:69
 msgid "Login FAILED! Wrong username or password!"
@@ -3907,12 +3869,8 @@ msgid "Library Member Login"
 msgstr "Login Anggota Perpustakaan"
 
 #: lib/contents/member.inc.php:80
-#, fuzzy
 msgid "Please insert your member ID and password given by library system administrator. If you are library's member and don't have a password yet, please contact library staff."
-msgstr ""
-"Masukan alamat e-mail dan password\n"
-"       yang diberikan oleh administrator sistem perpustakaan. Apabila anda anggota perpustakaan dan belum memiliki password,\n"
-"       harap hubungi staf perpustakaan."
+msgstr "Masukkan identitas keanggotaan serta kata sandi yang diberikan kepada Anda oleh administrator sistem perpustakaan. Jika Anda adalah anggota perpustakaan namun belum memiliki kata sandi, hubungi staf perpustakaan."
 
 #: lib/contents/member.inc.php:84
 msgid "Password"
@@ -3932,18 +3890,16 @@ msgstr "Konfirmasi Password"
 
 #: lib/contents/member.inc.php:115
 #: lib/contents/member.inc.php:281
-#, fuzzy
 msgid "Change Password"
-msgstr "Password Baru"
+msgstr "Ubah Kata Sandi"
 
 #: lib/contents/member.inc.php:174
 msgid "Your Membership Already EXPIRED! Please extend your membership."
 msgstr "Keanggotaan anda sudah HABIS MASA BERLAKU-nya! Harap perpanjang keanggotaan anda segera."
 
 #: lib/contents/member.inc.php:177
-#, fuzzy
 msgid "Membership currently in pending state, no loan transaction can be made yet."
-msgstr "Keanggotaan saat ini sedang di-pending, transaksi peminjaman tidak bisa dilakukan."
+msgstr "Keanggotaan saat ini sedang ditunda, transaksi peminjaman tidak bisa dilakukan."
 
 #: lib/contents/member.inc.php:210
 msgid "OVERDUED"
@@ -3990,9 +3946,8 @@ msgid "Sorry, Please fill institution field if you are not library member"
 msgstr "Maaf, jika Anda bukan anggota perpustakaan, silahkan beritahu kami nama institusi Anda "
 
 #: lib/contents/visitor.inc.php:87
-#, fuzzy
 msgid "Error inserting counter data to database!"
-msgstr "Otentikasi user dan password error"
+msgstr "Galat mensisipkan penghitung data ke pangkalan data!"
 
 #: lib/contents/visitor.inc.php:96
 msgid "Visitor Counter"
@@ -4107,9 +4062,8 @@ msgid "Help on Search"
 msgstr "Bantuan pencarian"
 
 #: template/blue/index_template.inc.php:39
-#, fuzzy
 msgid "Member Area"
-msgstr "Pencarian Anggota"
+msgstr "Area Anggota"
 
 #: template/blue/index_template.inc.php:40
 msgid "Librarian LOGIN"
@@ -4128,24 +4082,20 @@ msgid "Advanced Search"
 msgstr "Pencarian Spesifik"
 
 #: ucs/admin/index.php:57
-#, fuzzy
 msgid "Union Catalog Server administration console. you are currently logged in as"
-msgstr "Selamat datang di automasi perpustakaan, saat ini anda login sebagai"
+msgstr "Konsol administrasi Peladen Katalog Induk. Saat ini Anda masuk sebagai"
 
 #: ucs/admin/logout.php:32
-#, fuzzy
 msgid "You Have Been Logged Out From Union Catalog Server console"
-msgstr "Anda telah keluar dari sistem automasi perpustakaan"
+msgstr "Anda Telah Keluar dari konsol Peladen Katalo Induk"
 
 #: ucs/admin/default/home.php:30
-#, fuzzy
 msgid "<strong>PHP GD</strong> extension is not installed. Please install it or application won't be able to create image thumbnail."
-msgstr "Extension <strong>PHP GD</strong> belum terinstall. Pastikan PHP GD terinstall atau aplikasi tidak dapat membuat thumbnail image dan membuat barcode"
+msgstr "Ekstensi <strong>PHP GD</strong> belum terpasang. Pastikan PHP GD terpasang atau aplikasi tidak dapat membuat gambar mini dan barkod."
 
 #: ucs/admin/default/submenu.php:24
-#, fuzzy
 msgid "Bibliography List"
-msgstr "Daftar Katalog"
+msgstr "Daftar Bibliografi"
 
 #: ucs/admin/default/submenu.php:24
 msgid "View existing Union Server Catalog data"
@@ -4153,14 +4103,12 @@ msgstr "Lihat Union Server Catalog yang tercatat"
 
 #: ucs/admin/modules/bibliography/index.php:392
 #: ucs/admin/modules/bibliography/index.php:399
-#, fuzzy
 msgid "Node"
-msgstr "Tidak Ada"
+msgstr "Simpul"
 
 #: ucs/admin/modules/system/index.php:128
-#, fuzzy
 msgid "OPAC Template"
-msgstr "Template administrasi"
+msgstr "Templat OPAC"
 
 #: ucs/admin/modules/system/nodes_poll.php:46
 msgid "Nodes poll cleared!"
@@ -4171,19 +4119,16 @@ msgid "NODES POLL"
 msgstr "KUMPULAN NODE"
 
 #: ucs/admin/modules/system/nodes_poll.php:57
-#, fuzzy
 msgid "Are you SURE to completely clear nodes poll!"
-msgstr "Apakah anda YAKIN untuk menghapus seluruh data Log Sistem? Aksi ini tidak bisa di-undo"
+msgstr "Anda YAKIN ingin menghapus kumpulan simpul!"
 
 #: ucs/admin/modules/system/nodes_poll.php:57
-#, fuzzy
 msgid "CLEAR ALL NODES POLL"
-msgstr "HAPUS LOG"
+msgstr "Hapus Semua Kumpulan Simpul"
 
 #: ucs/admin/modules/system/nodes_poll.php:87
-#, fuzzy
 msgid "IP Address"
-msgstr "Alamat"
+msgstr "Alamat IP"
 
 #: ucs/admin/modules/system/nodes_poll.php:88
 msgid "Request Start"
@@ -4207,23 +4152,20 @@ msgstr "Selamat Datang di halaman administrasi Union Server Catalog"
 
 #: ucs/themes/default/custom_frontpage_record.inc.php:12
 #: ucs/themes/default/detail_template.php:12
-#, fuzzy
 msgid "Collection Location"
-msgstr "Statistik Koleksi"
+msgstr "Lokasi Koleksi"
 
 #: ucs/themes/default/index_template.inc.php:25
-#, fuzzy
 msgid "Union Catalog Information"
-msgstr "Info Perpustakaan"
+msgstr "Informasi Katalog Induk"
 
 #: ucs/themes/default/index_template.inc.php:26
 msgid "Help"
 msgstr "Bantuan"
 
 #: ucs/themes/default/index_template.inc.php:88
-#, fuzzy
 msgid "Quick Search"
-msgstr "Pencarian"
+msgstr "Pencarian Cepat"
 
 #~ msgid "copies at"
 #~ msgstr "kopi terdapat di"
