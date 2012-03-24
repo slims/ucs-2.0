@@ -7,7 +7,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -38,4 +38,3 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
 @session_set_cookie_params(86400, UCS_WEB_ROOT_DIR.'admin/');
 // start session
 session_start();
-?>

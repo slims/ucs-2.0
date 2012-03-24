@@ -1,11 +1,10 @@
 <?php
 /**
- *
  * Copyright (C) 2010  Arie Nugraha (dicarve@yahoo.com)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -45,9 +44,10 @@ require SIMBIO_BASE_DIR.'simbio_DB/simbio_dbop.inc.php';
 
 ?>
 <fieldset class="menuBox">
-    <div class="menuBoxInner systemIcon">
-        <?php echo strtoupper(__('System Configuration')).'<hr />'.__('Modify global application preferences'); ?>
-    </div>
+<div class="menuBoxInner systemIcon">
+  <div class="per_title">
+	  <h2><?php echo __('System Configuration'); ?></h2>
+  </div>
 </fieldset>
 <?php
 /* main content */
@@ -160,4 +160,3 @@ $form->addTextField('text', 'session_timeout', __('Session Login Timeout'), $sys
 // print out the object
 echo $form->printOut();
 /* main content end */
-?>

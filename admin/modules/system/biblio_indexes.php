@@ -4,7 +4,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -100,12 +100,18 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
 ?>
 <fieldset class="menuBox">
 <div class="menuBoxInner systemIcon">
-    <?php echo strtoupper(__('UCS Bibliographic Index')); ?>
-	<div style="font-weight: normal">Bibliographic Index will speed up UCS catalog search</div>
-	<hr />
-	<a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/biblio_indexes.php?action=detail&detail=empty" class="headerText2"><?php echo __('Emptying Index'); ?></a>
-    &nbsp; <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/biblio_indexes.php?action=detail&detail=reindex" class="headerText2"><?php echo __('Re-create Index'); ?></a>
-    &nbsp; <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/biblio_indexes.php?action=detail&detail=update" class="headerText2"><?php echo __('Update Index'); ?></a>
+  <div class="per_title">
+	  <h2><?php echo __('UCS Bibliographic Index'); ?></h2>
+  </div>
+  <div class="sub_section">
+		.
+	  <div class="action_button">
+		  <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/biblio_indexes.php?action=detail&detail=empty" class="headerText2"><?php echo __('Emptying Index'); ?></a>
+      <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/biblio_indexes.php?action=detail&detail=reindex" class="headerText2"><?php echo __('Re-create Index'); ?></a>
+      <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/biblio_indexes.php?action=detail&detail=update" class="headerText2"><?php echo __('Update Index'); ?></a>
+	  </div>
+	</div>
+	<div class="infoBox">Bibliographic Index will speed up UCS catalog search</div>
 </div>
 </fieldset>
 <?php
@@ -124,4 +130,3 @@ echo '<div>Total indexed data: ' . $idx_total . ' records.</div>';
 echo '<div>Unidexed data: ' . $unidx_total . ' records.</div>';
 echo '</div>';
 }
-?>

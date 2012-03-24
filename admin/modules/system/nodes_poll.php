@@ -5,7 +5,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -55,11 +55,15 @@ if (isset($_POST['clearPoll']) AND $can_write AND $_SESSION['uid'] == 1) {
 ?>
 <fieldset class="menuBox">
 <div class="menuBoxInner nodesIcon">
-    <?php echo strtoupper(__('NODES POLL'));?> -
+  <div class="per_title">
+	  <h2><?php echo __('Nodes Poll'); ?></h2>
+  </div>
+  <div class="sub_section">
     <?php if ($_SESSION['uid'] == 1) { ?>
-    <a href="#" onclick="confSubmit('clearPollForm', '<?php echo __('Are you SURE to completely clear nodes poll!'); ?>')" class="notAJAX headerText2" style="color: red;"><?php echo __('CLEAR ALL NODES POLL'); ?></a>
+	  <div class="action_button">
+      <a href="#" onclick="confSubmit('clearPollForm', '<?php echo __('Are you SURE to completely clear nodes poll!'); ?>')" class="notAJAX headerText2" style="color: red;"><?php echo __('CLEAR ALL NODES POLL'); ?></a>
+	  </div>
     <?php } ?>
-    <hr />
     <form name="search" action="<?php echo MODULES_WEB_ROOT_DIR; ?>system/nodes_poll.php" id="search" method="get" style="display: inline;"><?php echo __('Search'); ?> :
     <input type="text" name="keywords" size="30" />
     <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="button" />
@@ -69,6 +73,7 @@ if (isset($_POST['clearPoll']) AND $can_write AND $_SESSION['uid'] == 1) {
     <form action="<?php echo MODULES_WEB_ROOT_DIR; ?>system/nodes_poll.php" id="clearPollForm" target="blindSubmit" method="post" style="display: inline;"><input type="hidden" name="clearPoll" value="true" /></form>
     <?php } ?>
     <!-- POLL CLEARANCE FORM END -->
+  </div>
 </div>
 </fieldset>
 <?php
@@ -128,4 +133,3 @@ if (isset($_GET['keywords']) AND $_GET['keywords']) {
 
 echo $datagrid_result;
 /* main content end */
-?>

@@ -4,7 +4,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -57,18 +57,21 @@ $_SESSION['formID'] = null;
 ?>
 <fieldset class="menuBox">
 <div class="menuBoxInner trashIcon">
-    <?php echo strtoupper(__('Nodes Data Removal')); ?>
-    <hr />
-    <form name="search" action="<?php echo MODULES_WEB_ROOT_DIR; ?>bibliography/nodes_removal.php" id="search" method="post" style="display: inline;"><?php echo __('Select Node'); ?> :
-    <select name="node"><option value="0"><?php echo __('Select Node'); ?></option>
-	<?php
-	foreach ($sysconf['node'] as $id => $node) {
-		echo '<option value="'.$id.'">'.$node['name'].'</option>';
-	}
-	?>
-	</select>
-    <input type="submit" name="doRemove" id="doRemove" value="<?php echo __('Remove All Selected Node\'s Data'); ?>" class="button" />
-    </form>
+    <div class="per_title">
+	    <h2><?php echo __('Nodes Data Removal'); ?></h2>
+    </div>
+    <div class="sub_section">
+			<form name="search" action="<?php echo MODULES_WEB_ROOT_DIR; ?>bibliography/nodes_removal.php" id="search" method="post" style="display: inline;"><?php echo __('Select Node'); ?> :
+			<select name="node"><option value="0"><?php echo __('Select Node'); ?></option>
+			<?php
+			foreach ($sysconf['node'] as $id => $node) {
+				echo '<option value="'.$id.'">'.$node['name'].'</option>';
+			}
+			?>
+			</select>
+			<input type="submit" name="doRemove" id="doRemove" value="<?php echo __('Remove All Selected Node\'s Data'); ?>" class="button" />
+			</form>
+		</div>
 </div>
 </fieldset>
 <?php
@@ -108,4 +111,3 @@ if (isset($_POST['node']) && isset($_POST['doRemove'])) {
 		echo '<div class="errorBox">'.__('Node Undefined on server!').'</div>';
 	}
 }
-?>

@@ -6,7 +6,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -31,16 +31,16 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
 @ini_set('magic_quotes_sybase', false);
 // force disabling magic quotes
 if (get_magic_quotes_gpc()) {
-    function stripslashes_deep($value)
-    {
-        $value = is_array($value)?array_map('stripslashes_deep', $value):stripslashes($value);
-        return $value;
-    }
+  function stripslashes_deep($value)
+  {
+    $value = is_array($value)?array_map('stripslashes_deep', $value):stripslashes($value);
+    return $value;
+  }
 
-    $_POST = array_map('stripslashes_deep', $_POST);
-    $_GET = array_map('stripslashes_deep', $_GET);
-    $_COOKIE = array_map('stripslashes_deep', $_COOKIE);
-    $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
+  $_POST = array_map('stripslashes_deep', $_POST);
+  $_GET = array_map('stripslashes_deep', $_GET);
+  $_COOKIE = array_map('stripslashes_deep', $_COOKIE);
+  $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
 }
 // turn off all error messages for security reason
 @ini_set('display_errors', false);
@@ -306,4 +306,3 @@ if (defined('LIGHTWEIGHT_MODE') OR isset($_COOKIE['LIGHTWEIGHT_MODE'])) {
     $sysconf['enable_xml_detail'] = false;
     $sysconf['enable_xml_result'] = false;
 }
-?>

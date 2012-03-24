@@ -5,7 +5,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -41,12 +41,18 @@ if (!($can_read AND $can_write)) {
 ?>
 <fieldset class="menuBox">
 <div class="menuBoxInner backupIcon">
-    <?php echo strtoupper(__('Database Backup')); ?> - <a href="javascript: setContent('backupStat', '<?php echo MODULES_WEB_ROOT_DIR; ?>/system/backup_proc.php', 'post', 'start=true');" class="headerText2 notAJAX"><?php echo __('Start New Backup'); ?></a>
-    <hr />
+  <div class="per_title">
+	  <h2><?php echo __('Database Backup'); ?></h2>
+  </div>
+  <div class="sub_section">
+	  <div class="action_button">
+      <a href="javascript: setContent('backupStat', '<?php echo MODULES_WEB_ROOT_DIR; ?>/system/backup_proc.php', 'post', 'start=true');" class="headerText2 notAJAX"><?php echo __('Start New Backup'); ?></a>
+	  </div>
     <form name="search" action="<?php echo MODULES_WEB_ROOT_DIR; ?>system/backup_proc.php" id="search" method="get" style="display: inline;"><?php echo __('Search'); ?> :
     <input type="text" name="keywords" size="30" />
     <input type="submit" id="doSearch" loadcontainer="backupStat" value="<?php echo __('Search'); ?>" class="button" />
     </form>
+  </div>
 </div>
 </fieldset>
 <div id="backupStat">
