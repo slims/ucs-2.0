@@ -23,12 +23,12 @@
 // be sure that this file not accessed directly
 if (!defined('INDEX_AUTH')) {
     die("can not access this file directly");
-} elseif (INDEX_AUTH != 1) { 
+} elseif (INDEX_AUTH != 1) {
     die("can not access this file directly");
 }
 
 if (defined('LIGHTWEIGHT_MODE')) {
-    header('Location: index.php');
+  header('Location: index.php');
 }
 
 // required file
@@ -40,7 +40,7 @@ if ($sysconf['https_enable']) {
 }
 
 // check if session browser cookie already exists
-if (isset($_COOKIE['admin_logged_in'])) {
+if (isset($_COOKIE['ucs_admin_logged_in'])) {
     header('location: admin/index.php');
 }
 
@@ -55,8 +55,8 @@ if (isset($_POST['logMeIn'])) {
         echo '<script type="text/javascript">alert(\''.__('Please supply valid username and password').'\');</script>';
     } else {
         // destroy previous session set in OPAC
-        simbio_security::destroySessionCookie(null, SENAYAN_MEMBER_SESSION_COOKIES_NAME, SENAYAN_WEB_ROOT_DIR, false);
-        require SENAYAN_BASE_DIR.'admin/default/session.inc.php';
+        simbio_security::destroySessionCookie(null, UCS_MEMBER_SESSION_COOKIES_NAME, UCS_WEB_ROOT_DIR, false);
+        require UCS_BASE_DIR.'admin/default/session.inc.php';
         // regenerate session ID to prevent session hijacking
         session_regenerate_id(true);
         // create logon class instance
@@ -65,31 +65,30 @@ if (isset($_POST['logMeIn'])) {
             $ldap_configs = $sysconf['auth']['user'];
         }
         if ($logon->adminValid($dbs)) {
-
             # <!-- Captcha form processing - start -->
             if ($sysconf['captcha']['smc']['enable']) {
-                if ($sysconf['captcha']['smc']['type'] == 'recaptcha') {
-                    require_once LIB_DIR.$sysconf['captcha']['smc']['folder'].'/'.$sysconf['captcha']['smc']['incfile'];
-                    $privatekey = $sysconf['captcha']['smc']['privatekey'];
-                    $resp = recaptcha_check_answer ($privatekey,
-                                          $_SERVER["REMOTE_ADDR"],
-                                          $_POST["recaptcha_challenge_field"],
-                                          $_POST["recaptcha_response_field"]);
+              if ($sysconf['captcha']['smc']['type'] == 'recaptcha') {
+                require_once LIB_DIR.$sysconf['captcha']['smc']['folder'].'/'.$sysconf['captcha']['smc']['incfile'];
+                $privatekey = $sysconf['captcha']['smc']['privatekey'];
+                $resp = recaptcha_check_answer ($privatekey,
+                    $_SERVER["REMOTE_ADDR"],
+                    $_POST["recaptcha_challenge_field"],
+                    $_POST["recaptcha_response_field"]);
 
-                    if (!$resp->is_valid) {
-                        // What happens when the CAPTCHA was entered incorrectly
-                        session_unset();
-                        header("location:index.php?p=login");
-                        die();
-                    }
-                } elseif ($sysconf['captcha']['smc']['type'] == 'others') {
-                    # other captchas here
+                if (!$resp->is_valid) {
+                    // What happens when the CAPTCHA was entered incorrectly
+                    session_unset();
+                    header("location:index.php?p=login");
+                    die();
                 }
+              } elseif ($sysconf['captcha']['smc']['type'] == 'others') {
+                  # other captchas here
+              }
             }
             # <!-- Captcha form processing - end -->
 
             // set cookie admin flag
-            setcookie('admin_logged_in', true, time()+14400, SENAYAN_WEB_ROOT_DIR);
+            setcookie('ucs_admin_logged_in', true, time()+14400, UCS_WEB_ROOT_DIR);
             // write log
             utility::writeLogs($dbs, 'staff', $username, 'Login', 'Login success for user '.$username.' from address '.$_SERVER['REMOTE_ADDR']);
             echo '<script type="text/javascript">';
@@ -97,7 +96,7 @@ if (isset($_POST['logMeIn'])) {
                 echo 'alert(\''.__('Welcome to Library Automation, ').$logon->real_name.'\');';
             }
             #echo 'location.href = \'admin/index.php\';';
-            echo 'location.href = \''.SENAYAN_WEB_ROOT_DIR.'admin/index.php\';';
+            echo 'location.href = \''.UCS_WEB_ROOT_DIR.'admin/index.php\';';
             echo '</script>';
             exit();
         } else {
@@ -108,7 +107,7 @@ if (isset($_POST['logMeIn'])) {
             $msg .= 'alert(\''.__('Wrong Username or Password. ACCESS DENIED').'\');';
             $msg .= 'history.back();';
             $msg .= '</script>';
-            simbio_security::destroySessionCookie($msg, SENAYAN_SESSION_COOKIES_NAME, SENAYAN_WEB_ROOT_DIR.'admin', false);
+            simbio_security::destroySessionCookie($msg, UCS_SESSION_COOKIES_NAME, UCS_WEB_ROOT_DIR.'admin', false);
             exit();
         }
     }
@@ -116,7 +115,7 @@ if (isset($_POST['logMeIn'])) {
 ?>
 <div id="loginForm">
     <noscript>
-        <div style="font-weight: bold; color: #FF0000;"><?php echo __('Your browser does not support Javascript or Javascript is disabled. Application won\'t run without Javascript!'); ?><div>
+      <div><?php echo __('Your browser does not support Javascript or Javascript is disabled. Application won\'t run without Javascript!'); ?><div>
     </noscript>
     <!-- Captcha preloaded javascript - start -->
     <?php if ($sysconf['captcha']['smc']['enable']) { ?>
@@ -127,15 +126,15 @@ if (isset($_POST['logMeIn'])) {
           lang : '<?php echo$sysconf['captcha']['smc']['recaptcha']['lang']; ?>',
           <?php if($sysconf['captcha']['smc']['recaptcha']['customlang']['enable']) { ?>
                 custom_translations : {
-                        instructions_visual : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['instructions_visual']; ?>",
-                        instructions_audio : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['instructions_audio']; ?>",
-                        play_again : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['play_again']; ?>",
-                        cant_hear_this : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['cant_hear_this']; ?>",
-                        visual_challenge : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['visual_challenge']; ?>",
-                        audio_challenge : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['audio_challenge']; ?>",
-                        refresh_btn : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['refresh_btn']; ?>",
-                        help_btn : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['help_btn']; ?>",
-                        incorrect_try_again : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['incorrect_try_again']; ?>",
+                instructions_visual : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['instructions_visual']; ?>",
+                instructions_audio : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['instructions_audio']; ?>",
+                play_again : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['play_again']; ?>",
+                cant_hear_this : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['cant_hear_this']; ?>",
+                visual_challenge : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['visual_challenge']; ?>",
+                audio_challenge : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['audio_challenge']; ?>",
+                refresh_btn : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['refresh_btn']; ?>",
+                help_btn : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['help_btn']; ?>",
+                incorrect_try_again : "<?php echo $sysconf['captcha']['smc']['recaptcha']['customlang']['incorrect_try_again']; ?>",
                 },
           <?php } ?>
         };
@@ -160,12 +159,12 @@ if (isset($_POST['logMeIn'])) {
       ?>
       </div>
       <!-- <div><input type="text" name="captcha_code" id="captcha-form" style="width: 80%;" /></div> -->
-    <?php 
+    <?php
       } elseif ($sysconf['captcha']['smc']['type'] == "others") {
 
       }
       #debugging
-      #echo SENAYAN_WEB_ROOT_DIR.'lib/'.$sysconf['captcha']['folder'].'/'.$sysconf['captcha']['webfile'];
+      #echo UCS_WEB_ROOT_DIR.'lib/'.$sysconf['captcha']['folder'].'/'.$sysconf['captcha']['webfile'];
     } ?>
     <!-- Captcha in form - end -->
 
@@ -196,4 +195,3 @@ if ($sysconf['template']['base'] == 'html') {
     require_once $sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'/login_template.inc.php';
 }
 exit();
-?>

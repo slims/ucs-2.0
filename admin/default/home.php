@@ -22,6 +22,15 @@
 if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
     include_once '../../ucsysconfig.inc.php';
 }
+?>
+<fieldset class="menuBox adminHome">
+<div class="menuBoxInner">
+	<div class="per_title">
+    	<h2><?php echo $sysconf['server']['name']; ?><div><?php echo $sysconf['server']['subname']; ?></div></h2>
+	</div>
+</div>
+</fieldset>
+<?php
 
 // generate warning messages
 $warnings = array();
@@ -36,10 +45,10 @@ if (!file_exists($sysconf['mysqldump'])) {
 
 // if there any warnings
 if ($warnings) {
-    echo '<div style="padding: 3px; border: 1px dotted #FF0000; background: #FFFFFF;">';
+    echo '<div class="errorBox">';
     echo '<ul>';
     foreach ($warnings as $warning_msg) {
-        echo '<li style="color: #FF0000;">'.$warning_msg.'</li>';
+        echo '<li>'.$warning_msg.'</li>';
     }
     echo '</ul>';
     echo '</div>';

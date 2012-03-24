@@ -4,7 +4,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -20,6 +20,8 @@
 
 /* UCS console logout */
 
+define('INDEX_AUTH', 1);
+
 // required file
 require '../ucsysconfig.inc.php';
 // start the session
@@ -33,7 +35,6 @@ $msg .= 'alert(\''.__('You Have Been Logged Out From Union Catalog Server consol
 $msg .= 'location.href = \''.UCS_WEB_ROOT_DIR.'index.php?p=login\';';
 $msg .= '</script>';
 // unset admin cookie flag
-setcookie('admin_logged_in', true, time()-86400, UCS_WEB_ROOT_DIR);
+setcookie('ucs_admin_logged_in', true, time()-86400, UCS_WEB_ROOT_DIR);
 // completely destroy session cookie
 simbio_security::destroySessionCookie($msg, UCS_SESSION_COOKIES_NAME, UCS_WEB_ROOT_DIR.'admin/', true);
-?>

@@ -6,7 +6,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -22,16 +22,15 @@
 
 // we prefer to use mysqli extensions if its available
 if (extension_loaded('mysqli')) {
-    /* MYSQLI */
-    $dbs = @new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
-    if (mysqli_connect_error()) {
-        die('<div style="border: 1px dotted #FF0000; color: #FF0000; padding: 5px;">Error Connecting to Database. Please check your configuration</div>');
-    }
+  /* MYSQLI */
+  $dbs = @new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
+  if (mysqli_connect_error()) {
+      die('<div style="border: 1px dotted #FF0000; color: #FF0000; padding: 5px;">Error Connecting to Database. Please check your configuration</div>');
+  }
 } else {
-    /* MYSQL */
-    // require the simbio mysql class
-    include SIMBIO_BASE_DIR.'simbio_DB/mysql/simbio_mysql.inc.php';
-    // make a new connection object that will be used by all applications
-    $dbs = @new simbio_mysql(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
+  /* MYSQL */
+  // require the simbio mysql class
+  include SIMBIO_BASE_DIR.'simbio_DB/mysql/simbio_mysql.inc.php';
+  // make a new connection object that will be used by all applications
+  $dbs = @new simbio_mysql(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
 }
-?>

@@ -5,7 +5,7 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation; either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -130,13 +130,19 @@ if (isset($_POST['saveData'])) {
 ?>
 <fieldset class="menuBox">
 <div class="menuBoxInner systemIcon">
-    <?php echo strtoupper(__('Content')); ?> - <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/content.php?action=detail" class="headerText2"><?php echo __('Add New Content'); ?></a>
-    &nbsp; <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/content.php" class="headerText2"><?php echo __('Content List'); ?></a>
-    <hr />
+  <div class="per_title">
+	  <h2><?php echo __('Content'); ?></h2>
+  </div>
+  <div class="sub_section">
+	  <div class="action_button">
+      <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/content.php?action=detail" class="headerText2"><?php echo __('Add New Content'); ?></a>
+      <a href="<?php echo MODULES_WEB_ROOT_DIR; ?>system/content.php" class="headerText2"><?php echo __('Content List'); ?></a>
+	  </div>
     <form name="search" action="<?php echo MODULES_WEB_ROOT_DIR; ?>system/content.php" id="search" method="get" style="display: inline;"><?php echo __('Search'); ?> :
     <input type="text" name="keywords" size="30" />
     <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="button" />
-</form>
+    </form>
+  </div>
 </div>
 </fieldset>
 <?php
@@ -241,4 +247,3 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
     echo $datagrid_result;
 }
 /* main content end */
-?>
