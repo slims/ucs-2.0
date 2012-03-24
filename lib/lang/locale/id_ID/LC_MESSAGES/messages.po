@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Senayan3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-24 01:07+0700\n"
-"PO-Revision-Date: 2012-03-24 01:49+0700\n"
+"POT-Creation-Date: 2012-03-25 01:24+0700\n"
+"PO-Revision-Date: 2012-03-25 02:21+0700\n"
 "Last-Translator: Arif Syamsudin <buitenzorg812@gmail.com>\n"
 "Language-Team: Arie Nugraha; Hendro Wicaksono; Wardiyono <dicarve@yahoo.com; hendrowicaksono@yahoo.com; wynerst@gmail.com>\n"
 "Language: \n"
@@ -48,7 +48,7 @@ msgstr "Sementara"
 
 #: ucsysconfig.inc.php:271
 msgid "Genre"
-msgstr "Genre"
+msgstr "Aliran"
 
 #: ucsysconfig.inc.php:272
 msgid "Occupation"
@@ -64,7 +64,7 @@ msgstr "Pengarang Tambahan"
 
 #: ucsysconfig.inc.php:277
 msgid "Editor"
-msgstr "Editor"
+msgstr "Penyunting"
 
 #: ucsysconfig.inc.php:278
 msgid "Translator"
@@ -96,7 +96,7 @@ msgstr "Kontributor"
 
 #: index.php:33
 msgid "Web Online Public Access Catalog - Use the search options to find documents quickly"
-msgstr "Web Online Public Access Catalog - Gunakan fasilitas pencarian untuk mempercepat anda menemukan data katalog"
+msgstr "Akses Katalog Publik Daring - Gunakan fasilitas pencarian untuk mempercepat anda menemukan data katalog"
 
 #: includes/common.inc.php:25
 msgid "All Locations"
@@ -116,35 +116,35 @@ msgstr "Indonesia"
 
 #: includes/contents/login.inc.php:48
 msgid "Please supply valid username and password"
-msgstr "Lengkapi username dan password dengan benar"
+msgstr "Isi dengan nama pengguna dan kata sandi yang benar"
 
 #: includes/contents/login.inc.php:61
 msgid "Welcome to Union Catalog Server administration,"
-msgstr "Selamat Datang di halaman administrasi Union Server Catalog"
+msgstr "Selamat Datang di Halaman Administrasi Peladen Katalog Induk"
 
 #: includes/contents/login.inc.php:70
 msgid "Wrong Username or Password. ACCESS DENIED"
-msgstr "Username atau Password salah. ANDA TIDAK BERHAK MELANJUTKAN"
+msgstr "Nama Pengguna atau Kata Sandi salah. AKSES DITOLAK"
 
 #: includes/contents/login.inc.php:82
 msgid "Your browser does not support Javascript or Javascript is disabled. Application won't run without Javascript!"
-msgstr "Browser anda tidak mendukung Javascript atau Javascript tidak diaktifkan. Aplikasi tidak dapat dijalankan tanpa Javascript!"
+msgstr "Peramban Anda tidak mendukung <i>Javascript</i> atau <i>Javascript</i> tidak diaktifkan. Aplikasi tidak dapat dijalankan tanpa <i>Javascript</i>!"
 
-#: admin/logout.php:32
+#: admin/logout.php:34
 msgid "You Have Been Logged Out From Union Catalog Server console"
-msgstr "Anda Telah Keluar dari konsol Peladen Katalo Induk"
+msgstr "Anda Telah Keluar dari konsol Peladen Katalog Induk"
 
 #: admin/index.php:62
 msgid "Union Catalog Server administration console. you are currently logged in as"
-msgstr "Konsol administrasi Peladen Katalog Induk. Saat ini Anda masuk sebagai"
+msgstr "Konsol Administrasi Peladen Katalog Induk. Saat ini Anda masuk sebagai"
 
-#: admin/default/home.php:30
+#: admin/default/home.php:39
 msgid "<strong>PHP GD</strong> extension is not installed. Please install it or application won't be able to create image thumbnail."
 msgstr "Ekstensi <strong>PHP GD</strong> belum terpasang. Pastikan PHP GD terpasang atau aplikasi tidak dapat membuat gambar mini dan barkod."
 
-#: admin/default/home.php:34
+#: admin/default/home.php:43
 msgid "The PATH for <strong>mysqldump</strong> program is not right! Please check configuration file or you won't be able to do any database backups."
-msgstr "Letak program <strong>mysqldump</strong> tidak ditemukan! Periksa kembali file konfigurasi aplikasi atau anda tidak dapat melakukan backup."
+msgstr "Letak program <strong>mysqldump</strong> tidak ditemukan! Periksa kembali berkas konfigurasi aplikasi atau Anda tidak dapat melakukan pencadangan."
 
 #: admin/default/session_check.inc.php:32
 #: admin/default/session_check.inc.php:44
@@ -153,7 +153,7 @@ msgstr "Anda tidak memiliki wewenang untuk masuk ke bagian ini!"
 
 #: admin/default/session_check.inc.php:56
 msgid "Your Login Session has already timeout!"
-msgstr "Sesi login anda telah habis. Harap lakukan login kembali"
+msgstr "Sesi login Anda telah habis. Harap login kembali"
 
 #: admin/default/submenu.php:21
 msgid "Panel"
@@ -161,11 +161,11 @@ msgstr "Panel"
 
 #: admin/default/submenu.php:22
 msgid "Change User Profiles"
-msgstr "Ubah Profil User"
+msgstr "Ubah Profil Pengguna"
 
 #: admin/default/submenu.php:22
 msgid "Change Current User Profiles and Password"
-msgstr "Ubah Profil dan Password User Aktif"
+msgstr "Ubah Profil dan Kata Sandi Pengguna Aktif"
 
 #: admin/default/submenu.php:24
 msgid "Bibliography List"
@@ -173,18 +173,18 @@ msgstr "Daftar Bibliografi"
 
 #: admin/default/submenu.php:24
 msgid "View existing Union Server Catalog data"
-msgstr "Lihat Union Server Catalog yang tercatat"
+msgstr "Tampilkan data Peladen Katalog Induk"
 
 #: admin/modules/master_file/place.php:42
-#: admin/modules/master_file/place.php:134
+#: admin/modules/master_file/place.php:140
 #: admin/modules/master_file/topic.php:42
-#: admin/modules/master_file/topic.php:137
+#: admin/modules/master_file/topic.php:143
 #: admin/modules/master_file/doc_language.php:41
-#: admin/modules/master_file/doc_language.php:137
+#: admin/modules/master_file/doc_language.php:143
 #: admin/modules/master_file/publisher.php:42
-#: admin/modules/master_file/publisher.php:134
+#: admin/modules/master_file/publisher.php:140
 #: admin/modules/master_file/author.php:42
-#: admin/modules/master_file/author.php:136
+#: admin/modules/master_file/author.php:142
 #: admin/modules/master_file/supplier.php:42
 #: admin/modules/master_file/supplier.php:142
 msgid "You don't have enough privileges to access this area!"
@@ -200,7 +200,7 @@ msgstr "Data Tempat Berhasil Diperbaharui"
 
 #: admin/modules/master_file/place.php:70
 msgid "Place Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Tempat Terbit GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Tempat Terbit GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/place.php:77
 msgid "New Place Data Successfully Saved"
@@ -208,7 +208,7 @@ msgstr "Data Tempat Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/place.php:79
 msgid "Place Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Tempat GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Tempat GAGAL Disimpan. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/place.php:106
 #: admin/modules/master_file/topic.php:109
@@ -240,123 +240,122 @@ msgstr ""
 "Sebagian atau semua data GAGAL dihapus!\n"
 "Hubungi administrator sistem"
 
-#: admin/modules/master_file/place.php:120
-#: admin/modules/master_file/submenu.php:28
-msgid "Place"
-msgstr "Tempat"
+#: admin/modules/master_file/place.php:121
+msgid "Bibliographic"
+msgstr "Bibliografi"
 
-#: admin/modules/master_file/place.php:120
+#: admin/modules/master_file/place.php:125
 msgid "Add New Place"
 msgstr "Nama Tempat Baru"
 
-#: admin/modules/master_file/place.php:121
+#: admin/modules/master_file/place.php:126
 msgid "Place List"
 msgstr "Daftar Tempat"
 
-#: admin/modules/master_file/place.php:123
-#: admin/modules/master_file/place.php:125
-#: admin/modules/master_file/topic.php:126
-#: admin/modules/master_file/topic.php:128
-#: admin/modules/master_file/frequency.php:124
-#: admin/modules/master_file/frequency.php:126
-#: admin/modules/master_file/doc_language.php:126
-#: admin/modules/master_file/doc_language.php:128
-#: admin/modules/master_file/index.php:127
-#: admin/modules/master_file/index.php:129
-#: admin/modules/master_file/publisher.php:123
-#: admin/modules/master_file/publisher.php:125
-#: admin/modules/master_file/author.php:125
-#: admin/modules/master_file/author.php:127
+#: admin/modules/master_file/place.php:128
+#: admin/modules/master_file/place.php:130
+#: admin/modules/master_file/topic.php:131
+#: admin/modules/master_file/topic.php:133
+#: admin/modules/master_file/frequency.php:129
+#: admin/modules/master_file/frequency.php:131
+#: admin/modules/master_file/doc_language.php:131
+#: admin/modules/master_file/doc_language.php:133
+#: admin/modules/master_file/index.php:132
+#: admin/modules/master_file/index.php:134
+#: admin/modules/master_file/publisher.php:128
+#: admin/modules/master_file/publisher.php:130
+#: admin/modules/master_file/author.php:130
+#: admin/modules/master_file/author.php:132
 #: admin/modules/master_file/supplier.php:131
 #: admin/modules/master_file/supplier.php:133
-#: admin/modules/system/content.php:136
-#: admin/modules/system/content.php:138
-#: admin/modules/system/user_group.php:164
-#: admin/modules/system/user_group.php:166
-#: admin/modules/system/sys_log.php:76
-#: admin/modules/system/sys_log.php:78
+#: admin/modules/system/content.php:141
+#: admin/modules/system/content.php:143
+#: admin/modules/system/user_group.php:169
+#: admin/modules/system/user_group.php:171
+#: admin/modules/system/sys_log.php:80
+#: admin/modules/system/sys_log.php:82
 msgid "Search"
 msgstr "Pencarian"
 
-#: admin/modules/master_file/place.php:143
-#: admin/modules/master_file/topic.php:146
-#: admin/modules/master_file/frequency.php:144
-#: admin/modules/master_file/doc_language.php:146
-#: admin/modules/master_file/index.php:147
-#: admin/modules/master_file/publisher.php:143
-#: admin/modules/master_file/author.php:145
+#: admin/modules/master_file/place.php:149
+#: admin/modules/master_file/topic.php:152
+#: admin/modules/master_file/frequency.php:150
+#: admin/modules/master_file/doc_language.php:152
+#: admin/modules/master_file/index.php:153
+#: admin/modules/master_file/publisher.php:149
+#: admin/modules/master_file/author.php:151
 #: admin/modules/master_file/supplier.php:151
-#: admin/modules/system/content.php:156
-#: admin/modules/system/user_group.php:181
+#: admin/modules/system/content.php:162
+#: admin/modules/system/user_group.php:187
 msgid "Save"
 msgstr "Simpan"
 
-#: admin/modules/master_file/place.php:158
-#: admin/modules/master_file/topic.php:161
-#: admin/modules/master_file/frequency.php:159
-#: admin/modules/master_file/doc_language.php:161
-#: admin/modules/master_file/index.php:162
-#: admin/modules/master_file/publisher.php:158
-#: admin/modules/master_file/author.php:160
+#: admin/modules/master_file/place.php:164
+#: admin/modules/master_file/topic.php:167
+#: admin/modules/master_file/frequency.php:165
+#: admin/modules/master_file/doc_language.php:167
+#: admin/modules/master_file/index.php:168
+#: admin/modules/master_file/publisher.php:164
+#: admin/modules/master_file/author.php:166
 #: admin/modules/master_file/supplier.php:166
-#: admin/modules/system/content.php:172
-#: admin/modules/system/user_group.php:196
+#: admin/modules/system/content.php:178
+#: admin/modules/system/user_group.php:202
 msgid "Update"
-msgstr "Perbaharui"
+msgstr "Perbarui"
 
-#: admin/modules/master_file/place.php:163
-#: admin/modules/master_file/place.php:180
-#: admin/modules/master_file/place.php:183
+#: admin/modules/master_file/place.php:169
+#: admin/modules/master_file/place.php:186
+#: admin/modules/master_file/place.php:189
 #: admin/modules/master_file/submenu.php:28
 msgid "Place Name"
-msgstr "Nama-nama Tempat"
+msgstr "Nama Tempat"
 
-#: admin/modules/master_file/place.php:167
+#: admin/modules/master_file/place.php:173
 msgid "You are going to edit place data"
-msgstr "Anda akan mengedit data tempat"
+msgstr "Anda akan menyunting data tempat"
 
-#: admin/modules/master_file/place.php:167
-#: admin/modules/master_file/place.php:181
-#: admin/modules/master_file/place.php:184
-#: admin/modules/master_file/topic.php:177
-#: admin/modules/master_file/topic.php:195
-#: admin/modules/master_file/topic.php:200
-#: admin/modules/master_file/frequency.php:184
-#: admin/modules/master_file/frequency.php:202
+#: admin/modules/master_file/place.php:173
+#: admin/modules/master_file/place.php:187
+#: admin/modules/master_file/place.php:190
+#: admin/modules/master_file/topic.php:183
+#: admin/modules/master_file/topic.php:201
+#: admin/modules/master_file/topic.php:206
+#: admin/modules/master_file/frequency.php:190
 #: admin/modules/master_file/frequency.php:208
-#: admin/modules/master_file/doc_language.php:171
-#: admin/modules/master_file/doc_language.php:181
-#: admin/modules/master_file/doc_language.php:183
-#: admin/modules/master_file/index.php:173
-#: admin/modules/master_file/index.php:188
-#: admin/modules/master_file/index.php:192
-#: admin/modules/master_file/publisher.php:167
-#: admin/modules/master_file/publisher.php:182
-#: admin/modules/master_file/publisher.php:187
-#: admin/modules/master_file/author.php:176
-#: admin/modules/master_file/author.php:194
-#: admin/modules/master_file/author.php:199
+#: admin/modules/master_file/frequency.php:214
+#: admin/modules/master_file/doc_language.php:177
+#: admin/modules/master_file/doc_language.php:187
+#: admin/modules/master_file/doc_language.php:189
+#: admin/modules/master_file/index.php:179
+#: admin/modules/master_file/index.php:194
+#: admin/modules/master_file/index.php:198
+#: admin/modules/master_file/publisher.php:173
+#: admin/modules/master_file/publisher.php:188
+#: admin/modules/master_file/publisher.php:193
+#: admin/modules/master_file/author.php:182
+#: admin/modules/master_file/author.php:200
+#: admin/modules/master_file/author.php:205
 #: admin/modules/master_file/supplier.php:185
 #: admin/modules/master_file/supplier.php:202
 #: admin/modules/master_file/supplier.php:208
-#: admin/modules/system/user_group.php:217
-#: admin/modules/system/user_group.php:229
+#: admin/modules/system/user_group.php:223
+#: admin/modules/system/user_group.php:235
 msgid "Last Update"
 msgstr "Perubahan Terakhir"
 
-#: admin/modules/master_file/place.php:203
-#: admin/modules/master_file/topic.php:239
-#: admin/modules/master_file/frequency.php:227
-#: admin/modules/master_file/doc_language.php:202
-#: admin/modules/master_file/index.php:211
-#: admin/modules/master_file/publisher.php:207
-#: admin/modules/master_file/author.php:231
+#: admin/modules/master_file/place.php:209
+#: admin/modules/master_file/topic.php:245
+#: admin/modules/master_file/frequency.php:233
+#: admin/modules/master_file/doc_language.php:208
+#: admin/modules/master_file/index.php:217
+#: admin/modules/master_file/publisher.php:213
+#: admin/modules/master_file/author.php:237
 #: admin/modules/master_file/supplier.php:229
-#: admin/modules/system/content.php:237
-#: admin/modules/system/user_group.php:249
-#: admin/modules/system/sys_log.php:131
+#: admin/modules/system/content.php:243
+#: admin/modules/system/user_group.php:255
+#: admin/modules/system/sys_log.php:136
 msgid "Found <strong>{result->num_rows}</strong> from your keywords"
-msgstr "Ditemukan  <strong>{result->num_rows}</strong> dari pencarian anda melalui kata kunci"
+msgstr "Ditemukan <strong>{result->num_rows}</strong> dari pencarian Anda melalui kata kunci"
 
 #: admin/modules/master_file/topic.php:50
 msgid "Subject can't be empty"
@@ -368,7 +367,7 @@ msgstr "Data Subyek Berhasil Diperbaharui"
 
 #: admin/modules/master_file/topic.php:72
 msgid "Subject Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Subyek GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Subyek GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/topic.php:79
 msgid "New Subject Data Successfully Saved"
@@ -376,46 +375,45 @@ msgstr "Subyek Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/topic.php:81
 msgid "Subject Data FAILED to Save. Please Contact System Administrator"
-msgstr "Subyek GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Subyek GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/master_file/topic.php:123
-#: admin/modules/master_file/topic.php:166
-#: admin/modules/master_file/topic.php:192
-#: admin/modules/master_file/topic.php:197
+#: admin/modules/master_file/topic.php:124
+#: admin/modules/master_file/topic.php:172
+#: admin/modules/master_file/topic.php:198
+#: admin/modules/master_file/topic.php:203
 #: admin/modules/master_file/submenu.php:27
 msgid "Subject"
 msgstr "Subyek"
 
-#: admin/modules/master_file/topic.php:123
+#: admin/modules/master_file/topic.php:128
 msgid "Add New Subject"
 msgstr "Daftar Subyek"
 
-#: admin/modules/master_file/topic.php:124
+#: admin/modules/master_file/topic.php:129
 msgid "Subject List"
-msgstr "Tambah Subyek Baru"
+msgstr "Daftar Subyek"
 
-#: admin/modules/master_file/topic.php:171
-#: admin/modules/master_file/topic.php:193
-#: admin/modules/master_file/topic.php:198
-msgid "Subject Type"
-msgstr "Tipe Subyek"
-
-#: admin/modules/master_file/topic.php:173
-#: admin/modules/master_file/topic.php:194
+#: admin/modules/master_file/topic.php:177
 #: admin/modules/master_file/topic.php:199
+#: admin/modules/master_file/topic.php:204
+msgid "Subject Type"
+msgstr "Jenis Subyek"
+
+#: admin/modules/master_file/topic.php:179
+#: admin/modules/master_file/topic.php:200
+#: admin/modules/master_file/topic.php:205
 #: admin/modules/master_file/submenu.php:23
-#: admin/modules/master_file/author.php:172
-#: admin/modules/master_file/author.php:193
-#: admin/modules/master_file/author.php:198
+#: admin/modules/master_file/author.php:178
+#: admin/modules/master_file/author.php:199
+#: admin/modules/master_file/author.php:204
 msgid "Authority Files"
 msgstr "Daftar Terkendali"
 
-#: admin/modules/master_file/topic.php:177
+#: admin/modules/master_file/topic.php:183
 msgid "You are going to edit Subject data"
-msgstr "Anda akan meng-edit data Subyek"
+msgstr "Anda akan menyunting data Subyek"
 
 #: admin/modules/master_file/submenu.php:24
-#: admin/modules/master_file/index.php:124
 msgid "GMD"
 msgstr "GMD"
 
@@ -424,7 +422,7 @@ msgid "General Material Designation"
 msgstr "Format Fisik Dokumen"
 
 #: admin/modules/master_file/submenu.php:25
-#: admin/modules/master_file/publisher.php:120
+#: admin/modules/master_file/publisher.php:121
 msgid "Publisher"
 msgstr "Penerbit"
 
@@ -433,7 +431,7 @@ msgid "Document Publisher"
 msgstr "Penerbit Dokumen"
 
 #: admin/modules/master_file/submenu.php:26
-#: admin/modules/master_file/author.php:122
+#: admin/modules/master_file/author.php:123
 msgid "Author"
 msgstr "Pengarang"
 
@@ -441,8 +439,11 @@ msgstr "Pengarang"
 msgid "Document Authors"
 msgstr "Pengarang Dokumen"
 
+#: admin/modules/master_file/submenu.php:28
+msgid "Place"
+msgstr "Tempat"
+
 #: admin/modules/master_file/submenu.php:29
-#: admin/modules/master_file/doc_language.php:123
 msgid "Doc. Language"
 msgstr "Bahasa Dok."
 
@@ -451,19 +452,19 @@ msgid "Document Content Language"
 msgstr "Bahasa Konten Dokumen"
 
 #: admin/modules/master_file/submenu.php:30
-#: admin/modules/master_file/frequency.php:121
-#: admin/modules/master_file/frequency.php:164
-#: admin/modules/master_file/frequency.php:198
+#: admin/modules/master_file/frequency.php:122
+#: admin/modules/master_file/frequency.php:170
 #: admin/modules/master_file/frequency.php:204
+#: admin/modules/master_file/frequency.php:210
 msgid "Frequency"
 msgstr "Kala Terbit"
 
 #: admin/modules/master_file/frequency.php:41
-#: admin/modules/master_file/frequency.php:135
+#: admin/modules/master_file/frequency.php:141
 #: admin/modules/master_file/index.php:45
-#: admin/modules/master_file/index.php:138
+#: admin/modules/master_file/index.php:144
 #: admin/modules/system/content.php:43
-#: admin/modules/system/content.php:146
+#: admin/modules/system/content.php:152
 #: admin/modules/system/user_group.php:35
 #: admin/modules/system/backup_proc.php:43
 #: admin/modules/system/sys_log.php:43
@@ -480,7 +481,7 @@ msgstr "Data Kala Terbit Berhasil Diperbaharui"
 
 #: admin/modules/master_file/frequency.php:72
 msgid "Frequency Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Kala Terbit GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Kala Terbit GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/frequency.php:78
 msgid "New Frequency Data Successfully Saved"
@@ -488,56 +489,56 @@ msgstr "Kala Terbit Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/frequency.php:80
 msgid "Frequency Data FAILED to Save. Please Contact System Administrator"
-msgstr "Kala Terbit GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Kala Terbit GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/master_file/frequency.php:121
+#: admin/modules/master_file/frequency.php:126
 msgid "Add New Frequency"
 msgstr "Tambah Kala Terbit"
 
-#: admin/modules/master_file/frequency.php:122
+#: admin/modules/master_file/frequency.php:127
 msgid "Frequency Available"
-msgstr "Daftar Kala Terbit"
+msgstr "Kala Terbit Tersedia"
 
-#: admin/modules/master_file/frequency.php:172
-#: admin/modules/master_file/frequency.php:199
+#: admin/modules/master_file/frequency.php:178
 #: admin/modules/master_file/frequency.php:205
-#: admin/modules/master_file/doc_language.php:168
-#: admin/modules/master_file/doc_language.php:181
-#: admin/modules/master_file/doc_language.php:183
+#: admin/modules/master_file/frequency.php:211
+#: admin/modules/master_file/doc_language.php:174
+#: admin/modules/master_file/doc_language.php:187
+#: admin/modules/master_file/doc_language.php:189
 msgid "Language"
 msgstr "Bahasa"
 
-#: admin/modules/master_file/frequency.php:174
-#: admin/modules/master_file/frequency.php:200
+#: admin/modules/master_file/frequency.php:180
 #: admin/modules/master_file/frequency.php:206
+#: admin/modules/master_file/frequency.php:212
 msgid "Time Increment"
 msgstr "Selang Waktu"
 
-#: admin/modules/master_file/frequency.php:176
+#: admin/modules/master_file/frequency.php:182
 msgid "Day"
 msgstr "Hari"
 
-#: admin/modules/master_file/frequency.php:177
+#: admin/modules/master_file/frequency.php:183
 msgid "Week"
 msgstr "Minggu"
 
-#: admin/modules/master_file/frequency.php:178
+#: admin/modules/master_file/frequency.php:184
 msgid "Month"
 msgstr "Bulan"
 
-#: admin/modules/master_file/frequency.php:179
+#: admin/modules/master_file/frequency.php:185
 msgid "Year"
 msgstr "Tahun"
 
-#: admin/modules/master_file/frequency.php:180
-#: admin/modules/master_file/frequency.php:201
+#: admin/modules/master_file/frequency.php:186
 #: admin/modules/master_file/frequency.php:207
+#: admin/modules/master_file/frequency.php:213
 msgid "Time Unit"
 msgstr "Satuan Waktu"
 
-#: admin/modules/master_file/frequency.php:184
+#: admin/modules/master_file/frequency.php:190
 msgid "You are going to edit Frequency data"
-msgstr "Anda akan meng-edit data Kala Terbit"
+msgstr "Anda akan menyunting data Kala Terbit"
 
 #: admin/modules/master_file/doc_language.php:50
 msgid "Language ID or Name can't be empty"
@@ -549,7 +550,7 @@ msgstr "Data Bahasa Berhasil Diperbaharui"
 
 #: admin/modules/master_file/doc_language.php:73
 msgid "Language Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Bahasa GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Bahasa GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/doc_language.php:80
 msgid "New Language Data Successfully Saved"
@@ -557,23 +558,27 @@ msgstr "Bahasa Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/doc_language.php:82
 msgid "Language Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Bahasa GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Bahasa GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/master_file/doc_language.php:123
+#: admin/modules/master_file/doc_language.php:124
+msgid "Document Language"
+msgstr "Bahasa Dokumen"
+
+#: admin/modules/master_file/doc_language.php:128
 msgid "Add New Language"
 msgstr "Tambah Bahasa"
 
-#: admin/modules/master_file/doc_language.php:124
+#: admin/modules/master_file/doc_language.php:129
 msgid "Language List"
 msgstr "Daftar Bahasa"
 
-#: admin/modules/master_file/doc_language.php:166
+#: admin/modules/master_file/doc_language.php:172
 msgid "Language Code"
 msgstr "Kode Bahasa"
 
-#: admin/modules/master_file/doc_language.php:171
+#: admin/modules/master_file/doc_language.php:177
 msgid "You are going to edit language data"
-msgstr "Anda akan meng-edit data bahasa :"
+msgstr "Anda akan menyunting data bahasa"
 
 #: admin/modules/master_file/index.php:54
 msgid "GMD Code And Name can't be empty"
@@ -581,11 +586,11 @@ msgstr "Kode dan Nama GMD tidak boleh kosong"
 
 #: admin/modules/master_file/index.php:73
 msgid "GMD Data Successfully Updated"
-msgstr "Data GMD Berhasil Diperbaharui"
+msgstr "Data GMD Berhasil Diperbarui"
 
 #: admin/modules/master_file/index.php:75
 msgid "GMD Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data GMD GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data GMD GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/index.php:81
 msgid "New GMD Data Successfully Saved"
@@ -593,31 +598,35 @@ msgstr "GMD Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/index.php:83
 msgid "GMD Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data GMD GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
-
-#: admin/modules/master_file/index.php:124
-msgid "Add New GMD"
-msgstr "GMD Baru"
+msgstr "Data GMD GAGAL Disimpan. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/index.php:125
+msgid "GMD (General Materi Designation)"
+msgstr "Format Fisik Dokumen"
+
+#: admin/modules/master_file/index.php:129
+msgid "Add New GMD"
+msgstr "Tambah GMD Baru"
+
+#: admin/modules/master_file/index.php:130
 msgid "GMD List"
 msgstr "Daftar GMD"
 
-#: admin/modules/master_file/index.php:167
-#: admin/modules/master_file/index.php:186
-#: admin/modules/master_file/index.php:190
+#: admin/modules/master_file/index.php:173
+#: admin/modules/master_file/index.php:192
+#: admin/modules/master_file/index.php:196
 msgid "GMD Code"
 msgstr "Kode GMD"
 
-#: admin/modules/master_file/index.php:169
-#: admin/modules/master_file/index.php:187
-#: admin/modules/master_file/index.php:191
+#: admin/modules/master_file/index.php:175
+#: admin/modules/master_file/index.php:193
+#: admin/modules/master_file/index.php:197
 msgid "GMD Name"
 msgstr "Nama GMD"
 
-#: admin/modules/master_file/index.php:173
+#: admin/modules/master_file/index.php:179
 msgid "You are going to edit gmd data"
-msgstr "Anda akan meng-edit data GMD"
+msgstr "Anda akan menyunting data GMD"
 
 #: admin/modules/master_file/publisher.php:50
 msgid "Publisher Name can't be empty"
@@ -625,11 +634,11 @@ msgstr "Nama Penerbit tidak boleh kosong"
 
 #: admin/modules/master_file/publisher.php:68
 msgid "Publisher Data Successfully Updated"
-msgstr "Data Penerbit Berhasil Diperbahatui"
+msgstr "Data Penerbit Berhasil Diperbaharui"
 
 #: admin/modules/master_file/publisher.php:70
 msgid "PUBLISHER Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data PENERBIT GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data PENERBIT GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/publisher.php:77
 msgid "New Publisher Data Successfully Saved"
@@ -637,25 +646,25 @@ msgstr "Data Penerbit Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/publisher.php:79
 msgid "Publisher Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Penerbit GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Penerbit GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/master_file/publisher.php:120
+#: admin/modules/master_file/publisher.php:125
 msgid "Add New Publisher"
 msgstr "Tambah Penerbit Baru"
 
-#: admin/modules/master_file/publisher.php:121
+#: admin/modules/master_file/publisher.php:126
 msgid "Publisher List"
 msgstr "Daftar Penerbit"
 
-#: admin/modules/master_file/publisher.php:163
-#: admin/modules/master_file/publisher.php:181
-#: admin/modules/master_file/publisher.php:185
+#: admin/modules/master_file/publisher.php:169
+#: admin/modules/master_file/publisher.php:187
+#: admin/modules/master_file/publisher.php:191
 msgid "Publisher Name"
 msgstr "Nama Penerbit"
 
-#: admin/modules/master_file/publisher.php:167
+#: admin/modules/master_file/publisher.php:173
 msgid "You are going to edit publisher data"
-msgstr "Anda akan meng-edit data penerbit"
+msgstr "Anda akan menyunting data penerbit"
 
 #: admin/modules/master_file/author.php:50
 msgid "Author name can't be empty"
@@ -667,7 +676,7 @@ msgstr "Data Pengarang Berhasil Diperbaharui"
 
 #: admin/modules/master_file/author.php:72
 msgid "Author Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Pengarang GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Pengarang GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/author.php:79
 msgid "New Author Data Successfully Saved"
@@ -675,69 +684,69 @@ msgstr "Pengarang Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/author.php:81
 msgid "Author Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data tipe koleksi GAGAL disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data tipe koleksi GAGAL disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/master_file/author.php:122
+#: admin/modules/master_file/author.php:127
 msgid "Add New Author"
-msgstr "Pengarang Baru"
+msgstr "Tambah Pengarang Baru"
 
-#: admin/modules/master_file/author.php:123
+#: admin/modules/master_file/author.php:128
 msgid "Author List"
 msgstr "Daftar Pengarang"
 
-#: admin/modules/master_file/author.php:165
-#: admin/modules/master_file/author.php:191
-#: admin/modules/master_file/author.php:196
+#: admin/modules/master_file/author.php:171
+#: admin/modules/master_file/author.php:197
+#: admin/modules/master_file/author.php:202
 msgid "Author Name"
 msgstr "Nama Pengarang"
 
-#: admin/modules/master_file/author.php:170
-#: admin/modules/master_file/author.php:192
-#: admin/modules/master_file/author.php:197
+#: admin/modules/master_file/author.php:176
+#: admin/modules/master_file/author.php:198
+#: admin/modules/master_file/author.php:203
 msgid "Authority Type"
 msgstr "Jenis Pengarang"
 
-#: admin/modules/master_file/author.php:176
+#: admin/modules/master_file/author.php:182
 msgid "You are going to edit author data"
-msgstr "Anda akan meng-edit data pengarang"
+msgstr "Anda akan menyunting data pengarang"
 
 #: admin/modules/master_file/supplier.php:50
 msgid "Supplier Name can't be empty"
-msgstr "Nama Suplaiyer tidak boleh kosong"
+msgstr "Nama Penyuplai tidak boleh kosong"
 
 #: admin/modules/master_file/supplier.php:74
 msgid "Supplier Data Successfully Updated"
-msgstr "Data Suplaiyer Berhasil Diperbaharui"
+msgstr "Data Penyuplai Berhasil Diperbaharui"
 
 #: admin/modules/master_file/supplier.php:76
 msgid "Supplier Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Suplaiyer GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Penyupla GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/supplier.php:83
 msgid "New Supplier Data Successfully Saved"
-msgstr "Data Suplaiyer Baru Berhasil Disimpan"
+msgstr "Data Penyuplai Baru Berhasil Disimpan"
 
 #: admin/modules/master_file/supplier.php:86
 msgid "Supplier Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Suplaiyer GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Penyuplai GAGAL Disimpan. Hubungi Administrator Sistem"
 
 #: admin/modules/master_file/supplier.php:128
 msgid "Supplier"
-msgstr "Penyedia"
+msgstr "Penyuplai"
 
 #: admin/modules/master_file/supplier.php:128
 msgid "Add New Supplier"
-msgstr "Tambah Penyuplai/Agen"
+msgstr "Tambah Penyuplai Baru"
 
 #: admin/modules/master_file/supplier.php:129
 msgid "Supplier List"
-msgstr "Daftar Penyuplai/Agen"
+msgstr "Daftar Penyuplai"
 
 #: admin/modules/master_file/supplier.php:171
 #: admin/modules/master_file/supplier.php:198
 #: admin/modules/master_file/supplier.php:204
 msgid "Supplier Name"
-msgstr "Nama Suplaiyer"
+msgstr "Nama Penyuplai"
 
 #: admin/modules/master_file/supplier.php:173
 msgid "Address"
@@ -767,19 +776,19 @@ msgstr "Nomor Akun"
 
 #: admin/modules/master_file/supplier.php:185
 msgid "You are going to edit Supplier data"
-msgstr "Anda akan meng-edit data Suplaiyer data"
+msgstr "Anda akan menyunting data Penyuplai"
 
 #: admin/modules/system/content.php:52
 msgid "Title or Path can't be empty!"
-msgstr "Judul atau Path tidak boleh dikosongkan!"
+msgstr "Judul atau <i>Path</i> tidak boleh dikosongkan!"
 
 #: admin/modules/system/content.php:74
 msgid "Content data updated"
-msgstr "Data Konten berhasil diupdate"
+msgstr "Data konten diperbarui"
 
 #: admin/modules/system/content.php:76
 msgid "Content data FAILED to update!"
-msgstr "Data Konten GAGAL diupdate!"
+msgstr "Data konten GAGAL diperbarui!"
 
 #: admin/modules/system/content.php:84
 msgid "Content data saved"
@@ -789,54 +798,54 @@ msgstr "Data Konten berhasil disimpan"
 msgid "Content data FAILED to save!"
 msgstr "Data Konten GAGAL disimpan!"
 
-#: admin/modules/system/content.php:133
+#: admin/modules/system/content.php:134
 #: admin/modules/system/submenu.php:28
 msgid "Content"
 msgstr "Konten"
 
-#: admin/modules/system/content.php:133
+#: admin/modules/system/content.php:138
 msgid "Add New Content"
-msgstr "Add New Content"
+msgstr "Tambah Konten Baru"
 
-#: admin/modules/system/content.php:134
+#: admin/modules/system/content.php:139
 msgid "Content List"
-msgstr "Content List"
+msgstr "Daftar Konten"
 
-#: admin/modules/system/content.php:177
-#: admin/modules/system/content.php:210
-#: admin/modules/system/content.php:214
+#: admin/modules/system/content.php:183
+#: admin/modules/system/content.php:216
+#: admin/modules/system/content.php:220
 msgid "Content Title"
 msgstr "Judul Konten"
 
-#: admin/modules/system/content.php:179
-#: admin/modules/system/content.php:211
-#: admin/modules/system/content.php:215
+#: admin/modules/system/content.php:185
+#: admin/modules/system/content.php:217
+#: admin/modules/system/content.php:221
 msgid "Path (Must be unique)"
-msgstr "Path (Harus unik)"
+msgstr "<i>Path</i> (Harus unik)"
 
-#: admin/modules/system/content.php:181
+#: admin/modules/system/content.php:187
 msgid "Content Description"
 msgstr "Deskripsi Konten"
 
-#: admin/modules/system/content.php:185
+#: admin/modules/system/content.php:191
 msgid "You are going to update Content data"
-msgstr "Anda akan mengubah data konten"
+msgstr "Anda akan menyunting data Konten"
 
-#: admin/modules/system/content.php:185
-#: admin/modules/system/content.php:212
-#: admin/modules/system/content.php:216
+#: admin/modules/system/content.php:191
+#: admin/modules/system/content.php:218
+#: admin/modules/system/content.php:222
 msgid "Last Updated"
 msgstr "Terakhir diubah"
 
-#: admin/modules/system/module_priv_form.inc.php:26
+#: admin/modules/system/module_priv_form.inc.php:25
 msgid "Module Name"
 msgstr "Nama Modul"
 
-#: admin/modules/system/module_priv_form.inc.php:26
+#: admin/modules/system/module_priv_form.inc.php:25
 msgid "Read"
 msgstr "Baca"
 
-#: admin/modules/system/module_priv_form.inc.php:26
+#: admin/modules/system/module_priv_form.inc.php:25
 msgid "Write"
 msgstr "Ubah"
 
@@ -850,7 +859,7 @@ msgstr "Data Kelompok Berhasil Diperbaharui"
 
 #: admin/modules/system/user_group.php:86
 msgid "Group Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Kelompok GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Kelompok GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/system/user_group.php:112
 msgid "New Group Data Successfully Saved"
@@ -858,33 +867,33 @@ msgstr "Kelompok Baru Berhasil Disimpan"
 
 #: admin/modules/system/user_group.php:114
 msgid "Group Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Kelompok GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Kelompok GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/system/user_group.php:161
+#: admin/modules/system/user_group.php:162
 #: admin/modules/system/submenu.php:34
 msgid "User Group"
 msgstr "Kelompok Pengguna"
 
-#: admin/modules/system/user_group.php:161
+#: admin/modules/system/user_group.php:166
 msgid "Add New Group"
-msgstr "Data Kelompok Baru"
+msgstr "Tambah Kelompok Baru"
 
-#: admin/modules/system/user_group.php:162
+#: admin/modules/system/user_group.php:167
 msgid "Group List"
 msgstr "Daftar Kelompok"
 
-#: admin/modules/system/user_group.php:201
-#: admin/modules/system/user_group.php:228
+#: admin/modules/system/user_group.php:207
+#: admin/modules/system/user_group.php:234
 msgid "Group Name"
 msgstr "Nama Kelompok"
 
-#: admin/modules/system/user_group.php:212
+#: admin/modules/system/user_group.php:218
 msgid "Privileges"
 msgstr "Hak Istimewa"
 
-#: admin/modules/system/user_group.php:217
+#: admin/modules/system/user_group.php:223
 msgid "You are going to edit Group data"
-msgstr "Anda akan meng-edit data kelompok"
+msgstr "Anda akan menyunting data Kelompok"
 
 #: admin/modules/system/submenu.php:23
 msgid "System"
@@ -896,16 +905,15 @@ msgstr "Konfigurasi Sistem"
 
 #: admin/modules/system/submenu.php:26
 msgid "Configure Global System Preferences"
-msgstr "Konfigurasi Global Aplikasi"
+msgstr "Konfigurasi Preferensi Global Aplikasi"
 
 #: admin/modules/system/submenu.php:31
 msgid "Biblio Indexes"
-msgstr ""
+msgstr "Indeks Biblio"
 
 #: admin/modules/system/submenu.php:31
-#, fuzzy
 msgid "Bibliographic Indexes management"
-msgstr "Daftar Katalog"
+msgstr "Management Indeks Bibliografi"
 
 #: admin/modules/system/submenu.php:32
 msgid "Modules"
@@ -921,24 +929,24 @@ msgstr "Pengguna Aplikasi"
 
 #: admin/modules/system/submenu.php:33
 msgid "Manage Application User or Library Staff"
-msgstr "Pengelolaan Data Pengguna Aplikasi/Staf Perpustakaan"
+msgstr "Kelola Pengguna Aplikasi or Staf Perpustakaan"
 
 #: admin/modules/system/submenu.php:34
 msgid "Manage Group of Application User"
-msgstr "Pengelolaan Data Kelompok Pengguna Aplikasi"
+msgstr "Kelola Kelompok Pengguna Aplikasi"
 
 #: admin/modules/system/submenu.php:35
 msgid "Nodes Poll"
-msgstr "Kumpulan Node"
+msgstr "Kumpulan Simpul"
 
 #: admin/modules/system/submenu.php:35
 msgid "View Nodes Poll/Request"
-msgstr "Lihat Penambahan/Permintaan pada Nodes"
+msgstr "Lihat Kumpulan/Permintaan Simpul"
 
 #: admin/modules/system/submenu.php:37
-#: admin/modules/system/sys_log.php:70
+#: admin/modules/system/sys_log.php:71
 msgid "System Log"
-msgstr "Log Sistem"
+msgstr "Catatan Sistem"
 
 #: admin/modules/system/submenu.php:37
 msgid "View Application System Log"
@@ -950,89 +958,81 @@ msgstr "Salinan Pangkalan Data"
 
 #: admin/modules/system/submenu.php:38
 msgid "Backup Application Database"
-msgstr "Membuat Salinan Pangkalan Data Aplikasi"
+msgstr "Salin Pangkalan Data Aplikasi"
 
 #: admin/modules/system/sys_log.php:61
 msgid "System Log data completely cleared!"
-msgstr "Data Log Sistem sepenuhnya terhapus!"
+msgstr "Data Catatan Sistem sepenuhnya terhapus!"
 
-#: admin/modules/system/sys_log.php:72
+#: admin/modules/system/sys_log.php:76
 msgid "Are you SURE to completely clear system log data? This action cannot be undo!"
-msgstr "Apakah anda YAKIN untuk menghapus seluruh data Log Sistem? Aksi ini tidak bisa di-undo"
+msgstr "Anda YAKIN untuk menghapus seluruh data Log Sistem? Aksi ini tidak bisa di-undo"
 
-#: admin/modules/system/sys_log.php:72
+#: admin/modules/system/sys_log.php:76
 msgid "CLEAR LOGS"
-msgstr "HAPUS LOG"
+msgstr "HAPUS CATATAN"
 
-#: admin/modules/system/sys_log.php:73
+#: admin/modules/system/sys_log.php:77
 msgid "Save Logs record to file?"
-msgstr "Simpan Rekod Log ke Berkas?"
+msgstr "Simpan Catatan ke Berkas?"
 
-#: admin/modules/system/sys_log.php:73
+#: admin/modules/system/sys_log.php:77
 msgid "Save Logs To File"
-msgstr "Simpan Data Log ke Berkas"
+msgstr "Simpan Catatan ke Berkas"
 
-#: admin/modules/system/sys_log.php:97
+#: admin/modules/system/sys_log.php:102
 msgid "Time"
 msgstr "Waktu"
 
-#: admin/modules/system/sys_log.php:98
+#: admin/modules/system/sys_log.php:103
 msgid "Location"
 msgstr "Lokasi"
 
-#: admin/modules/system/sys_log.php:99
+#: admin/modules/system/sys_log.php:104
 msgid "Message"
 msgstr "Catatan Pesan"
 
 #: admin/modules/system/nodes_poll.php:49
 msgid "Nodes poll cleared!"
-msgstr "Kumpulan nodes sudah dihapus!"
+msgstr "Kumpulan simpul sudah dihapus!"
 
-#: admin/modules/system/nodes_poll.php:58
-msgid "NODES POLL"
-msgstr "KUMPULAN NODE"
-
-#: admin/modules/system/nodes_poll.php:60
+#: admin/modules/system/nodes_poll.php:64
 msgid "Are you SURE to completely clear nodes poll!"
 msgstr "Anda YAKIN ingin menghapus kumpulan simpul!"
 
-#: admin/modules/system/nodes_poll.php:60
+#: admin/modules/system/nodes_poll.php:64
 msgid "CLEAR ALL NODES POLL"
 msgstr "Hapus Semua Kumpulan Simpul"
 
-#: admin/modules/system/nodes_poll.php:89
-#: admin/modules/bibliography/index.php:396
+#: admin/modules/system/nodes_poll.php:94
 #: admin/modules/bibliography/index.php:403
+#: admin/modules/bibliography/index.php:410
 msgid "Node"
 msgstr "Simpul"
 
-#: admin/modules/system/nodes_poll.php:90
+#: admin/modules/system/nodes_poll.php:95
 msgid "IP Address"
 msgstr "Alamat IP"
 
-#: admin/modules/system/nodes_poll.php:91
+#: admin/modules/system/nodes_poll.php:96
 msgid "Request Start"
 msgstr "Penambahan dimulai"
 
-#: admin/modules/system/nodes_poll.php:92
+#: admin/modules/system/nodes_poll.php:97
 msgid "Request End"
-msgstr "Penambahan selesai"
+msgstr "Penambahan Selesai"
 
-#: admin/modules/system/nodes_poll.php:93
+#: admin/modules/system/nodes_poll.php:98
 msgid "Status"
 msgstr "Status"
 
-#: admin/modules/system/index.php:49
-msgid "Modify global application preferences"
-msgstr "Mengatur konfigurasi global aplikasi sesuai kebutuhan"
-
 #: admin/modules/system/index.php:93
 msgid "Settings saved. Refreshing page"
-msgstr "Konfigurasi telah disimpan. Perbaharui informasi terbaru"
+msgstr "Pengaturan tersimpan. Segarkan halaman"
 
 #: admin/modules/system/index.php:100
 msgid "Save Settings"
-msgstr "Simpan Konfigurasi"
+msgstr "Simpan Pengaturan"
 
 #: admin/modules/system/index.php:114
 msgid "Library Name"
@@ -1040,7 +1040,7 @@ msgstr "Nama Perpustakaan"
 
 #: admin/modules/system/index.php:117
 msgid "Library Subname"
-msgstr "Nama Perpustakaan Tambahan"
+msgstr "Nama Tambahan Perpustakaan"
 
 #: admin/modules/system/index.php:131
 msgid "OPAC Template"
@@ -1048,7 +1048,7 @@ msgstr "Templat OPAC"
 
 #: admin/modules/system/index.php:135
 msgid "Default App. Language"
-msgstr "Bahasa pengantar"
+msgstr "Bahasa Aplikasi Standar"
 
 #: admin/modules/system/index.php:143
 msgid "Number Of Collections To Show In OPAC Result List"
@@ -1057,7 +1057,7 @@ msgstr "Jumlah koleksi yang ditampilkan hasil pencarian OPAC"
 #: admin/modules/system/index.php:147
 #: admin/modules/system/index.php:153
 msgid "Disable"
-msgstr "Tidak mungkin"
+msgstr "Tidak Mungkin"
 
 #: admin/modules/system/index.php:148
 #: admin/modules/system/index.php:154
@@ -1066,66 +1066,63 @@ msgstr "Dimungkinkan"
 
 #: admin/modules/system/index.php:149
 msgid "OPAC XML Detail"
-msgstr "Detail OPAC XML"
+msgstr "Detil XML OPAC"
 
 #: admin/modules/system/index.php:155
 msgid "OPAC XML Result"
-msgstr "Hasil OPAC dalam XML"
+msgstr "Hasil XML OPAC"
 
 #: admin/modules/system/index.php:158
 msgid "Session Login Timeout"
-msgstr "Timeout Sesi Login"
+msgstr "Sesi Login Habis"
 
 #: admin/modules/system/biblio_indexes.php:53
-#, fuzzy
 msgid "Index table truncated!"
-msgstr "Data Kardeks tersimpan!"
+msgstr "Tabel indeks terpotong!"
 
 #: admin/modules/system/biblio_indexes.php:55
 msgid "Index table FAILED to truncated, probably because of database query error!"
-msgstr ""
+msgstr "tabel indeks GAGAL dipotong, kemungkinan terjadi galat <i>query</i> pangkalan data!"
 
 #: admin/modules/system/biblio_indexes.php:69
 #, php-format
 msgid "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d minutes %d second(s)"
-msgstr ""
+msgstr "<strong>%d</strong> cantuman terindeks ulang (dari total <strong>%d</strong>). Diselesaikan dalam %d menit %d detik"
 
 #: admin/modules/system/biblio_indexes.php:71
 #: admin/modules/system/biblio_indexes.php:93
 #, php-format
 msgid "<strong>%d</strong> index records failed to indexed. The IDs are: %s"
-msgstr ""
+msgstr "cantuman <strong>%d</strong> indeks gagal diindeks. ID-nya adalah: %s"
 
 #: admin/modules/system/biblio_indexes.php:83
 msgid "Please empty the Index first before re-creating the Index"
-msgstr ""
+msgstr "Kosongkan indeks terlebih dahulu sebelum mengindeks ulang"
 
 #: admin/modules/system/biblio_indexes.php:91
 #, php-format
 msgid "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d second(s)"
-msgstr ""
+msgstr "<strong>%d</strong> cantuman terindeks ulang (dari total <strong>%d</strong>). Diselesaikan dalam %d detik"
 
-#: admin/modules/system/biblio_indexes.php:103
-#, fuzzy
+#: admin/modules/system/biblio_indexes.php:104
 msgid "UCS Bibliographic Index"
-msgstr "Katalog"
+msgstr "Indeks Bibliografi UCS"
 
-#: admin/modules/system/biblio_indexes.php:106
+#: admin/modules/system/biblio_indexes.php:109
 msgid "Emptying Index"
-msgstr ""
+msgstr "Mengosongkan Indeks"
 
-#: admin/modules/system/biblio_indexes.php:107
+#: admin/modules/system/biblio_indexes.php:110
 msgid "Re-create Index"
-msgstr ""
+msgstr "Membuat ulang Indeks"
 
-#: admin/modules/system/biblio_indexes.php:108
-#, fuzzy
+#: admin/modules/system/biblio_indexes.php:111
 msgid "Update Index"
-msgstr "Perbaharui"
+msgstr "Perbaharui Indeks"
 
 #: admin/modules/system/module.php:50
 msgid "Module name and path can't be empty"
-msgstr "Nama dan path tidak boleh kosong"
+msgstr "Nama dan <i>path</i> tidak boleh kosong"
 
 #: admin/modules/system/module.php:73
 msgid "Module Data Successfully Updated"
@@ -1133,7 +1130,7 @@ msgstr "Data Modul Berhasil Diperbaharui"
 
 #: admin/modules/system/module.php:75
 msgid "Module Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Modul GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Modul GAGAL Diperbaharui. Hubungi Administrator Sistem"
 
 #: admin/modules/system/module.php:86
 msgid "New Module Data Successfully Saved"
@@ -1141,40 +1138,40 @@ msgstr "Data Modul Baru Berhasil Disimpan"
 
 #: admin/modules/system/module.php:88
 msgid "Module Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Modul GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Modul GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/system/module.php:138
+#: admin/modules/system/module.php:143
 msgid "Add New Modules"
-msgstr "Data Modul Baru"
+msgstr "Tambah Modul Baru"
 
-#: admin/modules/system/module.php:139
+#: admin/modules/system/module.php:144
 msgid "Modules List"
 msgstr "Daftar Modul"
 
-#: admin/modules/system/module.php:180
+#: admin/modules/system/module.php:186
 msgid "Module Path"
-msgstr "Modul Path"
+msgstr "Alur Modul"
 
-#: admin/modules/system/module.php:182
-#: admin/modules/system/module.php:199
+#: admin/modules/system/module.php:188
+#: admin/modules/system/module.php:205
 msgid "Module Description"
 msgstr "Deskripsi Modul"
 
-#: admin/modules/system/module.php:186
+#: admin/modules/system/module.php:192
 msgid "You are going to edit data"
-msgstr "Anda akan meng-edit data modul"
+msgstr "Anda akan menyunting data"
 
 #: admin/modules/system/app_user.php:62
 msgid "User Name or Real Name can't be empty"
-msgstr "Nama Lengkap dan Nama Login tidak boleh kosong"
+msgstr "Nama Lengkap Pengguna dan Nama <i>Login</i> tidak boleh kosong"
 
 #: admin/modules/system/app_user.php:65
 msgid "Login username or Real Name is probihited!"
-msgstr "Login Pengguna atau Nama Lengkap tidak bisa digunakan!"
+msgstr "<i>Login</i> Pengguna atau Nama Lengkap tidak bisa digunakan!"
 
 #: admin/modules/system/app_user.php:68
 msgid "Password confirmation does not match. See if your Caps Lock key is on!"
-msgstr "Password dan Konfirmasinya tidak cocok. Pastikan penggunaan huruf besar dan kecil yang sesuai!"
+msgstr "Konfirmasi kata sandi tidak cocok. Pastikan Kunci Huruf Kapital tidak aktif!"
 
 #: admin/modules/system/app_user.php:102
 msgid "User Data Successfully Updated"
@@ -1182,138 +1179,130 @@ msgstr "Data Pengguna Berhasil Diperbaharui"
 
 #: admin/modules/system/app_user.php:104
 msgid "User Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data Pengguna GAGAL Diperbaharui. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Pengguna GAGAL Diperbarui. Hubungi Administrator Sistem"
 
 #: admin/modules/system/app_user.php:112
 msgid "New User Data Successfully Saved"
-msgstr "Pengguna Baru Berhasil Disimpan"
+msgstr "Data Pengguna Baru Berhasil Disimpan"
 
 #: admin/modules/system/app_user.php:114
 msgid "User Data FAILED to Save. Please Contact System Administrator"
-msgstr "Data Pengguna Baru GAGAL Disimpan. Hubungi admin sistem untuk pemecahannya"
+msgstr "Data Pengguna GAGAL Disimpan. Hubungi Administrator Sistem"
 
-#: admin/modules/system/app_user.php:162
+#: admin/modules/system/app_user.php:167
 msgid "Add New User"
-msgstr "Data Staf Baru"
+msgstr "Tambah Pengguna Baru"
 
-#: admin/modules/system/app_user.php:163
+#: admin/modules/system/app_user.php:168
 msgid "User List"
-msgstr "Daftar Staf"
+msgstr "Daftar Pengguna"
 
-#: admin/modules/system/app_user.php:217
-#: admin/modules/system/app_user.php:262
+#: admin/modules/system/app_user.php:223
+#: admin/modules/system/app_user.php:268
 msgid "Login Username"
-msgstr "Login Pengguna"
+msgstr "<i>Login</i> Pengguna"
 
-#: admin/modules/system/app_user.php:219
-#: admin/modules/system/app_user.php:261
-#: admin/modules/system/app_user.php:266
+#: admin/modules/system/app_user.php:225
 #: admin/modules/system/app_user.php:267
+#: admin/modules/system/app_user.php:272
+#: admin/modules/system/app_user.php:273
 msgid "Real Name"
 msgstr "Nama Pengguna"
 
-#: admin/modules/system/app_user.php:233
+#: admin/modules/system/app_user.php:239
 msgid "Group(s)"
 msgstr "Kelompok"
 
-#: admin/modules/system/app_user.php:236
-msgid "New Password"
-msgstr "Password Baru"
-
-#: admin/modules/system/app_user.php:238
-msgid "Confirm New Password"
-msgstr "Konfirmasi Password Baru"
-
 #: admin/modules/system/app_user.php:242
+msgid "New Password"
+msgstr "Kata Sandi Baru"
+
+#: admin/modules/system/app_user.php:244
+msgid "Confirm New Password"
+msgstr "Konfirmasi Kata Sandi Baru"
+
+#: admin/modules/system/app_user.php:248
 msgid "You are going to edit user profile"
-msgstr "Anda akan meng-edit data pengguna"
+msgstr "Anda akan menyunting profil pengguna"
 
-#: admin/modules/system/app_user.php:243
+#: admin/modules/system/app_user.php:249
 msgid "Leave Password field blank if you don't want to change the password"
-msgstr "Biarkan kotak Password kosong jika tidak ingin mengubahnya"
+msgstr "Ruas Kata Sandi boleh kosing jika Anda tidak ingin merubah kata sandi"
 
-#: admin/modules/system/app_user.php:263
-#: admin/modules/system/app_user.php:268
+#: admin/modules/system/app_user.php:269
+#: admin/modules/system/app_user.php:274
 msgid "Last Login"
-msgstr "Login terakhir"
+msgstr "<i>Login</i> terakhir"
 
-#: admin/modules/system/backup.php:44
+#: admin/modules/system/backup.php:49
 msgid "Start New Backup"
 msgstr "Mulai Salinan Baru"
 
 #: admin/modules/bibliography/nodes_removal.php:35
 msgid "ERROR ON PROCESSING DATA REMOVAL REQUEST"
-msgstr ""
+msgstr "Galat saat mengolah permintaan menghapus data"
 
 #: admin/modules/bibliography/nodes_removal.php:47
-#, fuzzy, php-format
+#, php-format
 msgid "%d records of %s removed succesfully from database"
-msgstr "rekod berhasil disisipkan dalam data anggota dari total rekod"
+msgstr "%d cantuman dari %s berhasil dihapus dari pangkalan data"
 
-#: admin/modules/bibliography/nodes_removal.php:60
+#: admin/modules/bibliography/nodes_removal.php:61
 #: admin/modules/bibliography/submenu.php:27
-#, fuzzy
 msgid "Nodes Data Removal"
-msgstr "Data denda dihapus"
+msgstr "Penghapusan Data Simpul"
 
-#: admin/modules/bibliography/nodes_removal.php:62
-#: admin/modules/bibliography/nodes_removal.php:63
-#, fuzzy
+#: admin/modules/bibliography/nodes_removal.php:64
+#: admin/modules/bibliography/nodes_removal.php:65
 msgid "Select Node"
-msgstr "Select Language"
+msgstr "Pilih Simpul"
 
-#: admin/modules/bibliography/nodes_removal.php:70
-#, fuzzy
+#: admin/modules/bibliography/nodes_removal.php:72
 msgid "Remove All Selected Node's Data"
-msgstr "Hapus Data Terpilih"
+msgstr "Hapus Data Simpul Terpilih"
 
-#: admin/modules/bibliography/nodes_removal.php:92
+#: admin/modules/bibliography/nodes_removal.php:95
 #, php-format
 msgid "There is %d records found.<br /> Are you sure to REMOVE ALL DATA of %s node? Once it done there is no way you can undo this action!"
-msgstr ""
+msgstr "Ditemukan %d cantuman. Anda yakin, ingin MENGHAPUS SEMUA DATA dari %s simpul? Hal ini tidak bisa dibatalkan!"
 
-#: admin/modules/bibliography/nodes_removal.php:97
+#: admin/modules/bibliography/nodes_removal.php:100
 msgid "I'm Very Sure to Remove ALL DATA"
-msgstr ""
+msgstr "Saya Yakin untuk Menghapus SEMUA DATA"
 
-#: admin/modules/bibliography/nodes_removal.php:98
+#: admin/modules/bibliography/nodes_removal.php:101
 msgid "CANCEL"
-msgstr ""
-
-#: admin/modules/bibliography/nodes_removal.php:105
-#, php-format
-msgid "Node %s doesn't have any record to remove!"
-msgstr ""
+msgstr "BATAL"
 
 #: admin/modules/bibliography/nodes_removal.php:108
+#, php-format
+msgid "Node %s doesn't have any record to remove!"
+msgstr "%s simpul tidak memiliki cantuman untuk dihapus!"
+
+#: admin/modules/bibliography/nodes_removal.php:111
 msgid "Node Undefined on server!"
-msgstr ""
+msgstr "Simpul Tidak Terdefinisikan pada peladen!"
 
 #: admin/modules/bibliography/iframe_author.php:64
 msgid "Author succesfully removed!"
-msgstr "Penanggung Jawab/Author berhasil dihapus!"
+msgstr "Pengarang berhasil dihapus!"
 
 #: admin/modules/bibliography/iframe_author.php:75
 msgid "Author removed!"
 msgstr "Penanggung Jawab/Author dihapus!"
 
-#: admin/modules/bibliography/submenu.php:23
-#: admin/modules/bibliography/index.php:199
-msgid "Bibliographic"
-msgstr "Katalog"
-
 #: admin/modules/bibliography/submenu.php:24
-#: admin/modules/bibliography/index.php:199
+#: admin/modules/bibliography/index.php:204
 msgid "Bibliographic List"
-msgstr "Daftar Katalog"
+msgstr "Daftar Bibliografi"
 
 #: admin/modules/bibliography/submenu.php:24
 msgid "Show Existing Bibliographic Data"
-msgstr "Daftar Data Katalog"
+msgstr "Tunjukkan Data Bibliografi Saat Ini"
 
 #: admin/modules/bibliography/submenu.php:25
 msgid "Tools"
-msgstr "Peralatan"
+msgstr "Perangkat"
 
 #: admin/modules/bibliography/submenu.php:26
 msgid "Export Data"
@@ -1325,19 +1314,19 @@ msgstr "Ekspor Data Bibliografi ke Format CSV"
 
 #: admin/modules/bibliography/submenu.php:27
 msgid "Mass Nodes Data Removal"
-msgstr ""
+msgstr "Menghapus Banyak Data Simpul "
 
 #: admin/modules/bibliography/pop_attach.php:85
 msgid "Upload FAILED! Forbidden file type or file size too big!"
-msgstr "Unggah GAGAL! Jenis file terlarang atau ukuran terlalu besar!"
+msgstr "Unggah GAGAL! Jenis berkas tidak diizinkan atau ukuran terlalu besar!"
 
 #: admin/modules/bibliography/pop_attach.php:134
 msgid "File Attachment data updated!"
-msgstr "Data lampiran berhasil diubah!"
+msgstr "Data lampiran berhasil diperbarui!"
 
 #: admin/modules/bibliography/pop_attach.php:138
 msgid "File Attachment data FAILED to update!"
-msgstr "Data lampiran GAGAL diubah!"
+msgstr "Berkas data Lampiran GAGAL diubah!"
 
 #: admin/modules/bibliography/pop_attach.php:143
 #: admin/modules/bibliography/pop_attach.php:158
@@ -1353,9 +1342,9 @@ msgid "Upload Now"
 msgstr "Unggah Sekarang"
 
 #: admin/modules/bibliography/pop_attach.php:188
-#: admin/modules/bibliography/index.php:251
-#: admin/modules/bibliography/index.php:394
+#: admin/modules/bibliography/index.php:258
 #: admin/modules/bibliography/index.php:401
+#: admin/modules/bibliography/index.php:408
 msgid "Title"
 msgstr "Judul"
 
@@ -1369,7 +1358,7 @@ msgstr "Direktori Repositori"
 
 #: admin/modules/bibliography/pop_attach.php:211
 msgid "File To Attach"
-msgstr "Berkas Lampiran"
+msgstr "Berkas untuk dilampirkan"
 
 #: admin/modules/bibliography/pop_attach.php:214
 msgid "URL"
@@ -1402,142 +1391,144 @@ msgstr "Judul harus diisi"
 #: admin/modules/bibliography/index.php:118
 #: admin/modules/bibliography/index.php:122
 msgid "Image Uploaded Successfully"
-msgstr "Citra/Berkas Gambar Berhasil Diunggah"
+msgstr "Gambar Berhasil Diunggah"
 
 #: admin/modules/bibliography/index.php:138
 msgid "Bibliography Data Successfully Updated"
-msgstr "Data bibliografi berhasil diperbaharui"
+msgstr "Data bibliografi berhasil diperbarui"
 
 #: admin/modules/bibliography/index.php:149
 msgid "Bibliography Data FAILED to Updated. Please Contact System Administrator"
-msgstr "Data bibliografi GAGAL diperbaharui. Hubungi System Administrator untuk pemecahan"
+msgstr "Data bibliografi GAGAL diperbaharui. Hubungi Administrator Sistem"
 
-#: admin/modules/bibliography/index.php:203
+#: admin/modules/bibliography/index.php:205
+msgid "Add New Bibliography"
+msgstr "Tambah Bibliografi Baru"
+
+#: admin/modules/bibliography/index.php:209
 msgid "All Fields"
 msgstr "Semua Ruas"
 
-#: admin/modules/bibliography/index.php:203
+#: admin/modules/bibliography/index.php:209
 msgid "Title/Series Title"
-msgstr "Judul Seri"
+msgstr "Judul/Judul Seri"
 
-#: admin/modules/bibliography/index.php:203
+#: admin/modules/bibliography/index.php:209
 msgid "Topics"
 msgstr "Topik"
 
-#: admin/modules/bibliography/index.php:203
+#: admin/modules/bibliography/index.php:209
 msgid "Authors"
 msgstr "Pengarang"
 
-#: admin/modules/bibliography/index.php:203
-#: admin/modules/bibliography/index.php:280
-#: admin/modules/bibliography/index.php:395
+#: admin/modules/bibliography/index.php:209
+#: admin/modules/bibliography/index.php:287
 #: admin/modules/bibliography/index.php:402
+#: admin/modules/bibliography/index.php:409
 msgid "ISBN/ISSN"
 msgstr "ISBN/ISSN"
 
-#: admin/modules/bibliography/index.php:253
+#: admin/modules/bibliography/index.php:260
 msgid "Edition"
 msgstr "Edisi"
 
-#: admin/modules/bibliography/index.php:255
+#: admin/modules/bibliography/index.php:262
 msgid "Specific Detail Info"
 msgstr "Detil Spesifik"
 
-#: admin/modules/bibliography/index.php:257
-#, fuzzy
+#: admin/modules/bibliography/index.php:264
 msgid "Authors/Roles"
-msgstr "Pengarang"
+msgstr "Pengarang/Peran"
 
-#: admin/modules/bibliography/index.php:257
+#: admin/modules/bibliography/index.php:264
 msgid "Add Author(s)"
 msgstr "Tambah Data Pengarang"
 
-#: admin/modules/bibliography/index.php:259
+#: admin/modules/bibliography/index.php:266
 msgid "Author(s)"
 msgstr "Pengarang"
 
-#: admin/modules/bibliography/index.php:271
+#: admin/modules/bibliography/index.php:278
 msgid "Not Applicable"
 msgstr "Belum Diaplikasikan"
 
-#: admin/modules/bibliography/index.php:277
+#: admin/modules/bibliography/index.php:284
 msgid "Use this for Serial publication"
 msgstr "Gunakan untuk koleksi terbitan berseri"
 
-#: admin/modules/bibliography/index.php:282
+#: admin/modules/bibliography/index.php:289
 msgid "Classification"
 msgstr "Klasifikasi"
 
-#: admin/modules/bibliography/index.php:296
+#: admin/modules/bibliography/index.php:303
 msgid "Publishing Year"
 msgstr "Tahun Terbit"
 
-#: admin/modules/bibliography/index.php:304
-#: admin/modules/bibliography/index.php:308
+#: admin/modules/bibliography/index.php:311
+#: admin/modules/bibliography/index.php:315
 msgid "Publishing Place"
 msgstr "Tempat Terbit"
 
-#: admin/modules/bibliography/index.php:310
+#: admin/modules/bibliography/index.php:317
 msgid "Collation"
 msgstr "Kolasi"
 
-#: admin/modules/bibliography/index.php:312
+#: admin/modules/bibliography/index.php:319
 msgid "Series Title"
 msgstr "Judul Seri"
 
-#: admin/modules/bibliography/index.php:314
+#: admin/modules/bibliography/index.php:321
 msgid "Call Number"
 msgstr "No. Panggil"
 
-#: admin/modules/bibliography/index.php:316
-#, fuzzy
+#: admin/modules/bibliography/index.php:323
 msgid "Subjects/Topics"
-msgstr "Tambah Subyek Baru"
+msgstr "Subyek/Topik"
 
-#: admin/modules/bibliography/index.php:316
+#: admin/modules/bibliography/index.php:323
 msgid "Add Subject(s)"
-msgstr "Tambah Data Subyek/Subjek"
+msgstr "Tambah Data Subyek"
 
-#: admin/modules/bibliography/index.php:318
+#: admin/modules/bibliography/index.php:325
 msgid "Subject(s)"
-msgstr "Subyek/Subjek"
+msgstr "Subyek"
 
-#: admin/modules/bibliography/index.php:328
+#: admin/modules/bibliography/index.php:335
 msgid "Abstract/Notes"
-msgstr "Catatan"
+msgstr "Abstrak/Catatan"
 
-#: admin/modules/bibliography/index.php:333
-#: admin/modules/bibliography/index.php:338
+#: admin/modules/bibliography/index.php:340
+#: admin/modules/bibliography/index.php:345
 msgid "Image"
 msgstr "Gambar Sampul"
 
-#: admin/modules/bibliography/index.php:341
+#: admin/modules/bibliography/index.php:348
 msgid "Show"
-msgstr "Tunjukan"
+msgstr "Tunjukkan"
 
-#: admin/modules/bibliography/index.php:342
+#: admin/modules/bibliography/index.php:349
 msgid "Hide"
 msgstr "Sembunyikan"
 
-#: admin/modules/bibliography/index.php:343
+#: admin/modules/bibliography/index.php:350
 msgid "Hide in OPAC"
 msgstr "Tidak ditampilkan di OPAC"
 
-#: admin/modules/bibliography/index.php:348
+#: admin/modules/bibliography/index.php:355
 msgid "You are going to edit biblio data"
-msgstr "Anda akan mengubah data biblio"
+msgstr "Anda akan menyunting data biblio"
 
-#: admin/modules/bibliography/index.php:451
+#: admin/modules/bibliography/index.php:458
 msgid "Query took"
-msgstr "Permintaan membutuhkan"
+msgstr "<i>Query</i> membutuhkan"
 
-#: admin/modules/bibliography/index.php:451
+#: admin/modules/bibliography/index.php:458
 msgid "second(s) to complete"
 msgstr "detik untuk selesai"
 
 #: admin/modules/bibliography/pop_topic.php:94
 msgid "Subject FAILED to Add. Please Contact System Administrator"
-msgstr "Subyek GAGAL Ditambahkan. Hubungi System Administrator"
+msgstr "Subyek GAGAL Ditambahkan. Hubungi Administrator Sistem"
 
 #: admin/modules/bibliography/pop_topic.php:119
 msgid "Subject added!"
@@ -1545,7 +1536,7 @@ msgstr "Subyek berhasil ditambahkan!"
 
 #: admin/modules/bibliography/pop_topic.php:130
 msgid "Add Subject"
-msgstr "Tambahkan Subyek"
+msgstr "Tambah Subyek"
 
 #: admin/modules/bibliography/pop_topic.php:136
 msgid "Keyword"
@@ -1553,7 +1544,7 @@ msgstr "Kata kunci"
 
 #: admin/modules/bibliography/pop_topic.php:150
 msgid "Type to search for existing topics or to add a new one"
-msgstr "Ketik untuk mencari topik atau menambah baru"
+msgstr "Ketik untuk mencari topik yang tersedia atau menambah baru"
 
 #: admin/modules/bibliography/pop_topic.php:152
 #: admin/modules/bibliography/pop_author.php:151
@@ -1566,7 +1557,7 @@ msgstr "Pengarang berhasil diperbaharui!"
 
 #: admin/modules/bibliography/pop_author.php:95
 msgid "Author FAILED to Add. Please Contact System Administrator"
-msgstr "Pengarang GAGAL Ditambahkan. Hubungi System Administrator"
+msgstr "Pengarang GAGAL Ditambahkan. Hubungi Administrator Sistem"
 
 #: admin/modules/bibliography/pop_author.php:120
 msgid "Author added!"
@@ -1578,81 +1569,81 @@ msgstr "Tambah Pengarang"
 
 #: admin/modules/bibliography/pop_author.php:149
 msgid "Type to search for existing authors or to add a new one"
-msgstr "Ketik untuk mencari pengarang atau menambah baru"
+msgstr "Ketik untuk mencari pengarang yang tersedia atau menambah baru"
 
 #: admin/modules/bibliography/export.php:105
 msgid "Error on query to database, Export FAILED!"
-msgstr "Error dalam query di database. Ekspor GAGAL!"
+msgstr "Galat dalam <i>query</i> pada pangkalan data. GAGAL Ekspor!"
 
 #: admin/modules/bibliography/export.php:143
 msgid "There is no record in bibliographic database yet, Export FAILED!"
-msgstr "Belum ada data dalam tabel bibliografi di database. Ekspor GAGAL!"
+msgstr "Belum ada cantuman dalam pangkalan data bibliografi. GAGAL Ekspor!"
 
-#: admin/modules/bibliography/export.php:152
-msgid "EXPORT TOOL"
-msgstr "Fasilitas Eksport"
+#: admin/modules/bibliography/export.php:153
+msgid "Export Tool"
+msgstr "Perangkat Ekspor"
 
-#: admin/modules/bibliography/export.php:154
+#: admin/modules/bibliography/export.php:156
 msgid "Export bibliographics data to CSV file"
-msgstr "Eksport data bibliografi data kedalam berkas CSV"
+msgstr "Ekspor data bibliografi menjadi berkas CSV"
 
-#: admin/modules/bibliography/export.php:161
+#: admin/modules/bibliography/export.php:164
 msgid "Export Now"
 msgstr "Ekspor Sekarang"
 
-#: admin/modules/bibliography/export.php:170
+#: admin/modules/bibliography/export.php:173
 msgid "Field Separator"
 msgstr "Pemisah Antar Ruas"
 
-#: admin/modules/bibliography/export.php:172
+#: admin/modules/bibliography/export.php:175
 msgid "Field Enclosed With"
 msgstr "Batas Awal-Akhir Ruas"
 
-#: admin/modules/bibliography/export.php:176
+#: admin/modules/bibliography/export.php:179
 msgid "Record Separator"
-msgstr "Batas Pemisah Rekod"
+msgstr "Pemisah Cantuman"
 
-#: admin/modules/bibliography/export.php:178
+#: admin/modules/bibliography/export.php:181
 msgid "Number of Records To Export (0 for all records)"
-msgstr "Jumlah Cantuman Untuk di Ekspor (0 untuk semua cantuman)"
+msgstr "Jumlah Cantuman Untuk Diekspor (0 untuk semua cantuman)"
 
-#: admin/modules/bibliography/export.php:180
+#: admin/modules/bibliography/export.php:183
 msgid "Start From Record"
 msgstr "Mulai dari rekod ke"
 
 #: lib/detail.inc.php:159
 msgid "Click to view others documents with this author"
-msgstr "Klik disini untuk mencari dokumen lain dari pengarang ini"
+msgstr "Klik untuk menampilkan dokumen lain dengan pengarang ini"
 
 #: lib/detail.inc.php:173
 msgid "Click to view others documents with this subject"
-msgstr "Klik disini untuk mencari dokumen lain dengan subjek ini"
+msgstr "Klik untuk menampilkan dokumen lain dengan subjek ini"
 
 #: lib/detail.inc.php:218
 msgid "View node catalog data"
-msgstr "Lihat catalog pada node"
+msgstr "Lihat data katalog simpul"
 
 #: lib/biblio_list_model.inc.php:179
 #: lib/biblio_list_model.inc.php:200
 msgid "Record Detail"
-msgstr "Detail Rekod"
+msgstr "Detil Cantuman"
 
 #: lib/biblio_list_model.inc.php:262
 msgid "mark this"
-msgstr ""
+msgstr "tandai ini"
 
 #: lib/biblio_list_model.inc.php:285
 msgid "Put marked selection into basket"
-msgstr ""
+msgstr "Letakkan pilihan ke dalam keranjang"
 
 #: lib/contents/default.inc.php:120
 #: lib/contents/default.inc.php:129
 msgid "Found  <strong>{biblio_list->num_rows}</strong> from your keywords"
-msgstr "Ditemukan  <strong>{biblio_list->num_rows}</strong> dari pencarian anda melalui kata kunci"
+msgstr "Ditemukan  <strong>{biblio_list->num_rows}</strong> melalui kata kunci Anda"
 
 #: lib/contents/default.inc.php:162
 msgid "You currently on page <strong>{page}</strong> of <strong>{total_pages}</strong> page(s)"
-msgstr "Saat ini anda berada pada halaman <strong>{page}</strong> dari total <strong>{total_pages}</strong> halaman"
+msgstr "Saat ini Anda berada pada halaman <strong>{page}</strong> dari total <strong>{total_pages}</strong> halaman"
 
 #: lib/contents/show_detail.inc.php:60
 msgid "Back To Previous"
@@ -1660,32 +1651,32 @@ msgstr "Kembali ke sebelumnya"
 
 #: lib/contents/common.inc.php:41
 msgid "All Collections"
-msgstr "Semua Koleksi"
+msgstr "Seluruh Koleksi"
 
-#: lib/contents/login.inc.php:97
+#: lib/contents/login.inc.php:96
 msgid "Welcome to Library Automation, "
 msgstr "Selamat Datang di Automasi Perpustakaan,"
 
 #: lib/lang/localisation.php:65
 msgid "Arabic"
-msgstr "Bahasa Arab"
+msgstr "Arabic"
 
 #: lib/lang/localisation.php:66
 msgid "German"
-msgstr "Jerman"
+msgstr "German"
 
 #: lib/lang/localisation.php:68
 msgid "Espanol"
-msgstr "Bahasa Spanyol"
+msgstr "Espanol"
 
 #: themes/lightweight/index_template.inc.php:20
 #: themes/default/index_template.inc.php:24
 msgid "Home"
-msgstr "Beranda depan"
+msgstr "Beranda"
 
 #: themes/lightweight/index_template.inc.php:21
 msgid "Library Information"
-msgstr "Info Perpustakaan"
+msgstr "Informasi Perpustakaan"
 
 #: themes/lightweight/index_template.inc.php:22
 msgid "Help on Search"
@@ -1705,7 +1696,7 @@ msgstr "Bantuan"
 
 #: themes/default/index_template.inc.php:38
 msgid "Select Language"
-msgstr "Select Language"
+msgstr "Pilih Bahasa"
 
 #: themes/default/index_template.inc.php:47
 msgid "Advanced Search"
@@ -1721,7 +1712,7 @@ msgstr "Tidak Ada Data"
 
 #: simbio2/simbio_GUI/paging/simbio_paging.inc.php:118
 msgid "First Page"
-msgstr "Hal. Pertama"
+msgstr "Halaman Pertama"
 
 #: simbio2/simbio_GUI/paging/simbio_paging.inc.php:120
 msgid "Previous"
@@ -1733,12 +1724,12 @@ msgstr "Berikutnya"
 
 #: simbio2/simbio_GUI/paging/simbio_paging.inc.php:149
 msgid "Last Page"
-msgstr "Hal. Akhir"
+msgstr "Halaman Akhir"
 
 #: simbio2/simbio_GUI/form_maker/simbio_form_table_AJAX.inc.php:98
 #: simbio2/simbio_GUI/form_maker/simbio_form_table.inc.php:105
 msgid "Delete Record"
-msgstr "Hapus Rekod"
+msgstr "Hapus Cantuman"
 
 #: simbio2/simbio_GUI/form_maker/simbio_form_table_AJAX.inc.php:99
 #: simbio2/simbio_GUI/form_maker/simbio_form_table.inc.php:106
@@ -1751,15 +1742,15 @@ msgstr "Tanggal"
 
 #: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:89
 msgid "DELETE"
-msgstr "DELETE"
+msgstr "HAPUS"
 
 #: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:90
 msgid "EDIT"
-msgstr "EDIT"
+msgstr "SUNTING"
 
 #: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:105
 msgid "Are You Sure Want to DELETE Selected Data?"
-msgstr "Anda Yakin Akan MENGHAPUS Data Terpilih?"
+msgstr "Anda Yakin Ingin MENGHAPUS Data Terpilih?"
 
 #: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:109
 msgid "Delete Selected Data"
