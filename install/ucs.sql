@@ -541,3 +541,47 @@ CREATE TABLE IF NOT EXISTS `user_group` (
 
 INSERT INTO `user_group` (`group_id`, `group_name`, `input_date`, `last_update`) VALUES
 (1, 'Administrator', '2010-03-01', '2010-03-01');
+
+
+--
+-- Table structure for table `search_biblio`
+--
+CREATE TABLE IF NOT EXISTS `search_biblio` (
+  `biblio_id` int(11) NOT NULL,
+  `orig_biblio_id` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `edition` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `isbn_issn` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `author` text COLLATE utf8_unicode_ci,
+  `topic` text COLLATE utf8_unicode_ci,
+  `gmd` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publisher` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publish_place` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `language` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `classification` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `spec_detail_info` text COLLATE utf8_unicode_ci,
+  `location` text COLLATE utf8_unicode_ci,
+  `publish_year` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8_unicode_ci,
+  `series_title` text COLLATE utf8_unicode_ci,
+  `items` text COLLATE utf8_unicode_ci,
+  `collection_types` text COLLATE utf8_unicode_ci,
+  `call_number` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `opac_hide` smallint(1) NOT NULL DEFAULT '0',
+  `promoted` smallint(1) NOT NULL DEFAULT '0',
+  `labels` text COLLATE utf8_unicode_ci,
+  `collation` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `image` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `input_date` datetime DEFAULT NULL,
+  `last_update` datetime DEFAULT NULL,
+  UNIQUE KEY `biblio_id` (`biblio_id`),
+  KEY `add_indexes` (`gmd`,`publisher`,`publish_place`,`language`,`classification`,`publish_year`,`call_number`),
+  KEY `add_indexes2` (`opac_hide`,`promoted`),
+  FULLTEXT `title` (`title`),
+  FULLTEXT `author` (`author`),
+  FULLTEXT `topic` (`topic`),
+  FULLTEXT `location` (`location`),
+  FULLTEXT `items` (`items`),
+  FULLTEXT `collection_types` (`collection_types`),
+  FULLTEXT `labels` (`labels`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='index table for advance searching technique in UC SLiMS';
