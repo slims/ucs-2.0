@@ -93,7 +93,8 @@ class simbio_paging
         $str_target_frame = 'target="'.$str_target_frame.'"';
 
         // init the return string
-        $_buffer = '<span class="pagingList">';
+        $_buffer = '<div class="pagination pagingList">';
+        $_buffer .= '<ul>';
         $_stopper = 1;
 
         // count the offset of paging
@@ -120,18 +121,15 @@ class simbio_paging
 				$_prev = __('Previous');
 
         if ($_page > 1) {
-            $_buffer .= ' &nbsp;';
-            $_buffer .= '<a href="'.$_current_page.(1).$str_fragment.'" '.$str_target_frame.'>'.$_first.'</a>&nbsp; '."\n";
-            $_buffer .= ' &nbsp;';
-            $_buffer .= '<a href="'.$_current_page.($_page-1).$str_fragment.'" '.$str_target_frame.'>'.$_prev.'</a>&nbsp; '."\n";
+            $_buffer .= '<li><a href="'.$_current_page.(1).$str_fragment.'" '.$str_target_frame.'>'.$_first.'</a></li>'."\n";
+            $_buffer .= '<li><a href="'.$_current_page.($_page-1).$str_fragment.'" '.$str_target_frame.'>'.$_prev.'</a></li>'."\n";
         }
 
         for ($p = $_pager_offset; ($p <= $_num_page_total) AND ($_stopper < $int_pages_each_set+1); $p++) {
             if ($p == $_page) {
-                $_buffer .= ' &nbsp;<b>'.$p.'</b>&nbsp; '."\n";
+                $_buffer .= '<li class="disabled"><a href="#">'.$p.'</a></li>'."\n";
             } else {
-                $_buffer .= ' &nbsp;';
-                $_buffer .= '<a href="'.$_current_page.$p.$str_fragment.'" '.$str_target_frame.'>'.$p.'</a>&nbsp; '."\n";
+                $_buffer .= '<li><a href="'.$_current_page.$p.$str_fragment.'" '.$str_target_frame.'>'.$p.'</a></li>'."\n";
             }
 
             $_stopper++;
@@ -141,19 +139,18 @@ class simbio_paging
 				$_next = __('Next');
 
         if (($_pager_offset != $_num_page_total-4) AND ($_page != $_num_page_total)) {
-            $_buffer .= ' &nbsp;';
-            $_buffer .= '<a href="'.$_current_page.($_page+1).$str_fragment.'" '.$str_target_frame.'>'.$_next.'</a>&nbsp; '."\n";
+            $_buffer .= '<li><a href="'.$_current_page.($_page+1).$str_fragment.'" '.$str_target_frame.'>'.$_next.'</a></li>'."\n";
         }
 
         // Last page link
 				$_last = __('Last Page');
 
         if ($_page < $_num_page_total) {
-            $_buffer .= ' &nbsp;';
-            $_buffer .= '<a href="'.$_current_page.($_num_page_total).$str_fragment.'" '.$str_target_frame.'>'.$_last.'</a>&nbsp; '."\n";
+          $_buffer .= '<li><a href="'.$_current_page.($_num_page_total).$str_fragment.'" '.$str_target_frame.'>'.$_last.'</a></li>'."\n";
         }
 
-        $_buffer .= '</span>';
+        $_buffer .= '</ul>';
+        $_buffer .= '</div>';
 
         return $_buffer;
     }

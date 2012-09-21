@@ -205,17 +205,16 @@ abstract class biblio_list_model
             }
 
             // cover images var
-            $_image_cover = '';
+            $_image_cover = '<img src="./themes/default/images/image.png" />';
             if (!empty($_biblio_d['image']) && !defined('LIGHTWEIGHT_MODE')) {
                 $_biblio_d['image'] = urlencode($_biblio_d['image']);
                 $images_loc = 'images/docs/'.$_biblio_d['image'];
-                if (file_exists($images_loc)) {
-                    $_image_cover = 'style="background-image: url(./lib/phpthumb/phpThumb.php?src=../../'.urlencode($images_loc).'&w=42); background-repeat: no-repeat;"';
-                }
+                $_image_cover = '<img src="./lib/phpthumb/phpThumb.php?src=../../'.$images_loc.'&w=90" width="90" height="115" />';
             }
 
             $_alt_list = ($_i%2 == 0)?'alterList':'alterList2';
-            $_buffer .= '<div class="item '.$_alt_list.'" '.$_image_cover.'>'.$_biblio_d['title'].'<br />';
+            $_buffer .= '<div class="item"><div class="cover-list">'.$_image_cover.'</div>';
+						$_buffer .= '<div class="detail-list"><h4>'.$_biblio_d['title'].'</h4>';
             // concat author data
             $_authors = isset($_biblio_d['author'])?$_biblio_d['author']:self::getAuthors($this->obj_db, $_biblio_d['biblio_id']);
             if ($_authors) {
@@ -258,28 +257,26 @@ abstract class biblio_list_model
                 }
             }
 
-			// checkbox for marking collection
-			$_check_mark = (utility::isMemberLogin() && $this->enable_mark)?' <input type="checkbox" id="biblioCheck'.$_i.'" name="biblio[]" class="biblioCheck" value="'.$_biblio_d['biblio_id'].'" /> <label for="biblioCheck'.$_i.'">'.__('mark this').'</label>':'';
-            $_buffer .= '<div class="subItem">'.$_biblio_d['detail_button'].' '.$_biblio_d['xml_button'].$_check_mark.'</div>';
-            $_buffer .= "</div>\n";
-            $_i++;
-        }
+      $_buffer .= '<div class="subItem">'.$_biblio_d['detail_button'].' '.$_biblio_d['xml_button'].$_check_mark.'</div>';
+      $_buffer .= "</div>\n";
+      $_buffer .= "</div>\n";
+      $_i++;
+    }
 
-        // free resultset memory
-        $this->resultset->free_result();
+    // free resultset memory
+    $this->resultset->free_result();
 
-        // paging
-        if (($this->num_rows > $this->num2show)) {
-            $_paging = '<div class="biblioPaging">'.simbio_paging::paging($this->num_rows, $this->num2show, 5).'</div>';
-        } else {
-            $_paging = '';
-        }
+    // paging
+    if (($this->num_rows > $this->num2show)) {
+        $_paging = '<div class="biblioPaging">'.simbio_paging::paging($this->num_rows, $this->num2show, 5).'</div>';
+    } else {
+        $_paging = '';
+    }
 
 		$_biblio_list = '';
 		$_is_member_logged_in = utility::isMemberLogin() && $this->enable_mark;
 		if ($_paging) {
 			$_biblio_list .= $_paging;
-			$_biblio_list .= '<hr width="98%" size="1" />';
 		}
 		if ($_is_member_logged_in) {
 			$_submit = '<div class="biblioMarkFormAction"><input type="submit" class="button markBiblio" name="markBiblio" value="'.__('Put marked selection into basket').'" /></div>';
@@ -292,7 +289,6 @@ abstract class biblio_list_model
 			$_biblio_list .= '</form>';
 		}
 		if ($_paging) {
-			$_biblio_list .= '<hr width="98%" size="1" />';
 			$_biblio_list .= $_paging;
 		}
 

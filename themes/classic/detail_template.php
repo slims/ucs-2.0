@@ -3,8 +3,11 @@
 // output the buffer
 ob_start(); /* <- DONT REMOVE THIS COMMAND */
 ?>
-<h4>{title}</h4>
 <table class="border margined" style="width: 99%;" cellpadding="5" cellspacing="0">
+<tr>
+<td class="tblHead" style="width: 20%;" valign="top"><?php print __('Title'); ?></td>
+<td class="tblContent" style="width: 80%;" valign="top">{title}</td>
+</tr>
 <tr>
 <td class="tblHead" style="width: 20%;" valign="top"><?php print __('Collection Location'); ?></td>
 <td class="tblContent" style="width: 80%;" valign="top">{location}</td>
