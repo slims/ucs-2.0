@@ -20,6 +20,9 @@
  *
  */
 
+// key to authenticate
+define('INDEX_AUTH', '1');
+
 require 'ucsysconfig.inc.php';
 require 'ucserver.inc.php';
 require LIB_DIR.'http_request.inc.php';

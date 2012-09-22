@@ -258,8 +258,7 @@ abstract class biblio_list_model
             }
 
       $_buffer .= '<div class="subItem">'.$_biblio_d['detail_button'].' '.$_biblio_d['xml_button'].$_check_mark.'</div>';
-      $_buffer .= "</div>\n";
-      $_buffer .= "</div>\n";
+      $_buffer .= "</div></div>\n";
       $_i++;
     }
 
