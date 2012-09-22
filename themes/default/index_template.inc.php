@@ -42,8 +42,9 @@
 							<li><a href="#advSearchModal" role="button" data-toggle="modal"><?php echo __('Advanced search'); ?></a></li>
             </ul>
           </div><!--/.nav-collapse -->
-					<form class="navbar-form pull-right">
-					<input type="text" class="search-query" placeholder="Search">
+					<form class="navbar-form pull-right" name="simpleSearch" action="index.php" method="get">
+					<input type="hidden" name="search" value="Search">
+					<input type="text" name="keywords" class="search-query" placeholder="Search">
           <select name="node" class="select">
             <?php echo $location_list; ?>
           </select>
@@ -55,11 +56,11 @@
     <div class="container">
 
     <!-- advanced search -->
-    <div class="modal hide" id="advSearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal hide" id="advSearchModal" tabindex="-1" role="dialog">
 		<form id="adv-search-form" action="index.php" method="get">
 		<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-		<h3 id="myModalLabel"><?php echo __('Advanced Search'); ?></h3>
+		<h3><?php echo __('Advanced Search'); ?></h3>
 		</div>
 		<div class="modal-body">
     <input type="hidden" name="advsearch" value="1" />
@@ -106,7 +107,7 @@
 		</table>
 		</div>
     <div class="modal-footer">
-      <a href="#" class="btn btn-primary"><?php echo __('Search'); ?></a>
+      <input type="submit" name="search" value="<?php echo __('Search'); ?>" class="btn btn-primary btn-large" />
     </div>
 		</form>
     </div>
@@ -125,6 +126,11 @@
 					 <ul class="nav pull-right">
 					 <li><a href="http://slims.web.id"><span>SLiMS</span></a></li>
 					 </ul>
+           <form name="langSelect" action="index.php" class="navbar-form pull-right" method="get">
+           <select name="select_lang" onchange="document.langSelect.submit();">
+           <?php echo $language_select; ?>
+           </select>
+           </form>
         </div>
       </div>
     </div>

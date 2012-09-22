@@ -86,8 +86,8 @@ if (isset($_POST['logMeIn'])) {
     <div><input type="text" name="userName" style="width: 80%;" /></div>
     <div class="heading1 marginTop">Password</div>
     <div><input type="password" name="passWord" style="width: 80%;" /></div>
-    <div class="marginTop"><input type="submit" name="logMeIn" value="Logon" id="loginButton" />
-        <input type="button" value="Home" id="homeButton" onclick="javascript: location.href = 'index.php';" />
+    <div class="marginTop"><input type="submit" name="logMeIn" class="btn btn-primary" value="Logon" id="loginButton" />
+        <input type="button" value="Home" id="homeButton" class="btn" onclick="javascript: location.href = 'index.php';" />
     </div>
     </form>
 </div>

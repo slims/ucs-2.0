@@ -3,7 +3,7 @@
 // output the buffer
 ob_start(); /* <- DONT REMOVE THIS COMMAND */
 ?>
-<h4>{title}</h4>
+<h3>{title}</h3>
 <table class="border margined" style="width: 99%;" cellpadding="5" cellspacing="0">
 <tr>
 <td class="tblHead" style="width: 20%;" valign="top"><?php print __('Collection Location'); ?></td>
@@ -75,7 +75,7 @@ ob_start(); /* <- DONT REMOVE THIS COMMAND */
 </tr>
 <tr>
 <td class="tblHead" style="width: 20%;" valign="top">&nbsp;</td>
-<td class="tblContent" style="width: 80%;" valign="top"><a href="javascript: history.back();"><?php print __('Back To Previous'); ?></a></td>
+<td class="tblContent" style="width: 80%;" valign="top"><a href="javascript: history.back();" class="btn btn-warning"><?php print __('Back To Previous'); ?></a></td>
 </tr>
 </table>
 <?php

@@ -168,6 +168,5 @@ if (isset($_GET['page']) AND $_GET['page'] > 1) {
 // query time
 $info .= '<div>'.__('Query took').' <b>'.$biblio_list->query_time.'</b> '.__('second(s) to complete').'</div>'; //mfc
 if (isset($biblio_list) && isset($sysconf['enable_xml_result']) && $sysconf['enable_xml_result']) {
-    $info .= '<div><a href="index.php?resultXML=true&'.$_SERVER['QUERY_STRING'].'" class="xmlResultLink" target="_blank" title="View Result in XML Format" style="clear: both;">XML Result</a></div>';
+    $info .= '<div><a href="index.php?resultXML=true&'.$_SERVER['QUERY_STRING'].'" class="xmlResultLink btn btn-success" target="_blank" title="View Result in XML Format" style="clear: both;">XML Result</a></div>';
 }
-?>

@@ -197,9 +197,9 @@ abstract class biblio_list_model
 		}
             }
             // button
-            $_biblio_d['detail_button'] = '<a href="'.$sysconf['baseurl'].'index.php?p=show_detail&id='.$_biblio_d['biblio_id'].'" class="detailLink" title="'.__('Record Detail').'">'.__('Record Detail').'</a>';
+            $_biblio_d['detail_button'] = '<a href="'.$sysconf['baseurl'].'index.php?p=show_detail&id='.$_biblio_d['biblio_id'].'" class="detailLink btn btn-small" title="'.__('Record Detail').'">'.__('Record Detail').'</a>';
             if ($this->xml_detail) {
-                $_biblio_d['xml_button'] = '<a href="'.$sysconf['baseurl'].'index.php?p=show_detail&inXML=true&id='.$_biblio_d['biblio_id'].'" class="xmlDetailLink" title="View Detail in XML Format" target="_blank">XML Detail</a>';
+                $_biblio_d['xml_button'] = '<a href="'.$sysconf['baseurl'].'index.php?p=show_detail&inXML=true&id='.$_biblio_d['biblio_id'].'" class="xmlDetailLink btn btn-success btn-small" title="View Detail in XML Format" target="_blank">XML Detail</a>';
             } else {
                 $_biblio_d['xml_button'] = '';
             }

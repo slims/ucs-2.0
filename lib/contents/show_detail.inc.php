@@ -57,10 +57,10 @@ if (isset($_GET['inXML']) AND !empty($_GET['inXML'])) {
     // set the content for info box
     $info = '<strong>'.strtoupper(__('Record Detail')).'</strong><hr />';
     if (!defined('LIGHTWEIGHT_MODE')) {
-        $info .= '<a href="javascript: history.back();">'.__('Back To Previous').'</a> &nbsp;';
+        $info .= '<a href="javascript: history.back();" class="btn btn-warning">'.__('Back To Previous').'</a> &nbsp;';
     }
     if (isset($sysconf['enable_xml_detail']) && $sysconf['enable_xml_detail'] && !defined('LIGHTWEIGHT_MODE')) {
-        $info .= '<a href="index.php?p=show_detail&inXML=true&id='.$detail_id.'" class="xmlDetailLink" target="_blank">XML Detail</a>';
+        $info .= '<a href="index.php?p=show_detail&inXML=true&id='.$detail_id.'" class="xmlDetailLink btn btn-success" target="_blank">XML Detail</a>';
     }
     // output the record detail
     echo $detail->showDetail();
@@ -68,4 +68,3 @@ if (isset($_GET['inXML']) AND !empty($_GET['inXML'])) {
     $metadata = $detail->metadata;
     echo '<br />'."\n";
 }
-?>
