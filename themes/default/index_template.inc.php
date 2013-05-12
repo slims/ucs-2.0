@@ -37,8 +37,20 @@
           <img src="themes/default/images/logo.png" class="logo" /><a class="brand" href="index.php"><?php echo $sysconf['server']['name']; ?></a>
           <div class="nav-collapse">
             <ul class="nav">
-							<li class="active"><a href="index.php"><span><?php echo __('Home'); ?></a></span></li>
-							<li><a href="index.php?p=libinfo"><span><?php echo __('UCS Information'); ?></span></a></li>
+							<?php
+              $menus['index'] = array('./index.php', __('Home'));
+              $menus['libinfo'] = array('./index.php', __('UCS Information'));
+
+							foreach ($menus as $path => $menu) {
+								if (isset($_GET['p']) && $_GET['p'] === $path) {
+                  echo '<li class="active"><a href="'.$menu[0].'?p='.$path.'">'.$menu[1].'</a></li>';
+								} else if (empty($_SERVER['QUERY_STRING']) && $path === 'index') {
+                  echo '<li class="active"><a href="'.$menu[0].'">'.$menu[1].'</a></li>';
+								} else {
+								  echo '<li><a href="'.$menu[0].'?p='.$path.'">'.$menu[1].'</a></li>';
+								}
+							}
+							?>
 							<li><a href="#advSearchModal" role="button" data-toggle="modal"><?php echo __('Advanced search'); ?></a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -56,62 +68,45 @@
     <div class="container">
 
     <!-- advanced search -->
-    <div class="modal hide" id="advSearchModal" tabindex="-1" role="dialog">
-		<form id="adv-search-form" action="index.php" method="get">
-		<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-		<h3><?php echo __('Advanced Search'); ?></h3>
-		</div>
-		<div class="modal-body">
-    <input type="hidden" name="advsearch" value="1" />
-    <input type="hidden" name="p" value="search" />
-		<table>
-			<tr>
-				<td class="value">
-				<?php echo __('Title'); ?>
-				</td>
-				<td class="value">
-				  <input type="text" name="title" />
-				</td>
-				<td class="value">
-				<?php echo __('Author(s)'); ?>
-				</td>
-				<td class="value">
-				  <input type="text" name="author" />
-				</td>
-			</tr>
-			<tr>
-				<td class="value">
-				<?php echo __('Subject(s)'); ?>
-				</td>
-				<td class="value">
-				<input type="text" name="subject" />
-				</td>
-				<td class="value">
-				<?php echo __('ISBN/ISSN'); ?>
-				</td>
-				<td class="value">
-					<input type="text" name="isbn" />
-				</td>
-			</tr>
-			<tr>
-				<td class="value">
-					<?php echo __('Location'); ?>
-				</td>
-				<td class="value" colspan="3">
-					<select name="node" class="full-width">
-          <?php echo $location_list; ?>
-					</select>
-				</td>
-			</tr>
-		</table>
+    <div id="advSearchModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <form name="advSearchForm" id="advSearchForm" action="index.php" method="get">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+      <h3 id="myModalLabel"><?php echo __('Advanced search'); ?></h3>
+    </div>
+    <div class="modal-body">
+    <div class="control-group">
+      <label class="control-label" for="inputTitle"><?php echo __('Title'); ?></label>
+      <div class="controls"><input type="text" name="title" id="inputTitle" /></div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputAuthors"><?php echo __('Author(s)'); ?></label>
+      <div class="controls"><?php echo $advsearch_author; ?></div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputSubjects"><?php echo __('Subject(s)'); ?></label>
+      <div class="controls"><?php echo $advsearch_topic; ?></div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputISBN"><?php echo __('ISBN/ISSN'); ?></label>
+      <div class="controls"><input type="text" name="isbn" id="inputISBN" /></div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputGMD"><?php echo __('GMD'); ?></label>
+      <div class="controls"><select name="gmd" id="inputGMD"><?php echo $gmd_list; ?></select></div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputLocation"><?php echo __('Location'); ?></label>
+      <div class="controls"><select name="node" id="inputLocation"><?php echo $location_list; ?></select></div>
+    </div>
 		</div>
     <div class="modal-footer">
-      <input type="submit" name="search" value="<?php echo __('Search'); ?>" class="btn btn-primary btn-large" />
+      <input type="submit" class="btn btn-large btn-primary" name="search" value="<?php echo __('Search'); ?>" />
     </div>
 		</form>
-    </div>
-		
+		</div>
+
+
     <div id="main-content" class="well well-small">
 		<?php echo $header_info; ?>
 		<div class="alert alert-info"><?php echo $info; ?></div>
@@ -134,7 +129,7 @@
         </div>
       </div>
     </div>
-		
+
     </div> <!-- /container -->
 
     <script src="./themes/default/js/supersized.3.1.3.min.js"></script>

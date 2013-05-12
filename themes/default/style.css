@@ -6,16 +6,9 @@
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
-#advSearchModal {
-	width: 550px;
-}
-
-#advSearchModal table input {
-	max-width: 170px;
-}
-
-#advSearchModal table td {
-	padding: 3px;
+#advSearchModal .control-group {
+  float: left;
+	width: 49%;
 }
 
 .modal form {
@@ -33,8 +26,12 @@
 	margin-right: 10px;
 }
 
-.btn-navbar:active,.btn-navbar.active{
-  background-color:#080808 \9;
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(91, 183, 91);
+  background-image: -moz-linear-gradient(center top , rgb(98, 196, 98), rgb(81, 163, 81));
+  background-repeat: repeat-x;
+	text-shadow: none;
 }
 
 .search-query {
@@ -113,4 +110,8 @@
 	z-index: -99;
 	padding:0;
 	margin:0;
+}
+
+.ajaxDDlist {
+	display: none;
 }

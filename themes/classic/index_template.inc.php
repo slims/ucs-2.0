@@ -55,7 +55,7 @@
             <?php echo __('ISBN/ISSN'); ?> :
             <input type="text" name="isbn" />
             <?php echo __('GMD'); ?> :
-            <select name="gmd" />
+            <select name="gmd">
             <?php echo $gmd_list; ?>
             </select>
             <?php echo __('Location'); ?> :
