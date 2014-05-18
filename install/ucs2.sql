@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 3.2.0.1
+-- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 09, 2010 at 08:21 AM
--- Server version: 5.1.37
--- PHP Version: 5.3.0
+-- Generation Time: May 18, 2014 at 12:10 PM
+-- Server version: 5.5.37-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,7 +17,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `ucs`
+-- Database: `ucs2`
 --
 
 -- --------------------------------------------------------
@@ -33,11 +34,6 @@ CREATE TABLE IF NOT EXISTS `backup_log` (
   PRIMARY KEY (`backup_log_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
---
--- Dumping data for table `backup_log`
---
-
-
 -- --------------------------------------------------------
 
 --
@@ -46,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `backup_log` (
 
 CREATE TABLE IF NOT EXISTS `biblio` (
   `biblio_id` int(11) NOT NULL AUTO_INCREMENT,
-  `orig_biblio_id` INT(11) NOT NULL,
+  `orig_biblio_id` int(11) NOT NULL,
   `gmd_id` int(3) DEFAULT NULL,
   `title` text COLLATE utf8_unicode_ci NOT NULL,
   `edition` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -73,18 +69,13 @@ CREATE TABLE IF NOT EXISTS `biblio` (
   `input_date` datetime DEFAULT NULL,
   `last_update` datetime DEFAULT NULL,
   PRIMARY KEY (`biblio_id`),
-  UNIQUE KEY `orig_biblio_idx` (`orig_biblio_id`, `node_id`),
+  UNIQUE KEY `orig_biblio_idx` (`orig_biblio_id`,`node_id`),
   KEY `references_idx` (`gmd_id`,`publisher_id`,`language_id`,`publish_place_id`),
   KEY `classification` (`classification`),
   KEY `node_id` (`node_id`),
   FULLTEXT KEY `title_ft_idx` (`title`,`series_title`),
   FULLTEXT KEY `notes_ft_idx` (`notes`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `biblio`
---
-
 
 -- --------------------------------------------------------
 
@@ -99,11 +90,6 @@ CREATE TABLE IF NOT EXISTS `biblio_author` (
   PRIMARY KEY (`biblio_id`,`author_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `biblio_author`
---
-
-
 -- --------------------------------------------------------
 
 --
@@ -116,11 +102,6 @@ CREATE TABLE IF NOT EXISTS `biblio_topic` (
   `level` int(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`biblio_id`,`topic_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `biblio_topic`
---
-
 
 -- --------------------------------------------------------
 
@@ -191,11 +172,6 @@ CREATE TABLE IF NOT EXISTS `mst_author` (
   PRIMARY KEY (`author_id`),
   UNIQUE KEY `author_name` (`author_name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `mst_author`
---
-
 
 -- --------------------------------------------------------
 
@@ -371,11 +347,6 @@ CREATE TABLE IF NOT EXISTS `mst_place` (
   UNIQUE KEY `place_name` (`place_name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
---
--- Dumping data for table `mst_place`
---
-
-
 -- --------------------------------------------------------
 
 --
@@ -390,11 +361,6 @@ CREATE TABLE IF NOT EXISTS `mst_publisher` (
   PRIMARY KEY (`publisher_id`),
   UNIQUE KEY `publisher_name` (`publisher_name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `mst_publisher`
---
-
 
 -- --------------------------------------------------------
 
@@ -412,11 +378,6 @@ CREATE TABLE IF NOT EXISTS `mst_topic` (
   PRIMARY KEY (`topic_id`),
   UNIQUE KEY `topic` (`topic`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `mst_topic`
---
-
 
 -- --------------------------------------------------------
 
@@ -436,10 +397,50 @@ CREATE TABLE IF NOT EXISTS `nodes_poll` (
   KEY `node_id` (`node_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `nodes_poll`
+-- Table structure for table `search_biblio`
 --
 
+CREATE TABLE IF NOT EXISTS `search_biblio` (
+  `biblio_id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `edition` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `isbn_issn` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `author` text COLLATE utf8_unicode_ci,
+  `topic` text COLLATE utf8_unicode_ci,
+  `gmd` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publisher` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publish_place` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `language` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `classification` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `spec_detail_info` text COLLATE utf8_unicode_ci,
+  `location` text COLLATE utf8_unicode_ci,
+  `publish_year` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8_unicode_ci,
+  `series_title` text COLLATE utf8_unicode_ci,
+  `items` text COLLATE utf8_unicode_ci,
+  `collection_types` text COLLATE utf8_unicode_ci,
+  `call_number` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `opac_hide` smallint(1) NOT NULL DEFAULT '0',
+  `promoted` smallint(1) NOT NULL DEFAULT '0',
+  `labels` text COLLATE utf8_unicode_ci,
+  `collation` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `image` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `input_date` datetime DEFAULT NULL,
+  `last_update` datetime DEFAULT NULL,
+  UNIQUE KEY `biblio_id` (`biblio_id`),
+  KEY `add_indexes` (`gmd`,`publisher`,`publish_place`,`language`,`classification`,`publish_year`,`call_number`),
+  KEY `add_indexes2` (`opac_hide`,`promoted`),
+  FULLTEXT KEY `title` (`title`),
+  FULLTEXT KEY `author` (`author`),
+  FULLTEXT KEY `topic` (`topic`),
+  FULLTEXT KEY `location` (`location`),
+  FULLTEXT KEY `items` (`items`),
+  FULLTEXT KEY `collection_types` (`collection_types`),
+  FULLTEXT KEY `labels` (`labels`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='index table for advance searching technique for SLiMS';
 
 -- --------------------------------------------------------
 
@@ -485,12 +486,14 @@ CREATE TABLE IF NOT EXISTS `system_log` (
   PRIMARY KEY (`log_id`),
   KEY `log_type` (`log_type`),
   KEY `id` (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `system_log`
 --
 
+INSERT INTO `system_log` (`log_id`, `log_type`, `id`, `log_location`, `log_msg`, `log_date`) VALUES
+(1, 'staff', 'admin', 'Login', 'Login success for user admin from address 127.0.0.1', '2014-05-17 05:35:10');
 
 -- --------------------------------------------------------
 
@@ -518,7 +521,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `realname`, `passwd`, `last_login`, `last_login_ip`, `groups`, `input_date`, `last_update`) VALUES
-(1, 'admin', 'Administrator', '21232f297a57a5a743894a0e4a801fc3', '2010-03-09 06:31:19', '::1', 'a:1:{i:0;s:1:"1";}', '2009-09-13', '2009-09-13');
+(1, 'admin', 'Administrator', '21232f297a57a5a743894a0e4a801fc3', '2014-05-17 05:35:10', '127.0.0.1', 'a:1:{i:0;s:1:"1";}', '2009-09-13', '2009-09-13');
 
 -- --------------------------------------------------------
 
@@ -541,3 +544,7 @@ CREATE TABLE IF NOT EXISTS `user_group` (
 
 INSERT INTO `user_group` (`group_id`, `group_name`, `input_date`, `last_update`) VALUES
 (1, 'Administrator', '2010-03-01', '2010-03-01');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
