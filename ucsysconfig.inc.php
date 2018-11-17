@@ -125,14 +125,10 @@ require SIMBIO_BASE_DIR.'simbio.inc.php';
 /* DATABASE CONNECTION config */
 // database constant
 // change below setting according to your database configuration
-#define('DB_HOST', 'localhost');
-define('DB_HOST', '172.17.0.2');
+define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
-#define('DB_NAME', 'ucsdiknasdb');
-define('DB_NAME', 'ucs_dikbud');
-#define('DB_USERNAME', 'ucsdiknasuser');
-define('DB_USERNAME', 'root');
-#define('DB_PASSWORD', 's0beautifulday');
+define('DB_NAME', 'ucsdbname');
+define('DB_USERNAME', 'ucsdbuser');
 define('DB_PASSWORD', 'mypassword');
 
 // database connection file
@@ -149,7 +145,7 @@ $sysconf['template']['theme'] = $sysconf['themes'];
 $sysconf['opac_result_num'] = 20;
 
 // language
-$sysconf['default_lang'] = 'en_US';
+$sysconf['default_lang'] = 'id_ID';
 
 // admin session timeout
 $sysconf['session_timeout'] = 7200;
