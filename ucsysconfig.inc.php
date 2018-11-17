@@ -125,11 +125,15 @@ require SIMBIO_BASE_DIR.'simbio.inc.php';
 /* DATABASE CONNECTION config */
 // database constant
 // change below setting according to your database configuration
-define('DB_HOST', 'localhost');
+#define('DB_HOST', 'localhost');
+define('DB_HOST', '172.17.0.2');
 define('DB_PORT', '3306');
-define('DB_NAME', 'ucsdb');
-define('DB_USERNAME', 'ucsuser');
-define('DB_PASSWORD', 'password_ucsuser');
+#define('DB_NAME', 'ucsdiknasdb');
+define('DB_NAME', 'ucs_dikbud');
+#define('DB_USERNAME', 'ucsdiknasuser');
+define('DB_USERNAME', 'root');
+#define('DB_PASSWORD', 's0beautifulday');
+define('DB_PASSWORD', 'mypassword');
 
 // database connection file
 require 'dbc.inc.php';

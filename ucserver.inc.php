@@ -39,11 +39,20 @@ $sysconf['server'] = array(
     );
 
 // nodes configuration
-$sysconf['node']['slims-node'] = array(
-    'id' => 'slims-node', // node id (must be UNIQUE, lowercase and not containing any spaces!)
-    'name' => 'SLiMS Library', // node name
-    'password' => '2325f677e21c1613909c953eb03c57352259cc5d', // this hash created with SHA1 algoritm
-    'baseurl' => 'http://localhost/slims5', // node base URL
+$sysconf['node']['perpust_kemdikbud'] = array(
+    'id' => 'perpust_kemdikbud', // node id (must be UNIQUE, lowercase and not containing any spaces!)
+    'name' => 'Perpustakaan Kemdikbud', // node name
+    'password' => 's0beautifulday', // this hash created with SHA1 algoritm
+    'baseurl' => 'http://localhost/slimsdev/slims8_akasia', // node base URL
+    'ip' => '' // IP address of node
+    );
+
+// nodes configuration
+$sysconf['node']['perpust_lpmp_dki'] = array(
+    'id' => 'perpust_lpmp_dki', // node id (must be UNIQUE, lowercase and not containing any spaces!)
+    'name' => 'Perpustakaan LPMP DKI', // node name
+    'password' => 's0beautifulday', // this hash created with SHA1 algoritm
+    'baseurl' => 'http://localhost/slimsdev/slims8_akasia', // node base URL
     'ip' => '' // IP address of node
     );
 

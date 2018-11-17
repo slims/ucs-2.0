@@ -322,9 +322,11 @@ abstract class biblio_list_model
                 $_title_main = trim($_biblio_d['title']);
             }
 
-            $_buffer .= '<titleInfo>'."\n".'<title>'.$_title_main.'</title>'."\n";
+            //$_buffer .= '<titleInfo>'."\n".'<title>'.$_title_main.'</title>'."\n";
+            $_buffer .= '<titleInfo>'."\n".'<title><![CDATA['.$_title_main.']]></title>'."\n";
             if ($_title_sub) {
-                $_buffer .= '<subTitle>'.$_title_sub.'</subTitle>'."\n";
+                //$_buffer .= '<subTitle>'.$_title_sub.'</subTitle>'."\n";
+                $_buffer .= '<subTitle><![CDATA['.$_title_sub.']]></subTitle>'."\n";
             }
             $_buffer .= '</titleInfo>'."\n";
 

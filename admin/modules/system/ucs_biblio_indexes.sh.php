@@ -25,9 +25,9 @@
 define('INDEX_AUTH', '1');
 
 // main system configuration
-require '../../../ucsysconfig.inc.php';
-require SIMBIO_BASE_DIR.'simbio_DB/simbio_dbop.inc.php';
-require MODULES_BASE_DIR.'system/ucs_biblio_indexer.inc.php';
+require '/var/www/html/ucs/ucsysconfig.inc.php';
+require SIMBIO_BASE_DIR.'/var/www/html/ucs/simbio2/simbio_DB/simbio_dbop.inc.php';
+require MODULES_BASE_DIR.'/var/www/html/ucs/admin/modules/system/ucs_biblio_indexer.inc.php';
 
 if ($argc < 2) {
     echo "Usage: \n";
@@ -39,18 +39,9 @@ if ($argc < 2) {
     $rec_bib_d = $rec_bib_q->fetch_row();
     $bib_total = $rec_bib_d[0];
     $idx_bib_q = $dbs->query('SELECT COUNT(*) FROM search_biblio');
-    
-    if($idx_bib_q->num_rows && $idx_bib_q->num_rows > 0 ){
-    #if($idx_bib_q->num_rows > 0){
-$idx_bib_d = $idx_bib_q->fetch_row();
-$idx_total = $idx_bib_d[0];
-}else{
-$idx_total = 0;
-}
-    
-#    $idx_bib_d = $idx_bib_q->fetch_row();
-#    $idx_total = $idx_bib_d[0];
-#    $unidx_total = $bib_total - $idx_total;
+    $idx_bib_d = $idx_bib_q->fetch_row();
+    $idx_total = $idx_bib_d[0];
+    $unidx_total = $bib_total - $idx_total;
 
     echo 'Total data on biblio: ' . $bib_total . ' records.'."\n";
     echo 'Total indexed data: ' . $idx_total . ' records.'."\n";
