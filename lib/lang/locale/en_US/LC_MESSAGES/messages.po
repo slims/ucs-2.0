@@ -1,0 +1,1776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Senayan3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-24 00:32+0700\n"
+"PO-Revision-Date: 2012-03-24 00:32+0700\n"
+"Last-Translator: Arif Syamsudin <buitenzorg812@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_ngettext:1,2\n"
+"X-Poedit-Basepath: ../../../../../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ucsysconfig.inc.php:262
+msgid "Personal Name"
+msgstr ""
+
+#: ucsysconfig.inc.php:263
+msgid "Organizational Body"
+msgstr ""
+
+#: ucsysconfig.inc.php:264
+msgid "Conference"
+msgstr ""
+
+#: ucsysconfig.inc.php:267
+msgid "Topic"
+msgstr ""
+
+#: ucsysconfig.inc.php:268
+msgid "Geographic"
+msgstr ""
+
+#: ucsysconfig.inc.php:269
+msgid "Name"
+msgstr ""
+
+#: ucsysconfig.inc.php:270
+msgid "Temporal"
+msgstr ""
+
+#: ucsysconfig.inc.php:271
+msgid "Genre"
+msgstr ""
+
+#: ucsysconfig.inc.php:272
+msgid "Occupation"
+msgstr ""
+
+#: ucsysconfig.inc.php:275
+msgid "Primary Author"
+msgstr ""
+
+#: ucsysconfig.inc.php:276
+msgid "Additional Author"
+msgstr ""
+
+#: ucsysconfig.inc.php:277
+msgid "Editor"
+msgstr ""
+
+#: ucsysconfig.inc.php:278
+msgid "Translator"
+msgstr ""
+
+#: ucsysconfig.inc.php:279
+msgid "Director"
+msgstr ""
+
+#: ucsysconfig.inc.php:280
+msgid "Producer"
+msgstr ""
+
+#: ucsysconfig.inc.php:281
+msgid "Composer"
+msgstr ""
+
+#: ucsysconfig.inc.php:282
+msgid "Illustrator"
+msgstr ""
+
+#: ucsysconfig.inc.php:283
+msgid "Creator"
+msgstr ""
+
+#: ucsysconfig.inc.php:284
+msgid "Contributor"
+msgstr ""
+
+#: index.php:33
+msgid "Web Online Public Access Catalog - Use the search options to find documents quickly"
+msgstr ""
+
+#: includes/common.inc.php:25
+msgid "All Locations"
+msgstr ""
+
+#: includes/common.inc.php:33
+msgid "All GMD/Media"
+msgstr ""
+
+#: includes/localisation.php:57
+msgid "English"
+msgstr ""
+
+#: includes/localisation.php:58
+msgid "Indonesian"
+msgstr ""
+
+#: includes/contents/login.inc.php:48
+msgid "Please supply valid username and password"
+msgstr ""
+
+#: includes/contents/login.inc.php:61
+msgid "Welcome to Union Catalog Server administration,"
+msgstr ""
+
+#: includes/contents/login.inc.php:70
+msgid "Wrong Username or Password. ACCESS DENIED"
+msgstr ""
+
+#: includes/contents/login.inc.php:82
+msgid "Your browser does not support Javascript or Javascript is disabled. Application won't run without Javascript!"
+msgstr ""
+
+#: admin/logout.php:32
+msgid "You Have Been Logged Out From Union Catalog Server console"
+msgstr ""
+
+#: admin/index.php:62
+msgid "Union Catalog Server administration console. you are currently logged in as"
+msgstr ""
+
+#: admin/default/home.php:30
+msgid "<strong>PHP GD</strong> extension is not installed. Please install it or application won't be able to create image thumbnail."
+msgstr ""
+
+#: admin/default/home.php:34
+msgid "The PATH for <strong>mysqldump</strong> program is not right! Please check configuration file or you won't be able to do any database backups."
+msgstr ""
+
+#: admin/default/session_check.inc.php:32
+#: admin/default/session_check.inc.php:44
+msgid "You are not authorized to view this section"
+msgstr ""
+
+#: admin/default/session_check.inc.php:56
+msgid "Your Login Session has already timeout!"
+msgstr ""
+
+#: admin/default/submenu.php:21
+msgid "Panel"
+msgstr ""
+
+#: admin/default/submenu.php:22
+msgid "Change User Profiles"
+msgstr ""
+
+#: admin/default/submenu.php:22
+msgid "Change Current User Profiles and Password"
+msgstr ""
+
+#: admin/default/submenu.php:24
+msgid "Bibliography List"
+msgstr ""
+
+#: admin/default/submenu.php:24
+msgid "View existing Union Server Catalog data"
+msgstr ""
+
+#: admin/modules/master_file/place.php:42
+#: admin/modules/master_file/place.php:134
+#: admin/modules/master_file/topic.php:42
+#: admin/modules/master_file/topic.php:137
+#: admin/modules/master_file/doc_language.php:41
+#: admin/modules/master_file/doc_language.php:137
+#: admin/modules/master_file/publisher.php:42
+#: admin/modules/master_file/publisher.php:134
+#: admin/modules/master_file/author.php:42
+#: admin/modules/master_file/author.php:136
+#: admin/modules/master_file/supplier.php:42
+#: admin/modules/master_file/supplier.php:142
+msgid "You don't have enough privileges to access this area!"
+msgstr ""
+
+#: admin/modules/master_file/place.php:50
+msgid "Place Name can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/place.php:68
+msgid "Place Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/place.php:70
+msgid "Place Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/place.php:77
+msgid "New Place Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/place.php:79
+msgid "Place Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/place.php:106
+#: admin/modules/master_file/topic.php:109
+#: admin/modules/master_file/frequency.php:107
+#: admin/modules/master_file/doc_language.php:109
+#: admin/modules/master_file/index.php:110
+#: admin/modules/master_file/publisher.php:106
+#: admin/modules/master_file/author.php:108
+#: admin/modules/master_file/supplier.php:114
+#: admin/modules/system/content.php:119
+#: admin/modules/system/user_group.php:147
+msgid "All Data Successfully Deleted"
+msgstr ""
+
+#: admin/modules/master_file/place.php:109
+#: admin/modules/master_file/topic.php:112
+#: admin/modules/master_file/frequency.php:110
+#: admin/modules/master_file/doc_language.php:112
+#: admin/modules/master_file/index.php:113
+#: admin/modules/master_file/publisher.php:109
+#: admin/modules/master_file/author.php:111
+#: admin/modules/master_file/supplier.php:117
+#: admin/modules/system/content.php:122
+#: admin/modules/system/user_group.php:150
+msgid ""
+"Some or All Data NOT deleted successfully!\\n"
+"Please contact system administrator"
+msgstr ""
+
+#: admin/modules/master_file/place.php:120
+#: admin/modules/master_file/submenu.php:28
+msgid "Place"
+msgstr ""
+
+#: admin/modules/master_file/place.php:120
+msgid "Add New Place"
+msgstr ""
+
+#: admin/modules/master_file/place.php:121
+msgid "Place List"
+msgstr ""
+
+#: admin/modules/master_file/place.php:123
+#: admin/modules/master_file/place.php:125
+#: admin/modules/master_file/topic.php:126
+#: admin/modules/master_file/topic.php:128
+#: admin/modules/master_file/frequency.php:124
+#: admin/modules/master_file/frequency.php:126
+#: admin/modules/master_file/doc_language.php:126
+#: admin/modules/master_file/doc_language.php:128
+#: admin/modules/master_file/index.php:127
+#: admin/modules/master_file/index.php:129
+#: admin/modules/master_file/publisher.php:123
+#: admin/modules/master_file/publisher.php:125
+#: admin/modules/master_file/author.php:125
+#: admin/modules/master_file/author.php:127
+#: admin/modules/master_file/supplier.php:131
+#: admin/modules/master_file/supplier.php:133
+#: admin/modules/system/content.php:136
+#: admin/modules/system/content.php:138
+#: admin/modules/system/user_group.php:164
+#: admin/modules/system/user_group.php:166
+#: admin/modules/system/sys_log.php:76
+#: admin/modules/system/sys_log.php:78
+msgid "Search"
+msgstr ""
+
+#: admin/modules/master_file/place.php:143
+#: admin/modules/master_file/topic.php:146
+#: admin/modules/master_file/frequency.php:144
+#: admin/modules/master_file/doc_language.php:146
+#: admin/modules/master_file/index.php:147
+#: admin/modules/master_file/publisher.php:143
+#: admin/modules/master_file/author.php:145
+#: admin/modules/master_file/supplier.php:151
+#: admin/modules/system/content.php:156
+#: admin/modules/system/user_group.php:181
+msgid "Save"
+msgstr ""
+
+#: admin/modules/master_file/place.php:158
+#: admin/modules/master_file/topic.php:161
+#: admin/modules/master_file/frequency.php:159
+#: admin/modules/master_file/doc_language.php:161
+#: admin/modules/master_file/index.php:162
+#: admin/modules/master_file/publisher.php:158
+#: admin/modules/master_file/author.php:160
+#: admin/modules/master_file/supplier.php:166
+#: admin/modules/system/content.php:172
+#: admin/modules/system/user_group.php:196
+msgid "Update"
+msgstr ""
+
+#: admin/modules/master_file/place.php:163
+#: admin/modules/master_file/place.php:180
+#: admin/modules/master_file/place.php:183
+#: admin/modules/master_file/submenu.php:28
+msgid "Place Name"
+msgstr ""
+
+#: admin/modules/master_file/place.php:167
+msgid "You are going to edit place data"
+msgstr ""
+
+#: admin/modules/master_file/place.php:167
+#: admin/modules/master_file/place.php:181
+#: admin/modules/master_file/place.php:184
+#: admin/modules/master_file/topic.php:177
+#: admin/modules/master_file/topic.php:195
+#: admin/modules/master_file/topic.php:200
+#: admin/modules/master_file/frequency.php:184
+#: admin/modules/master_file/frequency.php:202
+#: admin/modules/master_file/frequency.php:208
+#: admin/modules/master_file/doc_language.php:171
+#: admin/modules/master_file/doc_language.php:181
+#: admin/modules/master_file/doc_language.php:183
+#: admin/modules/master_file/index.php:173
+#: admin/modules/master_file/index.php:188
+#: admin/modules/master_file/index.php:192
+#: admin/modules/master_file/publisher.php:167
+#: admin/modules/master_file/publisher.php:182
+#: admin/modules/master_file/publisher.php:187
+#: admin/modules/master_file/author.php:176
+#: admin/modules/master_file/author.php:194
+#: admin/modules/master_file/author.php:199
+#: admin/modules/master_file/supplier.php:185
+#: admin/modules/master_file/supplier.php:202
+#: admin/modules/master_file/supplier.php:208
+#: admin/modules/system/user_group.php:217
+#: admin/modules/system/user_group.php:229
+msgid "Last Update"
+msgstr ""
+
+#: admin/modules/master_file/place.php:203
+#: admin/modules/master_file/topic.php:239
+#: admin/modules/master_file/frequency.php:227
+#: admin/modules/master_file/doc_language.php:202
+#: admin/modules/master_file/index.php:211
+#: admin/modules/master_file/publisher.php:207
+#: admin/modules/master_file/author.php:231
+#: admin/modules/master_file/supplier.php:229
+#: admin/modules/system/content.php:237
+#: admin/modules/system/user_group.php:249
+#: admin/modules/system/sys_log.php:131
+msgid "Found <strong>{result->num_rows}</strong> from your keywords"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:50
+msgid "Subject can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:70
+msgid "Subject Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:72
+msgid "Subject Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:79
+msgid "New Subject Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:81
+msgid "Subject Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:123
+#: admin/modules/master_file/topic.php:166
+#: admin/modules/master_file/topic.php:192
+#: admin/modules/master_file/topic.php:197
+#: admin/modules/master_file/submenu.php:27
+msgid "Subject"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:123
+msgid "Add New Subject"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:124
+msgid "Subject List"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:171
+#: admin/modules/master_file/topic.php:193
+#: admin/modules/master_file/topic.php:198
+msgid "Subject Type"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:173
+#: admin/modules/master_file/topic.php:194
+#: admin/modules/master_file/topic.php:199
+#: admin/modules/master_file/submenu.php:23
+#: admin/modules/master_file/author.php:172
+#: admin/modules/master_file/author.php:193
+#: admin/modules/master_file/author.php:198
+msgid "Authority Files"
+msgstr ""
+
+#: admin/modules/master_file/topic.php:177
+msgid "You are going to edit Subject data"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:24
+#: admin/modules/master_file/index.php:124
+msgid "GMD"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:24
+msgid "General Material Designation"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:25
+#: admin/modules/master_file/publisher.php:120
+msgid "Publisher"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:25
+msgid "Document Publisher"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:26
+#: admin/modules/master_file/author.php:122
+msgid "Author"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:26
+msgid "Document Authors"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:29
+#: admin/modules/master_file/doc_language.php:123
+msgid "Doc. Language"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:29
+msgid "Document Content Language"
+msgstr ""
+
+#: admin/modules/master_file/submenu.php:30
+#: admin/modules/master_file/frequency.php:121
+#: admin/modules/master_file/frequency.php:164
+#: admin/modules/master_file/frequency.php:198
+#: admin/modules/master_file/frequency.php:204
+msgid "Frequency"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:41
+#: admin/modules/master_file/frequency.php:135
+#: admin/modules/master_file/index.php:45
+#: admin/modules/master_file/index.php:138
+#: admin/modules/system/content.php:43
+#: admin/modules/system/content.php:146
+#: admin/modules/system/user_group.php:35
+#: admin/modules/system/backup_proc.php:43
+#: admin/modules/system/sys_log.php:43
+msgid "You don't have enough privileges to view this section"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:49
+msgid "Required fields (*)  must be filled correctly!"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:70
+msgid "Frequency Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:72
+msgid "Frequency Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:78
+msgid "New Frequency Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:80
+msgid "Frequency Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:121
+msgid "Add New Frequency"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:122
+msgid "Frequency Available"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:172
+#: admin/modules/master_file/frequency.php:199
+#: admin/modules/master_file/frequency.php:205
+#: admin/modules/master_file/doc_language.php:168
+#: admin/modules/master_file/doc_language.php:181
+#: admin/modules/master_file/doc_language.php:183
+msgid "Language"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:174
+#: admin/modules/master_file/frequency.php:200
+#: admin/modules/master_file/frequency.php:206
+msgid "Time Increment"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:176
+msgid "Day"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:177
+msgid "Week"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:178
+msgid "Month"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:179
+msgid "Year"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:180
+#: admin/modules/master_file/frequency.php:201
+#: admin/modules/master_file/frequency.php:207
+msgid "Time Unit"
+msgstr ""
+
+#: admin/modules/master_file/frequency.php:184
+msgid "You are going to edit Frequency data"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:50
+msgid "Language ID or Name can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:69
+msgid "Language Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:73
+msgid "Language Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:80
+msgid "New Language Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:82
+msgid "Language Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:123
+msgid "Add New Language"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:124
+msgid "Language List"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:166
+msgid "Language Code"
+msgstr ""
+
+#: admin/modules/master_file/doc_language.php:171
+msgid "You are going to edit language data"
+msgstr ""
+
+#: admin/modules/master_file/index.php:54
+msgid "GMD Code And Name can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/index.php:73
+msgid "GMD Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/index.php:75
+msgid "GMD Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/index.php:81
+msgid "New GMD Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/index.php:83
+msgid "GMD Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/index.php:124
+msgid "Add New GMD"
+msgstr ""
+
+#: admin/modules/master_file/index.php:125
+msgid "GMD List"
+msgstr ""
+
+#: admin/modules/master_file/index.php:167
+#: admin/modules/master_file/index.php:186
+#: admin/modules/master_file/index.php:190
+msgid "GMD Code"
+msgstr ""
+
+#: admin/modules/master_file/index.php:169
+#: admin/modules/master_file/index.php:187
+#: admin/modules/master_file/index.php:191
+msgid "GMD Name"
+msgstr ""
+
+#: admin/modules/master_file/index.php:173
+msgid "You are going to edit gmd data"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:50
+msgid "Publisher Name can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:68
+msgid "Publisher Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:70
+msgid "PUBLISHER Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:77
+msgid "New Publisher Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:79
+msgid "Publisher Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:120
+msgid "Add New Publisher"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:121
+msgid "Publisher List"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:163
+#: admin/modules/master_file/publisher.php:181
+#: admin/modules/master_file/publisher.php:185
+msgid "Publisher Name"
+msgstr ""
+
+#: admin/modules/master_file/publisher.php:167
+msgid "You are going to edit publisher data"
+msgstr ""
+
+#: admin/modules/master_file/author.php:50
+msgid "Author name can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/author.php:70
+msgid "Author Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/author.php:72
+msgid "Author Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/author.php:79
+msgid "New Author Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/author.php:81
+msgid "Author Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/author.php:122
+msgid "Add New Author"
+msgstr ""
+
+#: admin/modules/master_file/author.php:123
+msgid "Author List"
+msgstr ""
+
+#: admin/modules/master_file/author.php:165
+#: admin/modules/master_file/author.php:191
+#: admin/modules/master_file/author.php:196
+msgid "Author Name"
+msgstr ""
+
+#: admin/modules/master_file/author.php:170
+#: admin/modules/master_file/author.php:192
+#: admin/modules/master_file/author.php:197
+msgid "Authority Type"
+msgstr ""
+
+#: admin/modules/master_file/author.php:176
+msgid "You are going to edit author data"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:50
+msgid "Supplier Name can't be empty"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:74
+msgid "Supplier Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:76
+msgid "Supplier Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:83
+msgid "New Supplier Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:86
+msgid "Supplier Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:128
+msgid "Supplier"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:128
+msgid "Add New Supplier"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:129
+msgid "Supplier List"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:171
+#: admin/modules/master_file/supplier.php:198
+#: admin/modules/master_file/supplier.php:204
+msgid "Supplier Name"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:173
+msgid "Address"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:175
+#: admin/modules/master_file/supplier.php:199
+#: admin/modules/master_file/supplier.php:205
+msgid "Contact"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:177
+#: admin/modules/master_file/supplier.php:200
+#: admin/modules/master_file/supplier.php:206
+msgid "Phone Number"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:179
+#: admin/modules/master_file/supplier.php:201
+#: admin/modules/master_file/supplier.php:207
+msgid "Fax Number"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:181
+msgid "Account Number"
+msgstr ""
+
+#: admin/modules/master_file/supplier.php:185
+msgid "You are going to edit Supplier data"
+msgstr ""
+
+#: admin/modules/system/content.php:52
+msgid "Title or Path can't be empty!"
+msgstr ""
+
+#: admin/modules/system/content.php:74
+msgid "Content data updated"
+msgstr ""
+
+#: admin/modules/system/content.php:76
+msgid "Content data FAILED to update!"
+msgstr ""
+
+#: admin/modules/system/content.php:84
+msgid "Content data saved"
+msgstr ""
+
+#: admin/modules/system/content.php:86
+msgid "Content data FAILED to save!"
+msgstr ""
+
+#: admin/modules/system/content.php:133
+#: admin/modules/system/submenu.php:28
+msgid "Content"
+msgstr ""
+
+#: admin/modules/system/content.php:133
+msgid "Add New Content"
+msgstr ""
+
+#: admin/modules/system/content.php:134
+msgid "Content List"
+msgstr ""
+
+#: admin/modules/system/content.php:177
+#: admin/modules/system/content.php:210
+#: admin/modules/system/content.php:214
+msgid "Content Title"
+msgstr ""
+
+#: admin/modules/system/content.php:179
+#: admin/modules/system/content.php:211
+#: admin/modules/system/content.php:215
+msgid "Path (Must be unique)"
+msgstr ""
+
+#: admin/modules/system/content.php:181
+msgid "Content Description"
+msgstr ""
+
+#: admin/modules/system/content.php:185
+msgid "You are going to update Content data"
+msgstr ""
+
+#: admin/modules/system/content.php:185
+#: admin/modules/system/content.php:212
+#: admin/modules/system/content.php:216
+msgid "Last Updated"
+msgstr ""
+
+#: admin/modules/system/module_priv_form.inc.php:26
+msgid "Module Name"
+msgstr ""
+
+#: admin/modules/system/module_priv_form.inc.php:26
+msgid "Read"
+msgstr ""
+
+#: admin/modules/system/module_priv_form.inc.php:26
+msgid "Write"
+msgstr ""
+
+#: admin/modules/system/user_group.php:49
+msgid "Group name can't be empty"
+msgstr ""
+
+#: admin/modules/system/user_group.php:84
+msgid "Group Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/system/user_group.php:86
+msgid "Group Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/system/user_group.php:112
+msgid "New Group Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/system/user_group.php:114
+msgid "Group Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/system/user_group.php:161
+#: admin/modules/system/submenu.php:34
+msgid "User Group"
+msgstr ""
+
+#: admin/modules/system/user_group.php:161
+msgid "Add New Group"
+msgstr ""
+
+#: admin/modules/system/user_group.php:162
+msgid "Group List"
+msgstr ""
+
+#: admin/modules/system/user_group.php:201
+#: admin/modules/system/user_group.php:228
+msgid "Group Name"
+msgstr ""
+
+#: admin/modules/system/user_group.php:212
+msgid "Privileges"
+msgstr ""
+
+#: admin/modules/system/user_group.php:217
+msgid "You are going to edit Group data"
+msgstr ""
+
+#: admin/modules/system/submenu.php:23
+msgid "System"
+msgstr ""
+
+#: admin/modules/system/submenu.php:26
+msgid "System Configuration"
+msgstr ""
+
+#: admin/modules/system/submenu.php:26
+msgid "Configure Global System Preferences"
+msgstr ""
+
+#: admin/modules/system/submenu.php:31
+msgid "Biblio Indexes"
+msgstr ""
+
+#: admin/modules/system/submenu.php:31
+msgid "Bibliographic Indexes management"
+msgstr ""
+
+#: admin/modules/system/submenu.php:32
+msgid "Modules"
+msgstr ""
+
+#: admin/modules/system/submenu.php:32
+msgid "Configure Application Modules"
+msgstr ""
+
+#: admin/modules/system/submenu.php:33
+msgid "System Users"
+msgstr ""
+
+#: admin/modules/system/submenu.php:33
+msgid "Manage Application User or Library Staff"
+msgstr ""
+
+#: admin/modules/system/submenu.php:34
+msgid "Manage Group of Application User"
+msgstr ""
+
+#: admin/modules/system/submenu.php:35
+msgid "Nodes Poll"
+msgstr ""
+
+#: admin/modules/system/submenu.php:35
+msgid "View Nodes Poll/Request"
+msgstr ""
+
+#: admin/modules/system/submenu.php:37
+#: admin/modules/system/sys_log.php:70
+msgid "System Log"
+msgstr ""
+
+#: admin/modules/system/submenu.php:37
+msgid "View Application System Log"
+msgstr ""
+
+#: admin/modules/system/submenu.php:38
+msgid "Database Backup"
+msgstr ""
+
+#: admin/modules/system/submenu.php:38
+msgid "Backup Application Database"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:61
+msgid "System Log data completely cleared!"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:72
+msgid "Are you SURE to completely clear system log data? This action cannot be undo!"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:72
+msgid "CLEAR LOGS"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:73
+msgid "Save Logs record to file?"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:73
+msgid "Save Logs To File"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:97
+msgid "Time"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:98
+msgid "Location"
+msgstr ""
+
+#: admin/modules/system/sys_log.php:99
+msgid "Message"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:49
+msgid "Nodes poll cleared!"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:58
+msgid "NODES POLL"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:60
+msgid "Are you SURE to completely clear nodes poll!"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:60
+msgid "CLEAR ALL NODES POLL"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:89
+#: admin/modules/bibliography/index.php:396
+#: admin/modules/bibliography/index.php:403
+msgid "Node"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:90
+msgid "IP Address"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:91
+msgid "Request Start"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:92
+msgid "Request End"
+msgstr ""
+
+#: admin/modules/system/nodes_poll.php:93
+msgid "Status"
+msgstr ""
+
+#: admin/modules/system/index.php:49
+msgid "Modify global application preferences"
+msgstr ""
+
+#: admin/modules/system/index.php:93
+msgid "Settings saved. Refreshing page"
+msgstr ""
+
+#: admin/modules/system/index.php:100
+msgid "Save Settings"
+msgstr ""
+
+#: admin/modules/system/index.php:114
+msgid "Library Name"
+msgstr ""
+
+#: admin/modules/system/index.php:117
+msgid "Library Subname"
+msgstr ""
+
+#: admin/modules/system/index.php:131
+msgid "OPAC Template"
+msgstr ""
+
+#: admin/modules/system/index.php:135
+msgid "Default App. Language"
+msgstr ""
+
+#: admin/modules/system/index.php:143
+msgid "Number Of Collections To Show In OPAC Result List"
+msgstr ""
+
+#: admin/modules/system/index.php:147
+#: admin/modules/system/index.php:153
+msgid "Disable"
+msgstr ""
+
+#: admin/modules/system/index.php:148
+#: admin/modules/system/index.php:154
+msgid "Enable"
+msgstr ""
+
+#: admin/modules/system/index.php:149
+msgid "OPAC XML Detail"
+msgstr ""
+
+#: admin/modules/system/index.php:155
+msgid "OPAC XML Result"
+msgstr ""
+
+#: admin/modules/system/index.php:158
+msgid "Session Login Timeout"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:53
+msgid "Index table truncated!"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:55
+msgid "Index table FAILED to truncated, probably because of database query error!"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:69
+#, php-format
+msgid "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d minutes %d second(s)"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:71
+#: admin/modules/system/biblio_indexes.php:93
+#, php-format
+msgid "<strong>%d</strong> index records failed to indexed. The IDs are: %s"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:83
+msgid "Please empty the Index first before re-creating the Index"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:91
+#, php-format
+msgid "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d second(s)"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:103
+msgid "UCS Bibliographic Index"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:106
+msgid "Emptying Index"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:107
+msgid "Re-create Index"
+msgstr ""
+
+#: admin/modules/system/biblio_indexes.php:108
+msgid "Update Index"
+msgstr ""
+
+#: admin/modules/system/module.php:50
+msgid "Module name and path can't be empty"
+msgstr ""
+
+#: admin/modules/system/module.php:73
+msgid "Module Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/system/module.php:75
+msgid "Module Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/system/module.php:86
+msgid "New Module Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/system/module.php:88
+msgid "Module Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/system/module.php:138
+msgid "Add New Modules"
+msgstr ""
+
+#: admin/modules/system/module.php:139
+msgid "Modules List"
+msgstr ""
+
+#: admin/modules/system/module.php:180
+msgid "Module Path"
+msgstr ""
+
+#: admin/modules/system/module.php:182
+#: admin/modules/system/module.php:199
+msgid "Module Description"
+msgstr ""
+
+#: admin/modules/system/module.php:186
+msgid "You are going to edit data"
+msgstr ""
+
+#: admin/modules/system/app_user.php:62
+msgid "User Name or Real Name can't be empty"
+msgstr ""
+
+#: admin/modules/system/app_user.php:65
+msgid "Login username or Real Name is probihited!"
+msgstr ""
+
+#: admin/modules/system/app_user.php:68
+msgid "Password confirmation does not match. See if your Caps Lock key is on!"
+msgstr ""
+
+#: admin/modules/system/app_user.php:102
+msgid "User Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/system/app_user.php:104
+msgid "User Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/system/app_user.php:112
+msgid "New User Data Successfully Saved"
+msgstr ""
+
+#: admin/modules/system/app_user.php:114
+msgid "User Data FAILED to Save. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/system/app_user.php:162
+msgid "Add New User"
+msgstr ""
+
+#: admin/modules/system/app_user.php:163
+msgid "User List"
+msgstr ""
+
+#: admin/modules/system/app_user.php:217
+#: admin/modules/system/app_user.php:262
+msgid "Login Username"
+msgstr ""
+
+#: admin/modules/system/app_user.php:219
+#: admin/modules/system/app_user.php:261
+#: admin/modules/system/app_user.php:266
+#: admin/modules/system/app_user.php:267
+msgid "Real Name"
+msgstr ""
+
+#: admin/modules/system/app_user.php:233
+msgid "Group(s)"
+msgstr ""
+
+#: admin/modules/system/app_user.php:236
+msgid "New Password"
+msgstr ""
+
+#: admin/modules/system/app_user.php:238
+msgid "Confirm New Password"
+msgstr ""
+
+#: admin/modules/system/app_user.php:242
+msgid "You are going to edit user profile"
+msgstr ""
+
+#: admin/modules/system/app_user.php:243
+msgid "Leave Password field blank if you don't want to change the password"
+msgstr ""
+
+#: admin/modules/system/app_user.php:263
+#: admin/modules/system/app_user.php:268
+msgid "Last Login"
+msgstr ""
+
+#: admin/modules/system/backup.php:44
+msgid "Start New Backup"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:35
+msgid "ERROR ON PROCESSING DATA REMOVAL REQUEST"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:47
+#, php-format
+msgid "%d records of %s removed succesfully from database"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:60
+#: admin/modules/bibliography/submenu.php:27
+msgid "Nodes Data Removal"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:62
+#: admin/modules/bibliography/nodes_removal.php:63
+msgid "Select Node"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:70
+msgid "Remove All Selected Node's Data"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:92
+#, php-format
+msgid "There is %d records found.<br /> Are you sure to REMOVE ALL DATA of %s node? Once it done there is no way you can undo this action!"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:97
+msgid "I'm Very Sure to Remove ALL DATA"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:98
+msgid "CANCEL"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:105
+#, php-format
+msgid "Node %s doesn't have any record to remove!"
+msgstr ""
+
+#: admin/modules/bibliography/nodes_removal.php:108
+msgid "Node Undefined on server!"
+msgstr ""
+
+#: admin/modules/bibliography/iframe_author.php:64
+msgid "Author succesfully removed!"
+msgstr ""
+
+#: admin/modules/bibliography/iframe_author.php:75
+msgid "Author removed!"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:23
+#: admin/modules/bibliography/index.php:199
+msgid "Bibliographic"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:24
+#: admin/modules/bibliography/index.php:199
+msgid "Bibliographic List"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:24
+msgid "Show Existing Bibliographic Data"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:25
+msgid "Tools"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:26
+msgid "Export Data"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:26
+msgid "Export Bibliographic Data To CSV format"
+msgstr ""
+
+#: admin/modules/bibliography/submenu.php:27
+msgid "Mass Nodes Data Removal"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:85
+msgid "Upload FAILED! Forbidden file type or file size too big!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:134
+msgid "File Attachment data updated!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:138
+msgid "File Attachment data FAILED to update!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:143
+#: admin/modules/bibliography/pop_attach.php:158
+msgid "File Attachment uploaded succesfully!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:147
+msgid "File Attachment data FAILED to save!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:167
+msgid "Upload Now"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:188
+#: admin/modules/bibliography/index.php:251
+#: admin/modules/bibliography/index.php:394
+#: admin/modules/bibliography/index.php:401
+msgid "Title"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:197
+msgid "Repository ROOT"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:207
+msgid "Repo. Directory"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:211
+msgid "File To Attach"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:214
+msgid "URL"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:216
+msgid "Description"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:218
+msgid "Public"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:219
+msgid "Private"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:220
+msgid "Access"
+msgstr ""
+
+#: admin/modules/bibliography/pop_attach.php:227
+msgid "Access Limit by Member Type"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:54
+msgid "Title can not be empty"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:118
+#: admin/modules/bibliography/index.php:122
+msgid "Image Uploaded Successfully"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:138
+msgid "Bibliography Data Successfully Updated"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:149
+msgid "Bibliography Data FAILED to Updated. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:203
+msgid "All Fields"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:203
+msgid "Title/Series Title"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:203
+msgid "Topics"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:203
+msgid "Authors"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:203
+#: admin/modules/bibliography/index.php:280
+#: admin/modules/bibliography/index.php:395
+#: admin/modules/bibliography/index.php:402
+msgid "ISBN/ISSN"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:253
+msgid "Edition"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:255
+msgid "Specific Detail Info"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:257
+msgid "Authors/Roles"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:257
+msgid "Add Author(s)"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:259
+msgid "Author(s)"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:271
+msgid "Not Applicable"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:277
+msgid "Use this for Serial publication"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:282
+msgid "Classification"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:296
+msgid "Publishing Year"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:304
+#: admin/modules/bibliography/index.php:308
+msgid "Publishing Place"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:310
+msgid "Collation"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:312
+msgid "Series Title"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:314
+msgid "Call Number"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:316
+msgid "Subjects/Topics"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:316
+msgid "Add Subject(s)"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:318
+msgid "Subject(s)"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:328
+msgid "Abstract/Notes"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:333
+#: admin/modules/bibliography/index.php:338
+msgid "Image"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:341
+msgid "Show"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:342
+msgid "Hide"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:343
+msgid "Hide in OPAC"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:348
+msgid "You are going to edit biblio data"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:451
+msgid "Query took"
+msgstr ""
+
+#: admin/modules/bibliography/index.php:451
+msgid "second(s) to complete"
+msgstr ""
+
+#: admin/modules/bibliography/pop_topic.php:94
+msgid "Subject FAILED to Add. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/bibliography/pop_topic.php:119
+msgid "Subject added!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_topic.php:130
+msgid "Add Subject"
+msgstr ""
+
+#: admin/modules/bibliography/pop_topic.php:136
+msgid "Keyword"
+msgstr ""
+
+#: admin/modules/bibliography/pop_topic.php:150
+msgid "Type to search for existing topics or to add a new one"
+msgstr ""
+
+#: admin/modules/bibliography/pop_topic.php:152
+#: admin/modules/bibliography/pop_author.php:151
+msgid "Insert To Bibliography"
+msgstr ""
+
+#: admin/modules/bibliography/pop_author.php:91
+msgid "Author succesfully updated!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_author.php:95
+msgid "Author FAILED to Add. Please Contact System Administrator"
+msgstr ""
+
+#: admin/modules/bibliography/pop_author.php:120
+msgid "Author added!"
+msgstr ""
+
+#: admin/modules/bibliography/pop_author.php:131
+msgid "Add Author"
+msgstr ""
+
+#: admin/modules/bibliography/pop_author.php:149
+msgid "Type to search for existing authors or to add a new one"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:105
+msgid "Error on query to database, Export FAILED!"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:143
+msgid "There is no record in bibliographic database yet, Export FAILED!"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:152
+msgid "EXPORT TOOL"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:154
+msgid "Export bibliographics data to CSV file"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:161
+msgid "Export Now"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:170
+msgid "Field Separator"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:172
+msgid "Field Enclosed With"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:176
+msgid "Record Separator"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:178
+msgid "Number of Records To Export (0 for all records)"
+msgstr ""
+
+#: admin/modules/bibliography/export.php:180
+msgid "Start From Record"
+msgstr ""
+
+#: lib/detail.inc.php:159
+msgid "Click to view others documents with this author"
+msgstr ""
+
+#: lib/detail.inc.php:173
+msgid "Click to view others documents with this subject"
+msgstr ""
+
+#: lib/detail.inc.php:218
+msgid "View node catalog data"
+msgstr ""
+
+#: lib/biblio_list_model.inc.php:179
+#: lib/biblio_list_model.inc.php:200
+msgid "Record Detail"
+msgstr ""
+
+#: lib/biblio_list_model.inc.php:262
+msgid "mark this"
+msgstr ""
+
+#: lib/biblio_list_model.inc.php:285
+msgid "Put marked selection into basket"
+msgstr ""
+
+#: lib/contents/default.inc.php:120
+#: lib/contents/default.inc.php:129
+msgid "Found  <strong>{biblio_list->num_rows}</strong> from your keywords"
+msgstr ""
+
+#: lib/contents/default.inc.php:162
+msgid "You currently on page <strong>{page}</strong> of <strong>{total_pages}</strong> page(s)"
+msgstr ""
+
+#: lib/contents/show_detail.inc.php:60
+msgid "Back To Previous"
+msgstr ""
+
+#: lib/contents/common.inc.php:41
+msgid "All Collections"
+msgstr ""
+
+#: lib/contents/login.inc.php:97
+msgid "Welcome to Library Automation, "
+msgstr ""
+
+#: lib/lang/localisation.php:65
+msgid "Arabic"
+msgstr ""
+
+#: lib/lang/localisation.php:66
+msgid "German"
+msgstr ""
+
+#: lib/lang/localisation.php:68
+msgid "Espanol"
+msgstr ""
+
+#: themes/lightweight/index_template.inc.php:20
+#: themes/default/index_template.inc.php:24
+msgid "Home"
+msgstr ""
+
+#: themes/lightweight/index_template.inc.php:21
+msgid "Library Information"
+msgstr ""
+
+#: themes/lightweight/index_template.inc.php:22
+msgid "Help on Search"
+msgstr ""
+
+#: themes/lightweight/detail_template.php:12
+msgid "Collection Location"
+msgstr ""
+
+#: themes/default/index_template.inc.php:25
+msgid "Union Catalog Information"
+msgstr ""
+
+#: themes/default/index_template.inc.php:26
+msgid "Help"
+msgstr ""
+
+#: themes/default/index_template.inc.php:38
+msgid "Select Language"
+msgstr ""
+
+#: themes/default/index_template.inc.php:47
+msgid "Advanced Search"
+msgstr ""
+
+#: themes/default/index_template.inc.php:88
+msgid "Quick Search"
+msgstr ""
+
+#: simbio2/simbio_GUI/table/simbio_table.inc.php:223
+msgid "No Data"
+msgstr ""
+
+#: simbio2/simbio_GUI/paging/simbio_paging.inc.php:118
+msgid "First Page"
+msgstr ""
+
+#: simbio2/simbio_GUI/paging/simbio_paging.inc.php:120
+msgid "Previous"
+msgstr ""
+
+#: simbio2/simbio_GUI/paging/simbio_paging.inc.php:141
+msgid "Next"
+msgstr ""
+
+#: simbio2/simbio_GUI/paging/simbio_paging.inc.php:149
+msgid "Last Page"
+msgstr ""
+
+#: simbio2/simbio_GUI/form_maker/simbio_form_table_AJAX.inc.php:98
+#: simbio2/simbio_GUI/form_maker/simbio_form_table.inc.php:105
+msgid "Delete Record"
+msgstr ""
+
+#: simbio2/simbio_GUI/form_maker/simbio_form_table_AJAX.inc.php:99
+#: simbio2/simbio_GUI/form_maker/simbio_form_table.inc.php:106
+msgid "Cancel"
+msgstr ""
+
+#: simbio2/simbio_GUI/form_maker/simbio_form_element.inc.php:267
+msgid "Date"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:89
+msgid "DELETE"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:90
+msgid "EDIT"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:105
+msgid "Are You Sure Want to DELETE Selected Data?"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:109
+msgid "Delete Selected Data"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:137
+msgid "ascendingly"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:146
+msgid "descendingly"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:215
+msgid "Order list by"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:372
+msgid "Check All"
+msgstr ""
+
+#: simbio2/simbio_DB/datagrid/simbio_dbgrid.inc.php:373
+msgid "Uncheck All"
+msgstr ""
+

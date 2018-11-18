@@ -1,0 +1,7 @@
+ucsysconfig.inc.php
+ucserver.inc.php
+lib/phpthumb/cache/phpThumb_cache*
+images/barcodes/*
+.DS_Store
+._.*
+._*

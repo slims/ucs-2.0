@@ -1,0 +1,117 @@
+/*
+ Override bootstrap style
+*/
+
+#main-content {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#advSearchModal .control-group {
+  float: left;
+	width: 49%;
+}
+
+.modal form {
+	margin-bottom: 0;
+}
+
+.navbar-form select {
+	width: 150px;
+}
+
+.navbar .logo {
+	float: left;
+	display: inline-block;
+	margin: 3px;
+	margin-right: 10px;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(91, 183, 91);
+  background-image: -moz-linear-gradient(center top , rgb(98, 196, 98), rgb(81, 163, 81));
+  background-repeat: repeat-x;
+	text-shadow: none;
+}
+
+.search-query {
+  width: 40%;
+}
+
+.biblioPaging {
+	clear: both;
+}
+
+.accordion-group {
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  min-height: 20px;
+}
+
+.accordion-toggle {
+	font-size: 120%;
+}
+
+.full-width {
+	width: 99%;
+}
+
+.result-head {
+	display:block;
+	padding:8px 15px;
+}
+
+.loader {
+	display: block;
+	margin: 0 auto;
+}
+
+.field-author {
+	font-style: italic;
+}
+
+.field-title {
+	width: 60%;
+}
+
+.field-paging {
+	width: 80%;
+}
+
+.item {
+	clear: both;
+	width: 100%;
+}
+
+.cover-list
+{
+	float: left;
+	width:90px;
+	height:130px;
+	margin:5px;
+	clear: both;
+}
+
+.tblHead {
+	font-weight: bold;
+}
+
+#page-loader { position:fixed; top:50%; left:50%; z-index:99; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:#fff url(../result-loader.gif) no-repeat center center; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+
+#masking
+{
+	background: transparent url(images/line-dotted.png) left top repeat;
+	width:100%;
+	height:150%;
+	position:fixed;
+  top: -100px;
+	z-index: -99;
+	padding:0;
+	margin:0;
+}
+
+.ajaxDDlist {
+	display: none;
+}
