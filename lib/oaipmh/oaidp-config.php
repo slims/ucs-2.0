@@ -270,7 +270,8 @@ $SQL['table'] = 'biblio';
 // the name of the column where you store the unique identifiers
 // pointing to your item.
 // this is your internal identifier for the item
-$SQL['identifier'] = 'biblio_id';
+#$SQL['identifier'] = 'biblio_id';
+$SQL['identifier'] = 'orig_biblio_id';
 
 $SQL['metadataPrefix'] = 'oai_metadataprefix';
 
