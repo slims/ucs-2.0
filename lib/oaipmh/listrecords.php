@@ -164,7 +164,8 @@ while ($countrec++ < $maxrec) {
 	if($args['verb']=='ListRecords') {
 		$cur_record = $outputObj->create_record();
 		$institution_id = $record['node_id'];
-		$cur_header = $outputObj->create_header($oaiprefix.'-'.$identifier, $datestamp,$setspec,$cur_record, $sysconf['library_name'], $institution_id, $sysconf['node'][$institution_id]['name']);
+		#$cur_header = $outputObj->create_header($oaiprefix.'-'.$identifier, $datestamp,$setspec,$cur_record, $sysconf['library_name'], $institution_id, $sysconf['node'][$institution_id]['name']);
+		$cur_header = $outputObj->create_header($oaiprefix.'-'.$record[$SQL['orig_biblio_id']], $datestamp,$setspec,$cur_record, $sysconf['library_name'], $institution_id, $sysconf['node'][$institution_id]['name']);
 	// return the metadata record itself
 		if (!$status_deleted) {
 			debug_var_dump('inc_record',$inc_record);

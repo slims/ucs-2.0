@@ -253,7 +253,7 @@ function readResumToken($resumptionToken) {
 function selectallQuery ($metadPrefix = "oai_dc", $id = '')
 {
 	global $SQL;
-	$query = "SELECT " . $SQL['identifier'] . "," . $SQL['datestamp'] . "," . $SQL['set'] .
+	$query = "SELECT " . $SQL['identifier'] . "," .$SQL['orig_biblio_id']. "," . $SQL['datestamp'] . "," . $SQL['set'] .
 		" FROM ".$SQL['table'] . " WHERE 1 ";
 	if ($id != '') {
 		$query .= " AND ".$SQL['identifier']." ='$id'";
